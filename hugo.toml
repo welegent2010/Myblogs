@@ -1,0 +1,11 @@
+baseURL = 'https://87188202.xyz'  
+languageCode = 'zh-cn'
+title = 'Myblogs'
+theme = 'PaperMod'
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
