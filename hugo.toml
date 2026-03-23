@@ -1,7 +1,7 @@
 baseURL = 'https://87188202.xyz'  
 languageCode = 'zh-cn'
 title = 'Myblogs'
-theme = './themes/PaperMod'
+theme = 'PaperMod'
 
 [params]
   ShowReadingTime = true
