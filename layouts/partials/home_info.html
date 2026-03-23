@@ -1,0 +1,28 @@
+{{- with site.Params.brand }}
+<section class="brand-hero">
+    <div class="brand-hero__content">
+        <p class="brand-hero__eyebrow">{{ .name }}</p>
+        <h1>{{ .subtitle }}</h1>
+        <p class="brand-hero__description">{{ .description }}</p>
+        <div class="brand-hero__actions">
+            <a class="brand-hero__button brand-hero__button--primary" href="{{ .primaryButtonLink }}">{{ .primaryButtonName }}</a>
+            <a class="brand-hero__button brand-hero__button--secondary" href="{{ .secondaryButtonLink }}">{{ .secondaryButtonName }}</a>
+        </div>
+        <ul class="brand-hero__meta">
+            <li>持续更新工作笔记</li>
+            <li>支持 Typora + 图床写作</li>
+            <li>自动部署到 Cloudflare Pages</li>
+        </ul>
+        <footer class="brand-hero__social">
+            {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+        </footer>
+    </div>
+    <div class="brand-hero__visual">
+        <img src="{{ .avatar | absURL }}" alt="{{ .name }} avatar" class="brand-hero__avatar">
+        <div class="brand-hero__card">
+            <strong>欢迎来到我的数字花园</strong>
+            <p>这里会持续沉淀项目经验、个人观察、设计方法与实操记录。</p>
+        </div>
+    </div>
+</section>
+{{- end -}}

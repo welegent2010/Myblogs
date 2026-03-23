@@ -1,0 +1,13 @@
+{{- if and site.Params.comments.enabled (eq site.Params.comments.provider "utterances") (ne .Params.comments false) -}}
+<section class="comments-box">
+    <h2>评论</h2>
+    <script src="https://utteranc.es/client.js"
+        repo="{{ site.Params.comments.repo }}"
+        issue-term="{{ site.Params.comments.issueTerm }}"
+        label="{{ site.Params.comments.label }}"
+        theme="{{ site.Params.comments.theme }}"
+        crossorigin="anonymous"
+        async>
+    </script>
+</section>
+{{- end -}}
