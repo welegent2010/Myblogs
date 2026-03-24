@@ -1,14 +1,14 @@
 baseURL = 'https://87188202.xyz/'
-languageCode = 'zh-cn'
+languageCode = 'zh-CN'
 defaultContentLanguage = 'zh-cn'
 title = 'Myblogs'
 theme = 'congo-dev'
 enableRobotsTXT = true
 hasCJKLanguage = true
-copyright = '© 2026 welegent. 保留所有文字与原创内容版权。'
+summaryLength = 120
 
 [pagination]
-  pagerSize = 8
+  pagerSize = 6
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
@@ -19,69 +19,63 @@ copyright = '© 2026 welegent. 保留所有文字与原创内容版权。'
   series = 'series'
 
 [params]
-  env = 'production'
-  title = 'Myblogs'
-  description = '记录设计思考、项目见闻、工作笔记与日常灵感。'
-  keywords = ['博客', '设计', '工作笔记', '项目记录', 'Typora']
-  author = 'welegent'
-  defaultTheme = 'auto'
-  DateFormat = '2006-01-02'
-  disableThemeToggle = false
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowToc = true
-  ShowRssButtonInSectionTermList = true
-  ShowAllPagesInArchive = true
-  ShowPageNums = true
-  mainSections = ['posts']
+  colorScheme = 'slate'
+  defaultThemeColor = '#0f172a'
+  defaultAppearance = 'light'
+  autoSwitchAppearance = true
+  enableSearch = true
+  enableCodeCopy = true
+  enableImageLazyLoading = true
+  enableImageWebp = true
+  enableQuicklink = true
+  fingerprintAlgorithm = 'sha256'
+  keywords = ['博客', '设计研究', '项目记录', '工作笔记', '乡村振兴']
 
-  [params.label]
-    text = 'Myblogs'
+  [params.header]
+    layout = 'hybrid'
+    showTitle = true
 
-  [params.homeInfoParams]
-    Title = '你好，欢迎来到我的博客 👋'
-    Content = '这里记录设计思考、项目现场、工作笔记和日常灵感。文章可直接使用 Typora 写作，并插入你的图床图片链接，写完提交到 GitHub 后会自动发布。'
+  [params.footer]
+    showCopyright = true
+    showThemeAttribution = false
+    showAppearanceSwitcher = true
+    showScrollToTop = true
 
-  [params.brand]
-    name = 'welegent'
-    subtitle = '设计观察者 / 项目记录者 / 长期主义实践者'
-    description = '持续记录设计思考、乡村振兴项目、工作笔记与灵感片段。你可以把这里当作我的公开工作台与个人知识库。'
-    avatar = '/images/avatar.svg'
-    primaryButtonName = '开始阅读'
-    primaryButtonLink = '/posts/'
-    secondaryButtonName = '关于我'
-    secondaryButtonLink = '/about/'
+  [params.homepage]
+    layout = 'profile'
+    showRecent = true
+    recentLimit = 6
 
-  [params.cover]
-    hiddenInList = true
-    hiddenInSingle = false
-    responsiveImages = true
-    linkFullImages = true
+  [params.article]
+    showDate = true
+    showDateUpdated = false
+    showAuthor = true
+    showBreadcrumbs = true
+    showDraftLabel = true
+    showEdit = false
+    showHeadingAnchors = true
+    showPagination = true
+    invertPagination = false
+    showReadingTime = true
+    showTableOfContents = true
+    showTaxonomies = true
+    showWordCount = true
+    showComments = true
+    sharingLinks = ['linkedin', 'email']
 
-  [params.fuseOpts]
-    isCaseSensitive = false
-    shouldSort = true
-    location = 0
-    distance = 1000
-    threshold = 0.4
-    minMatchCharLength = 1
-    keys = ['title', 'permalink', 'summary', 'content']
+  [params.list]
+    showBreadcrumbs = true
+    showSummary = true
+    showTableOfContents = false
+    showTaxonomies = true
+    groupByYear = false
+    paginationWidth = 1
 
-  [[params.socialIcons]]
-    name = 'github'
-    url = 'https://github.com/welegent2010'
+  [params.sitemap]
+    excludedKinds = ['taxonomy', 'term']
 
-  [[params.socialIcons]]
-    name = 'email'
-    url = 'mailto:hello@87188202.xyz'
-
-  [[params.socialIcons]]
-    name = 'rss'
-    url = '/index.xml'
+  [params.taxonomy]
+    showTermCount = true
 
   [params.comments]
     enabled = true
@@ -91,39 +85,62 @@ copyright = '© 2026 welegent. 保留所有文字与原创内容版权。'
     label = 'comment'
     theme = 'preferred-color-scheme'
 
-  [params.footer]
-    text = '用 Typora 写作，用 Hugo 构建，用 Cloudflare Pages 发布。'
+[languages]
+  [languages.zh-cn]
+    languageCode = 'zh-CN'
+    languageName = '简体中文'
+    languageDirection = 'ltr'
+    weight = 1
+    title = 'Myblogs'
+    copyright = '© 2026 welegent. 保留所有文字与原创内容版权。'
+
+    [languages.zh-cn.params]
+      dateFormat = '2006-01-02'
+      mainSections = ['posts']
+      description = '记录设计思考、项目见闻、工作笔记与日常灵感。'
+
+    [languages.zh-cn.params.author]
+      name = 'welegent'
+      image = 'img/avatar.svg'
+      headline = '设计观察者 / 项目记录者 / 长期主义实践者'
+      bio = '持续记录设计思考、乡村振兴项目、工作笔记与灵感片段。你可以把这里当作我的公开工作台与个人知识库。'
+      links = [
+        { github = 'https://github.com/welegent2010' },
+        { email = 'mailto:hello@87188202.xyz' },
+        { rss = '/index.xml' },
+      ]
 
 [menu]
   [[menu.main]]
-    identifier = 'archives'
-    name = '归档'
-    url = '/archives/'
+    name = '文章'
+    url = '/posts/'
     weight = 10
 
   [[menu.main]]
-    identifier = 'categories'
-    name = '分类'
-    url = '/categories/'
+    name = '归档'
+    url = '/archives/'
     weight = 20
 
   [[menu.main]]
-    identifier = 'tags'
-    name = '标签'
-    url = '/tags/'
+    name = '分类'
+    url = '/categories/'
     weight = 30
 
   [[menu.main]]
-    identifier = 'search'
-    name = '搜索'
-    url = '/search/'
+    name = '标签'
+    url = '/tags/'
     weight = 40
 
   [[menu.main]]
-    identifier = 'about'
     name = '关于'
     url = '/about/'
     weight = 50
+
+  [[menu.main]]
+    identifier = 'search'
+    weight = 99
+    [menu.main.params]
+      action = 'search'
 
 [markup]
   [markup.goldmark.renderer]

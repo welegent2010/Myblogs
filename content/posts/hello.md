@@ -5,12 +5,12 @@ draft: false
 description: "关于西藏乡村振兴设计、村民需求调研与项目落地路径的一篇会议纪要。"
 summary: "从巴龙村与嘎拉桃花村项目出发，整理乡村振兴设计中的在地需求、系统方案与文旅融合思路。"
 tags:
-	- 乡村振兴
-	- 项目笔记
-	- 设计思考
+  - 乡村振兴
+  - 项目笔记
+  - 设计思考
 categories:
-	- 工作记录
-ShowToc: true
+  - 工作记录
+showTableOfContents: true
 ---
 这是我的第一篇文章，用 GitHub Desktop 管理的！
 
