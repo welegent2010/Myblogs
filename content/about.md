@@ -21,7 +21,7 @@ summary: "关于这个博客以及这里会记录什么。"
 如果文章需要配图，可以直接插入图床链接，例如：
 
 ```md
-![封面图](https://你的图床地址/example.jpg)
+![](https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/QQ_1774316449530.png)
 ```
 
 ## 这个博客的发布方式
