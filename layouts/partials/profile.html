@@ -1,0 +1,47 @@
+{{ $align := .align | default "center" }}
+{{ $alignmentClass := "items-center" }}
+{{ if eq $align "start" }}
+  {{ $alignmentClass = "items-start" }}
+{{ else if eq $align "end" }}
+  {{ $alignmentClass = "items-end" }}
+{{ end }}
+<section class="home-profile not-prose {{ $alignmentClass }} mb-3 flex flex-col">
+  <div class="home-profile__media">
+    {{ $lazy := site.Params.enableImageLazyLoading | default true }}
+    {{ $altText := site.Language.Params.Author.name | default "Author" }}
+    {{ with site.Language.Params.Author.image }}
+      {{ $imgClass := "avatar-circle avatar-circle--hero" }}
+      {{ if or (hasPrefix . "http://") (hasPrefix . "https://") }}
+        <img
+          src="{{ . }}"
+          alt="{{ $altText }}"
+          class="{{ $imgClass }}"
+          {{ if $lazy }}loading="lazy"{{ end }}
+        />
+      {{ else }}
+        {{ $authorImage := resources.Get . }}
+        {{ if $authorImage }}
+          {{ $webp := site.Params.enableImageWebp | default true }}
+          {{ partial "picture.html" (dict "img" $authorImage "alt" $altText "class" $imgClass "lazy" $lazy "webp" $webp) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+  <div class="home-profile__body">
+    <span class="home-profile__eyebrow">研究档案</span>
+    <h1 class="home-profile__name text-4xl font-extrabold">
+      {{ site.Language.Params.Author.name | default site.Title }}
+    </h1>
+    {{ with site.Language.Params.Author.headline }}
+      <h2 class="home-profile__headline text-xl text-neutral-500 dark:text-neutral-400">
+        {{ . | markdownify | emojify }}
+      </h2>
+    {{ end }}
+    {{ with site.Language.Params.Author.bio }}
+      <p class="home-profile__bio">{{ . | markdownify | emojify }}</p>
+    {{ end }}
+    <div class="home-profile__links mt-2 text-2xl">
+      {{ partialCached "author-links.html" site.Language.Lang }}
+    </div>
+  </div>
+</section>

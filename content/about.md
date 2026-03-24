@@ -18,11 +18,7 @@ summary: "关于这个博客以及这里会记录什么。"
 
 我通常会先在 Typora 中完成文章，再把 Markdown 文件放入 `content/posts` 目录。
 
-如果文章需要配图，可以直接插入图床链接，例如：
-
-```md
-![](https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/QQ_1774316449530.png)
-```
+如果文章需要配图，可以直接插入图床链接。
 
 ## 这个博客的发布方式
 

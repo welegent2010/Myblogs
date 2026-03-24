@@ -1,0 +1,23 @@
+<article class="home-article-card mt-6">
+  <div class="home-article-card__inner">
+    <div class="home-article-card__meta text-sm text-neutral-500 dark:text-neutral-400">
+      {{ partial "article-meta.html" (dict "context" . "scope" "list") }}
+    </div>
+    <h3 class="home-article-card__title">
+      {{ with .Params.externalUrl }}
+        <a class="home-article-card__link" href="{{ . }}" target="_blank" rel="external">
+          {{ $.Title | emojify }}
+        </a>
+      {{ else }}
+        <a class="home-article-card__link" href="{{ .Permalink }}">
+          {{ .Title | emojify }}
+        </a>
+      {{ end }}
+    </h3>
+    {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
+      <p class="home-article-card__summary">
+        {{ .Summary | plainify | htmlUnescape }}
+      </p>
+    {{ end }}
+  </div>
+</article>

@@ -1,0 +1,13 @@
+<div class="home-shell">
+  <article class="home-profile-page">
+    <section class="home-profile-card">
+      {{ partial "profile.html" (dict "align" "start") }}
+    </section>
+    <section class="home-profile-content prose dark:prose-invert">
+      {{ .Content | emojify }}
+    </section>
+  </article>
+  <section class="home-recent-articles">
+    {{ partial "recent-articles.html" . }}
+  </section>
+</div>
