@@ -68,7 +68,7 @@ summaryLength = 120
     showSummary = true
     showTableOfContents = false
     showTaxonomies = true
-    groupByYear = false
+    groupByYear = true
     paginationWidth = 1
 
   [params.sitemap]

@@ -1,7 +1,13 @@
 <article class="home-article-card mt-6">
   <div class="home-article-card__inner">
     <div class="home-article-card__meta text-sm text-neutral-500 dark:text-neutral-400">
-      {{ partial "article-meta.html" (dict "context" . "scope" "list") }}
+      <time class="home-article-card__date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+        {{ partial "functions/date.html" .Date }}
+      </time>
+      {{ if and (.Params.showReadingTime | default (.Site.Params.article.showReadingTime | default true)) (ne .ReadingTime 0) }}
+        <span class="home-article-card__meta-separator">&middot;</span>
+        <span>{{ i18n "article.reading_time" .ReadingTime }}</span>
+      {{ end }}
     </div>
     <h3 class="home-article-card__title">
       {{ with .Params.externalUrl }}

@@ -1,0 +1,182 @@
+{{ define "main" }}
+  {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+  {{ $yearGroups := $pages.GroupByDate "2006" }}
+
+  <header>
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
+      {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    {{ with .Summary }}
+      <p class="mt-4 max-w-prose text-base text-neutral-500 dark:text-neutral-400">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  {{ if gt (len $yearGroups) 0 }}
+    <section class="archive-toolbar mt-8">
+      <div class="archive-filter-card">
+        <div class="archive-filter-card__row">
+          <div>
+            <p class="archive-filter-card__label">时间筛选</p>
+            <h2 class="archive-filter-card__title">按年份和月份快速定位文章</h2>
+          </div>
+          <div class="archive-filter-card__actions">
+            <label class="archive-filter-card__field">
+              <span>年份</span>
+              <select id="archive-year-filter" class="archive-filter-card__select">
+                <option value="all">全部年份</option>
+                {{ range $yearGroups }}
+                  <option value="{{ .Key }}">{{ .Key }} 年</option>
+                {{ end }}
+              </select>
+            </label>
+            <label class="archive-filter-card__field">
+              <span>月份</span>
+              <select id="archive-month-filter" class="archive-filter-card__select">
+                <option value="all">全部月份</option>
+                {{ range seq 12 }}
+                  {{ $month := printf "%02d" . }}
+                  <option value="{{ $month }}">{{ $month }} 月</option>
+                {{ end }}
+              </select>
+            </label>
+            <button id="archive-filter-reset" type="button" class="archive-filter-card__reset">重置</button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="archive-year-nav" aria-label="年份快速跳转">
+        {{ range $yearGroups }}
+          <a class="archive-year-nav__link" href="#year-{{ .Key }}">{{ .Key }}</a>
+        {{ end }}
+      </nav>
+    </section>
+
+    <section class="archive-timeline mt-10" id="archive-timeline">
+      {{ range $yearGroups }}
+        <div class="archive-year-group mb-12 scroll-mt-24" id="year-{{ .Key }}" data-year-group="{{ .Key }}">
+          <div class="archive-year-group__heading mb-4 flex items-center gap-4">
+            <h2 class="text-2xl font-bold text-neutral-800 dark:text-neutral-100">{{ .Key }}</h2>
+            <span class="text-sm text-neutral-500 dark:text-neutral-400">{{ len .Pages }} 篇</span>
+          </div>
+
+          {{ range .Pages.GroupByDate "01" }}
+            <div class="archive-month-group mb-8" data-month-group="{{ .Key }}">
+              <h3 class="archive-month-group__title">{{ .Key }} 月</h3>
+              <div>
+                {{ range .Pages }}
+                  <div class="archive-entry" data-year="{{ .Date.Format "2006" }}" data-month="{{ .Date.Format "01" }}">
+                    {{ partial "article-link.html" . }}
+                  </div>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      <div id="archive-empty-state" class="archive-empty-state" hidden>
+        <p>当前筛选条件下还没有文章。</p>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const yearFilter = document.getElementById("archive-year-filter");
+        const monthFilter = document.getElementById("archive-month-filter");
+        const resetButton = document.getElementById("archive-filter-reset");
+        const entries = Array.from(document.querySelectorAll(".archive-entry"));
+        const monthGroups = Array.from(document.querySelectorAll(".archive-month-group"));
+        const yearGroups = Array.from(document.querySelectorAll(".archive-year-group"));
+        const emptyState = document.getElementById("archive-empty-state");
+
+        if (!yearFilter || !monthFilter || entries.length === 0) {
+          return;
+        }
+
+        const updateMonthOptions = function () {
+          const activeYear = yearFilter.value;
+          const availableMonths = new Set(
+            entries
+              .filter(function (entry) {
+                return activeYear === "all" || entry.dataset.year === activeYear;
+              })
+              .map(function (entry) {
+                return entry.dataset.month;
+              })
+          );
+
+          Array.from(monthFilter.options).forEach(function (option) {
+            if (option.value === "all") {
+              option.disabled = false;
+              option.hidden = false;
+              return;
+            }
+
+            const enabled = availableMonths.has(option.value);
+            option.disabled = !enabled;
+            option.hidden = !enabled;
+          });
+
+          if (monthFilter.value !== "all" && !availableMonths.has(monthFilter.value)) {
+            monthFilter.value = "all";
+          }
+        };
+
+        const applyFilters = function () {
+          updateMonthOptions();
+
+          const activeYear = yearFilter.value;
+          const activeMonth = monthFilter.value;
+
+          entries.forEach(function (entry) {
+            const matchesYear = activeYear === "all" || entry.dataset.year === activeYear;
+            const matchesMonth = activeMonth === "all" || entry.dataset.month === activeMonth;
+            entry.hidden = !(matchesYear && matchesMonth);
+          });
+
+          monthGroups.forEach(function (group) {
+            const hasVisibleEntries = Array.from(group.querySelectorAll(".archive-entry")).some(function (entry) {
+              return !entry.hidden;
+            });
+            group.hidden = !hasVisibleEntries;
+          });
+
+          yearGroups.forEach(function (group) {
+            const hasVisibleEntries = Array.from(group.querySelectorAll(".archive-entry")).some(function (entry) {
+              return !entry.hidden;
+            });
+            group.hidden = !hasVisibleEntries;
+          });
+
+          const hasVisibleEntries = entries.some(function (entry) {
+            return !entry.hidden;
+          });
+
+          if (emptyState) {
+            emptyState.hidden = hasVisibleEntries;
+          }
+        };
+
+        yearFilter.addEventListener("change", applyFilters);
+        monthFilter.addEventListener("change", applyFilters);
+
+        if (resetButton) {
+          resetButton.addEventListener("click", function () {
+            yearFilter.value = "all";
+            monthFilter.value = "all";
+            applyFilters();
+          });
+        }
+
+        applyFilters();
+      });
+    </script>
+  {{ else }}
+    <section class="prose mt-10 dark:prose-invert">
+      <p class="border-t py-8">
+        <em>{{ i18n "list.no_articles" | emojify }}</em>
+      </p>
+    </section>
+  {{ end }}
+{{ end }}

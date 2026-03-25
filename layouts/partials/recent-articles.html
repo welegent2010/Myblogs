@@ -1,0 +1,14 @@
+{{ if .Site.Params.homepage.showRecent | default false }}
+  <div class="flex items-center justify-between gap-4">
+    <h2 class="mt-8 text-2xl font-extrabold">{{ i18n "shortcode.recent_articles" | emojify }}</h2>
+    <a
+      class="mt-8 text-sm font-semibold text-neutral-500 transition hover:text-primary-600 dark:text-neutral-400 dark:hover:text-primary-400"
+      href="/archives/"
+    >
+      按时间浏览
+    </a>
+  </div>
+  {{ range first .Site.Params.homepage.recentLimit (.Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) .Site.Params.homepage.recentLimit).Pages }}
+    {{ partial "article-link.html" . }}
+  {{ end }}
+{{ end }}
