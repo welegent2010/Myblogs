@@ -1,4 +1,4 @@
-```yaml
+---
 title: "宜宾七星山竹文化生态公园项目战略研究报告：EOD模式下的盈利架构与综合效益深度分析"
 date: 2026-03-25
 lastmod: 2026-03-25
@@ -22,9 +22,7 @@ series:
 
 showTableOfContents: true
 showComments: true
-```
-
-
+---
 
 ## **1. 宏观背景与项目战略定位**
 
