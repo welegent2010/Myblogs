@@ -1,7 +1,7 @@
 ---
-title: " 工具不再是限制：一个城市研究者的AI突围史"
-date: 2026-04-2
-lastmod: 2026-04-2
+title: "工具不再是限制：一个城市研究者的AI突围史"
+date: 2026-04-02
+lastmod: 2026-04-02
 draft: false
 
 description: "三年困境一朝破解，AI工具重塑个人科研范式"
