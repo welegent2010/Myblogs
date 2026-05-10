@@ -1,32 +1,27 @@
-```
+---
 title: "SpaceX 不仅仅是火箭制造商，它正在重新定义太空，将其视为基础设施。"
 date: 2026-05-10
 lastmod: 2026-05-10
 draft: true
-
 description: "SpaceX 不再是一家火箭公司,而是正在将太空重新定义为基础设施平台,通过垂直整合发射、卫星网络和计算资源来改变整个行业的估值逻辑。"
 summary: "SpaceX 即将以 2 万亿美元估值上市,但市场购买的不是火箭,而是一个整合了发射系统、星链网络和 AI 计算的基础设施平台。本文分析其商业模式转型、资本结构及对整个航天行业的重新定价效应。"
-
 categories:
   - 工作记录
   - 商业分析
   - 科技产业
   - 基础设施
-
 tags:
   - 城市规划
   - 设计研究
   - 概念规划
   - 商业模式
   - 基础设施
-
 series:
   - 工作笔记
   - 商业模式
-
 showTableOfContents: true
 showComments: true
-```
+---
 
 ![](https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/202605102227006.jpg)
 
