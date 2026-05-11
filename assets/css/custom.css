@@ -237,8 +237,25 @@ html.dark .home-profile__bio {
   color: rgb(15, 23, 42);
 }
 
+.home-profile__links a[aria-label="Rss"] {
+  opacity: 1;
+  color: rgb(249, 115, 22);
+}
+
+.home-profile__links a[aria-label="Rss"]:hover {
+  color: rgb(234, 88, 12);
+}
+
 html.dark .home-profile__links a:hover {
   color: rgb(248, 250, 252);
+}
+
+html.dark .home-profile__links a[aria-label="Rss"] {
+  color: rgb(251, 146, 60);
+}
+
+html.dark .home-profile__links a[aria-label="Rss"]:hover {
+  color: rgb(253, 186, 116);
 }
 
 .home-recent-articles article {
