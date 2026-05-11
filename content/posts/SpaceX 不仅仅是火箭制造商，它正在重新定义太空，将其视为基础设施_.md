@@ -17,8 +17,7 @@ tags:
   - 商业模式
   - 基础设施
 series:
-  - 工作笔记
-  - 商业模式
+   - 商业模式
 showTableOfContents: true
 showComments: true
 ---
