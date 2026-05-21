@@ -2,7 +2,7 @@
   {{- $logo := resources.Get .Site.Params.header.logo }}
   {{- $logo_dark := resources.Get .Site.Params.header.logoDark }}
   {{- if $logo }}
-    <a href="https://www.welegent.com/" class="mr-2">
+    <a href="{{ "" | relLangURL }}" class="mr-2">
       <img
         src="{{ $logo.Permalink }}"
         width="{{ div $logo.Width 2 }}"
@@ -27,7 +27,7 @@
   <a
     class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
     rel="me"
-    href="https://www.welegent.com/"
+    href="{{ "" | relLangURL }}"
     >{{ .Site.Title | markdownify | emojify }}</a
   >
 {{- end }}
