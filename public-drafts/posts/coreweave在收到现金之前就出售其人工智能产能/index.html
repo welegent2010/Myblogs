@@ -1,0 +1,1269 @@
+
+
+
+
+
+<!doctype html>
+<html
+  lang="zh-CN"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  
+  <title> CoreWeave在收到现金之前就出售其人工智能产能 &middot; XD Wang</title>
+    <meta name="title" content=" CoreWeave在收到现金之前就出售其人工智能产能 &middot; XD Wang" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.ee2e82b4af309fc48cbf19861f21e98e94e555e679024ecf14ffb6a80f631e2c.css"
+    integrity="sha256-7i6CtK8wn8SMvxmGHyHpjpTlVeZ5Ak7PFP&#43;2qA9jHiw="
+  />
+  
+    
+    
+    
+  
+  
+    
+    
+    
+  
+  
+    
+    
+  
+  
+    
+    
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/js/main.bundle.min.c40f56f7e09883dd391543c15192a207f8c2ecc2089520ef89af55a74631f70e.js"
+      integrity="sha256-xA9W9&#43;CYg905FUPBUZKiB/jC7MIIlSDvia9Vp0Yx9w4="
+      data-copy="复制"
+      data-copied="已复制"
+    ></script>
+  
+  
+  <meta
+    name="description"
+    content="
+      深度分析 CoreWeave 商业模式的文章,揭示了这家 AI 云服务提供商如何在现金完全到账之前就需要出售和构建其 AI 产能。
+    "
+  />
+  <meta name="keywords" content="博客, 设计研究, 项目记录, 工作笔记, 乡村振兴" />
+  
+  
+  
+    <link rel="canonical" href="https://www.welegent.com/posts/coreweave%E5%9C%A8%E6%94%B6%E5%88%B0%E7%8E%B0%E9%87%91%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%87%BA%E5%94%AE%E5%85%B6%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A7%E8%83%BD/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://www.welegent.com/posts/coreweave%E5%9C%A8%E6%94%B6%E5%88%B0%E7%8E%B0%E9%87%91%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%87%BA%E5%94%AE%E5%85%B6%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A7%E8%83%BD/">
+  <meta property="og:site_name" content="XD Wang">
+  <meta property="og:title" content=" CoreWeave在收到现金之前就出售其人工智能产能">
+  <meta property="og:description" content="深度分析 CoreWeave 商业模式的文章,揭示了这家 AI 云服务提供商如何在现金完全到账之前就需要出售和构建其 AI 产能。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-05-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-11T00:00:00+00:00">
+    <meta property="article:tag" content="城市规划">
+    <meta property="article:tag" content="设计研究">
+    <meta property="article:tag" content="第一性原理">
+    <meta property="article:tag" content="商业模式">
+    <meta property="article:tag" content="AI 基础设施">
+      <meta property="og:see_also" content="https://www.welegent.com/posts/%E5%88%AB%E7%AE%A1%E4%BB%80%E4%B9%88%E6%A8%A1%E5%9E%8B%E6%8E%92%E8%A1%8C%E6%A6%9C%E4%BA%86%E7%9C%8B%E7%9C%8Balphabet%E6%8A%8A%E9%92%B1%E9%83%BD%E8%97%8F%E5%88%B0%E5%93%AA%E5%84%BF%E5%8E%BB%E4%BA%86/">
+      <meta property="og:see_also" content="https://www.welegent.com/posts/spacex-%E4%B8%8D%E4%BB%85%E4%BB%85%E6%98%AF%E7%81%AB%E7%AE%AD%E5%88%B6%E9%80%A0%E5%95%86%E5%AE%83%E6%AD%A3%E5%9C%A8%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E5%A4%AA%E7%A9%BA%E5%B0%86%E5%85%B6%E8%A7%86%E4%B8%BA%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD_/">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content=" CoreWeave在收到现金之前就出售其人工智能产能">
+  <meta name="twitter:description" content="深度分析 CoreWeave 商业模式的文章,揭示了这家 AI 云服务提供商如何在现金完全到账之前就需要出售和构建其 AI 产能。">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": " CoreWeave在收到现金之前就出售其人工智能产能",
+    "headline": " CoreWeave在收到现金之前就出售其人工智能产能",
+    "description": "深度分析 CoreWeave 商业模式的文章,揭示了这家 AI 云服务提供商如何在现金完全到账之前就需要出售和构建其 AI 产能。",
+    "abstract": "CoreWeave 报告 20.8 亿美元季度收入和 994 亿美元积压订单,但面临核心挑战:必须在现金到账前构建产能,承受巨额资本支出(310-350 亿美元)和融资压力,积压订单转化缓慢。",
+    "inLanguage": "zh-CN",
+    "url" : "https:\/\/www.welegent.com\/posts\/coreweave%E5%9C%A8%E6%94%B6%E5%88%B0%E7%8E%B0%E9%87%91%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%87%BA%E5%94%AE%E5%85%B6%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A7%E8%83%BD\/",
+    "author" : {
+      "@type": "Person",
+      "name": "xd wang"
+    },
+    "copyrightYear": "2026",
+    "dateCreated": "2026-05-11T00:00:00\u002b00:00",
+    "datePublished": "2026-05-11T00:00:00\u002b00:00",
+    
+    "dateModified": "2026-05-11T00:00:00\u002b00:00",
+    
+    "keywords": ["城市规划","设计研究","第一性原理","商业模式","AI 基础设施"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "5459"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "https://www.welegent.com/",
+       "name": "首页",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://www.welegent.com/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://www.welegent.com/categories/%E6%B7%B1%E5%BA%A6%E6%80%9D%E8%80%83/",
+       "name": "深度思考",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Core Weave在收到现金之前就出售其人工智能产能",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="xd wang" />
+  
+  
+    
+      <link href="https://www.welegent.com/" rel="me" />
+    
+      <link href="mailto:hello@87188202.xyz" rel="me" />
+    
+      <link href="/index.xml" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate icon" href="/favicon.svg">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#111827">
+<meta name="apple-mobile-web-app-title" content="Myblogs">
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >跳到主要内容</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="z-40 flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="https://www.welegent.com/"
+    >XD Wang</a
+  >
+    </div>
+    
+      
+      <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <input type="checkbox" id="menu-controller" class="hidden" />
+        <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+</span>
+        </div>
+        <div
+          id="menu-wrapper"
+          class="invisible fixed inset-0 z-30 m-auto h-full w-full cursor-default overflow-auto bg-neutral-100/50 opacity-0 backdrop-blur-sm transition-opacity dark:bg-neutral-900/50"
+        >
+          <ul
+            class="mx-auto flex w-full max-w-7xl list-none flex-col overflow-visible px-6 py-6 text-end sm:px-14 sm:py-10 sm:pt-10 md:px-24 lg:px-32"
+          >
+            <li class="mb-1">
+              <span class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400"
+                ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span></span
+              >
+            </li>
+            
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/posts/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >文章</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/archives/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >归档</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/categories/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >分类</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/tags/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >标签</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    <a
+                      href="/about/"
+                      title=""
+                      onclick="close_menu()"
+                      
+                      
+                      ><span
+                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          >关于</span
+                        >
+                      </a
+                    >
+                  
+                </li>
+              
+                
+                <li class="group mb-1">
+                  
+                    
+                    
+                      <button
+                        id="search-button-1"
+                        title="搜索 (/)"
+                      >
+                        
+                          <span
+                            class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                          ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            ></span
+                          >
+                        
+                      </button>
+                    
+                  
+                </li>
+              
+              
+            
+          </ul>
+        </div>
+      </label>
+      
+      <ul class="hidden list-none flex-row text-end sm:flex">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/posts/"
+                  title=""
+                  
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >文章</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/archives/"
+                  title=""
+                  
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >归档</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/categories/"
+                  title=""
+                  
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >分类</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/tags/"
+                  title=""
+                  
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >标签</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                <a
+                  href="/about/"
+                  title=""
+                  
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >关于</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              
+                
+                
+                  <button
+                    id="search-button-2"
+                    title="搜索 (/)"
+                  >
+                    
+                      <span
+                        class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                      ><span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span></span><span
+                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        ></span
+                      >
+                    
+                  </button>
+                
+              
+            </li>
+          
+          
+
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://www.welegent.com/"
+      >首页</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class=" inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://www.welegent.com/posts/"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden inline">
+    <a
+      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      href="https://www.welegent.com/posts/coreweave%E5%9C%A8%E6%94%B6%E5%88%B0%E7%8E%B0%E9%87%91%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%87%BA%E5%94%AE%E5%85%B6%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A7%E8%83%BD/"
+      > CoreWeave在收到现金之前就出售其人工智能产能</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+         CoreWeave在收到现金之前就出售其人工智能产能
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2026-05-11 00:00:00 &#43;0000 UTC">2026-05-11</time><span class="px-2 text-primary-500">&middot;</span><span>5459 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">11 分钟</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+    <div class="my-1 flex flex-wrap text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">
+      
+        
+          
+            <a
+              href="https://www.welegent.com/categories/%E6%B7%B1%E5%BA%A6%E6%80%9D%E8%80%83/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >深度思考</a
+            >
+          
+            <a
+              href="https://www.welegent.com/categories/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >商业模式</a
+            >
+          
+            <a
+              href="https://www.welegent.com/categories/%E6%80%9D%E7%BB%B4%E6%96%B9%E6%B3%95%E8%AE%BA/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >思维方法论</a
+            >
+          
+        
+      
+        
+          
+            <a
+              href="https://www.welegent.com/series/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >商业模式</a
+            >
+          
+        
+      
+        
+          
+            <a
+              href="https://www.welegent.com/tags/%E5%9F%8E%E5%B8%82%E8%A7%84%E5%88%92/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >城市规划</a
+            >
+          
+            <a
+              href="https://www.welegent.com/tags/%E8%AE%BE%E8%AE%A1%E7%A0%94%E7%A9%B6/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >设计研究</a
+            >
+          
+            <a
+              href="https://www.welegent.com/tags/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >第一性原理</a
+            >
+          
+            <a
+              href="https://www.welegent.com/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >商业模式</a
+            >
+          
+            <a
+              href="https://www.welegent.com/tags/ai-%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/"
+              class="mx-1 my-1 rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >AI 基础设施</a
+            >
+          
+        
+      
+    </div>
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+        <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+          <div class="toc pe-5 lg:sticky lg:top-10 print:hidden">
+            <details open class="-ms-5 mt-0 overflow-hidden rounded-lg ps-5">
+  <summary
+    class="block cursor-pointer bg-neutral-100 py-1 ps-5 text-lg font-semibold text-neutral-800 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    目录
+  </summary>
+  <div class="border-s border-dotted border-neutral-300 py-2 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#执行摘要">执行摘要</a></li>
+    <li><a href="#可见层需求">可见层：需求</a></li>
+    <li><a href="#隐藏层时机">隐藏层：时机</a></li>
+    <li><a href="#商业模式分析">商业模式分析</a>
+      <ul>
+        <li><a href="#收入">收入</a></li>
+        <li><a href="#成本">成本</a></li>
+        <li><a href="#资本支出">资本支出</a></li>
+        <li><a href="#现金周转">现金周转</a></li>
+      </ul>
+    </li>
+    <li><a href="#实体基础设施是产品">实体基础设施是产品</a></li>
+    <li><a href="#融资是产品的一部分">融资是产品的一部分</a></li>
+    <li><a href="#追踪资金流向">追踪资金流向</a>
+      <ul>
+        <li><a href="#谁来付钱">谁来付钱</a></li>
+        <li><a href="#钱先流向哪里">钱先流向哪里</a></li>
+        <li><a href="#谁掌握了经济命脉">谁掌握了经济命脉？</a></li>
+      </ul>
+    </li>
+    <li><a href="#这比coreweave更大">这比CoreWeave更大</a></li>
+    <li><a href="#真正的结论">真正的结论</a></li>
+    <li><a href="#本分析的局限性">本分析的局限性</a></li>
+    <li><a href="#数据来源和披露">数据来源和披露</a></li>
+    <li><a href="#仅限分析编辑用途">仅限分析/编辑用途</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+          </div>
+        </div>
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <p>
+
+
+
+
+
+
+  
+  
+<figure><img src="https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/CoreWeave%20Selling%20Capacity%20Before%20Cash.jpg" alt="" class="mx-auto my-0 rounded-md" />
+</figure>
+</p>
+<h2 id="执行摘要" class="relative group">执行摘要 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%89%a7%e8%a1%8c%e6%91%98%e8%a6%81" aria-label="锚点">#</a></span></h2><p><em>CoreWeave报道了<strong>20.8亿美元</strong>季度收入和<strong>994亿美元</strong>积压订单很多。但真正的关键不仅仅在于增长，更在于时机：一家新型云服务提供商必须先构建、运行并融资所需的容量，才能实现完全的现金流效益。这一缺口比表面数字所显示的更为重要。</em></p>
+<p><strong>本次分析中：</strong></p>
+<ul>
+<li>
+<p>为什么 CoreWeave 的待办事项列表并不能说明全部问题</p>
+</li>
+<li>
+<p>为什么业务运营要遵循两个时钟：合同期限和实际部署时间</p>
+</li>
+<li>
+<p>客户资金在转化为剩余利润之前都去了哪里</p>
+</li>
+<li>
+<p>为什么这对更广泛的新云模型至关重要</p>
+</li>
+</ul>
+<p>大多数人认为 CoreWeave 是一款简单易用的 AI 基础设施解决方案。</p>
+<p>表面上看，情况很容易理解。营收快速增长，积压订单量巨大，来自超大规模数据中心和企业客户的需求似乎也很强劲。公司不断增加电力、站点和容量。从表面上看，这似乎就是一个简单的规模扩张故事。</p>
+<p>但这只是可见的一层。</p>
+<p>更重要的因素是时机。</p>
+<p>CoreWeave 不仅仅是出售人工智能计算资源的使用权。它首先构建物理计算能力，并为此投入大量资金，然后才等待经济效益转化为实际收入，并最终实现可持续的现金流。</p>
+<p>这种差异很重要。</p>
+<p>积压订单可能数量庞大，但交付速度仍然过慢，无法让企业看起来运营状况良好。收入可能快速增长，但其运营结构可能比许多人最初预想的更加资本密集。一个季度可能显示强劲的运营现金流，但仍然无法解答一个更深层次的问题：该模式是否真正实现了自给自足，还是仅仅将资金转移到一个前期投入过高的系统中。</p>
+<p>正因如此，CoreWeave 对于更广泛的新云市场而言才是一个如此有用的案例研究。</p>
+<p>这主要不是一个软件故事。</p>
+<p>这是一个关于基础设施建设时机的故事。</p>
+<p>一旦你追溯资金流向，就会发现这家公司与其说是一个清晰的人工智能增长故事，不如说是一台机器，它必须在融资负担过重之前将已签署的需求转化为实际产能。</p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/Revenue,%20Backlog,%20and%20Timing%20Gap.jpg" alt="" class="mx-auto my-0 rounded-md" />
+</figure>
+</p>
+<p><em>图1. 收入、积压订单和时间差距。收入增长迅速，但积压订单仍需经过漫长的部署和转化过程才能实现可持续的经济效益。</em></p>
+<h2 id="可见层需求" class="relative group">可见层：需求 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%8f%af%e8%a7%81%e5%b1%82%e9%9c%80%e6%b1%82" aria-label="锚点">#</a></span></h2><p>CoreWeave报道了<strong>20.8亿美元</strong>收入<strong>2026年第一季度</strong>， 向上**112%**与去年同期相比。这是一个真实的数字，反映了真实的市场需求。</p>
+<p>该公司还报告了积压订单。<strong>994亿美元</strong>向上<strong>668亿美元</strong>上一季度末。各消息来源引用的管理层评论也表明，客户群扩大了。<strong>10</strong>预计顾客消费额将超过<strong>10亿美元</strong>每年，而且超过<strong>3.5吉瓦</strong>已签订合同的电力容量。</p>
+<p>这些事实解释了为什么这么多原始文件听起来都很激动人心。</p>
+<p>从表面上看，这似乎正是市场对人工智能基础设施提供商的期望：快速增长、可见的需求、不断扩大的客户范围以及大规模的物理建设。</p>
+<p>但需求强劲并不意味着商业模式就会变得更容易。</p>
+<p>在某些方面，这变得更加困难。</p>
+<p>一家普通的软件公司只需相对较少的额外实体投资，就能将需求转化为收入。但新型云服务提供商的运作方式并非如此。它必须先确保电力、站点、硬件、网络容量以及部署就绪，才能让签署的合同真正发挥盈利资产的作用。</p>
+<p>这意味着主要的分析问题不仅仅是客户是否需要更多的人工智能能力。</p>
+<p>CoreWeave能否迅速将已签署的需求转化为可计费的实时基础设施，从而使收入、利润率和融资成本同时朝着正确的方向发展，才是关键所在。</p>
+<p>这就是该公司……<strong>2026年第二季度</strong>营收预期<strong>24.5亿美元至26亿美元</strong>与市场预期相比<strong>26.9亿美元</strong>这不仅仅关乎一个季度的业绩。这一差距并非仅仅是媒体报道上的失利，它提醒我们，积压订单和收入的增长速度并不一致。</p>
+<h2 id="隐藏层时机" class="relative group">隐藏层：时机 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e9%9a%90%e8%97%8f%e5%b1%82%e6%97%b6%e6%9c%ba" aria-label="锚点">#</a></span></h2><p>误解 CoreWeave 的最简单方法就是认为待办事项列表是主要内容。</p>
+<p>积压订单固然重要，但它们仅仅预示着未来的盈利前景，并不能证明成本结构已经变得有利可图。</p>
+<p>资料反复指向同一个根本问题：大部分经济效益只有在产能建成、并网和启用之后才能实现。资料中引用的管理层评论指出……<strong>36%<strong>预计积压订单将在一段时间内转化为实际订单。<strong>24个月</strong>以及关于</strong>75%<strong>之内</strong>四年</strong>。</p>
+<p>这种时间分布很重要。</p>
+<p>这说明这家公司不仅仅是在兜售人工智能的需求，更是在兜售一套部署方案。</p>
+<p>客户签订未来容量合同后，CoreWeave 需要将物理系统变为现实。只有在电力供应到位、站点建成、设备安装完毕、工作负载上线后，收入才能逐渐显现。</p>
+<p>所以这家公司有两个钟。</p>
+<p>第一个时钟是商业时钟，也就是合同签署时钟，积压订单量也反映了这一点。</p>
+<p>第二个时钟是实际存在的，即部署时钟。它决定了何时能够实现收入、何时能够实现利润率正常化以及何时能够更容易地消化融资成本。</p>
+<p>这些钟表有关联，但并不完全相同。</p>
+<p>而他们之间的差距，正是大部分紧张关系的根源所在。</p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/Backlog%20Conversion%20Timeline.jpg" alt="" class="mx-auto my-0 rounded-md" />
+</figure>
+</p>
+<p><em>图 2. 积压订单转化时间表。已签约的需求可能很大，但收入仍然取决于产能从合同到实际部署的转化速度。</em></p>
+<h2 id="商业模式分析" class="relative group">商业模式分析 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%95%86%e4%b8%9a%e6%a8%a1%e5%bc%8f%e5%88%86%e6%9e%90" aria-label="锚点">#</a></span></h2><h3 id="收入" class="relative group">收入 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%94%b6%e5%85%a5" aria-label="锚点">#</a></span></h3><p>营收增长情况属实。</p>
+<p>CoreWeave 服务于一个对计算能力需求明显更高的市场。数据表明，超大规模数据中心、人工智能原生公司和企业级买家对 CoreWeave 的需求强劲。此外，数据还显示，与以往相比，客户集中度有所提高，并且需求正在向金融服务等领域扩展。</p>
+<p>这很重要，因为这意味着公司并非仅仅依靠单一狭窄的客户渠道生存。</p>
+<p>但收入仍然取决于部署情况。</p>
+<p>一家公司签署需求协议的速度可能比启动供应的速度更快。对于一家围绕实体人工智能能力构建的企业而言，这种差异并非次要的，而是其业务的核心所在。</p>
+<h3 id="成本" class="relative group">成本 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%88%90%e6%9c%ac" aria-label="锚点">#</a></span></h3><p>故事的走向从这里开始改变。</p>
+<p>数据源显示运营费用约为<strong>22.2亿美元</strong>在<strong>2026年第一季度</strong>报告还反复强调，在相关收入完全确认之前，成本结构中有多少部分就已经开始了。</p>
+<p>这是关键所在。</p>
+<p>CoreWeave运营的并非成本增量较低的轻量级数字平台，而是一套需要构建和激活的基础设施系统。这意味着在收入完全实现增长之前，租赁、电力安排、人工、场地准备、网络部署和硬件相关成本都至关重要。</p>
+<p>这就是为什么在这类公司中，调整后的盈利能力描述可能会产生误导。</p>
+<p>如果最重要的经济负担在于折旧、融资和前期基础设施成本，那么剔除这些因素并不能真正反映出该模式的健康状况。它只能告诉你，如果该模式中最棘手的部分不存在，那么它看起来会有多健康。</p>
+<h3 id="资本支出" class="relative group">资本支出 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%b5%84%e6%9c%ac%e6%94%af%e5%87%ba" aria-label="锚点">#</a></span></h3><p>资本支出在这里并非次要问题，而是运营模式的核心。</p>
+<p>CoreWeave提高了其<strong>2026财年</strong>资本支出指导<strong>310亿至350亿美元</strong>从先前的下限来看<strong>300亿美元</strong>在整个源集中，确切的<strong>Q1</strong>资本支出数据采用略有不同的定义，但可以得出明确的结论：该公司大约花费了<strong>70亿美元</strong>在一个季度内，以保持建设进度。</p>
+<p>相对于目前的收入基础而言，这是一笔巨大的数目。</p>
+<p>这说明企业在盈利能力尚未完全实现之前就购买了规模。</p>
+<p>这并非一定错误。对于容量平台而言，这或许是必要的。</p>
+<p>但这意味着公司必须不断将扩张转化为实际收益。否则，资本支出将持续存在，而经济回报却会延迟。</p>
+<h3 id="现金周转" class="relative group">现金周转 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e7%8e%b0%e9%87%91%e5%91%a8%e8%bd%ac" aria-label="锚点">#</a></span></h3><p>CoreWeave报告的经营现金流约为<strong>29.8亿美元</strong>在<strong>2026年第一季度</strong>表面上看，这似乎令人放心。</p>
+<p>这是很有用的信息。</p>
+<p>但不应掉以轻心。</p>
+<p>在以合同为主的基础设施模式下，一个季度强劲的运营现金流并不能自动证明企业已实现稳定的自筹资金经济效益。它可能反映的是时间安排、预付款或合同结构等因素，而非完全成熟的成本收入平衡。</p>
+<p>更稳妥的结论范围更窄。</p>
+<p>该公司可以在该模式下产生可观的现金流。</p>
+<p>更难的问题是，随着时间的推移，这种现金流能否持续超过前期资本支出和融资的负担。</p>
+<h2 id="实体基础设施是产品" class="relative group">实体基础设施是产品 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e5%ae%9e%e4%bd%93%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd%e6%98%af%e4%ba%a7%e5%93%81" aria-label="锚点">#</a></span></h2><p>这是广大观众常常忽略的故事部分。</p>
+<p>CoreWeave 的真正产品并非抽象的人工智能叙事。</p>
+<p>这是生理能力。</p>
+<p>该参考文献集引用了超过<strong>1吉瓦</strong>在线电力容量超过<strong>3.5吉瓦</strong>已签订的电力容量，以及达到的数据中心规模<strong>49</strong>添加站点后的网站<strong>6</strong>北美和欧洲本季度的情况。</p>
+<p>这些并非背景细节。</p>
+<p>他们就是这家公司。</p>
+<p>新云服务提供商的竞争不仅仅在于客户关系，更在于能否真正实现下一批容量的交付。</p>
+<p>权力至关重要。</p>
+<p>场地准备工作至关重要。</p>
+<p>网络安装很重要。</p>
+<p>硬件可用性很重要。</p>
+<p>如果这些环节进展缓慢，积压订单的商业前景也会进展缓慢。</p>
+<p>这就是为什么像CoreWeave这样的公司看起来既强大又紧张的原因。</p>
+<p>需求强劲，因为需求真实存在。</p>
+<p>供应紧张，因为实际交付决定了何时这种需求在经济上才可承受。</p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/Capacity%20Build%20Before%20Revenue.jpg" alt="" class="mx-auto my-0 rounded-md" />
+</figure>
+</p>
+<p><em>图 3. 营收前的容量建设。该模式要求在实现全部营收之前，需要对数据中心、电力和部署进行投资。</em></p>
+<h2 id="融资是产品的一部分" class="relative group">融资是产品的一部分 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%9e%8d%e8%b5%84%e6%98%af%e4%ba%a7%e5%93%81%e7%9a%84%e4%b8%80%e9%83%a8%e5%88%86" aria-label="锚点">#</a></span></h2><p>快速发展的基础设施公司仍然可能面临一个棘手的财务问题：谁来承担时间差？</p>
+<p>对于 CoreWeave 而言，答案越来越多地包括贷款人和资本提供者。</p>
+<p>来源集引用了<strong>5.36亿美元</strong>利息支出<strong>2026年第一季度</strong>管理层预计大约<strong>7.3亿美元</strong>下一季度。这并非无关紧要的小事，而是一个重要的经济渠道。</p>
+<p>一旦融资成本达到一定规模，资本结构就成为产品经济性的一部分。</p>
+<p>顾客可能认为他们购买的是计算能力。</p>
+<p>但这项服务得以实现的部分原因在于融资层，它为硬件、设施、部署以及完全盈利前的等待期提供资金。</p>
+<p>这就是为什么原始数据集中的杠杆定义至关重要。不同的文章使用不同的范围，包括仅包含债务的杠杆指标、以租赁为主的杠杆指标以及包含全部负债的杠杆指标。具体的杠杆指标结论可能因定义不同而有所差异，但方向性结论是一致的：该模型在规模扩张的同时，也承受着相当大的融资负担。</p>
+<p>这意味着不能仅凭收入增长来判断财务健康状况。</p>
+<p>必须根据公司最终能否使部署时间、利润转化率和融资成本协调一致来判断。</p>
+<p>如果这种对齐方式有所改善，模型看起来会更耐用。</p>
+<p>否则，增长依然存在，但代价高昂。</p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20260511155905018.png" alt="image-20260511155905018" class="mx-auto my-0 rounded-md" />
+</figure>
+</p>
+<p><em>图 4. 利息和资金压力。由于产能建设前期投入巨大，融资成本现在已成为商业模式本身的一部分。</em></p>
+<h2 id="追踪资金流向" class="relative group">追踪资金流向 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%bf%bd%e8%b8%aa%e8%b5%84%e9%87%91%e6%b5%81%e5%90%91" aria-label="锚点">#</a></span></h2><p>了解 CoreWeave 的最直接方法是追踪资金的实际流向。</p>
+<h3 id="谁来付钱" class="relative group">谁来付钱 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%b0%81%e6%9d%a5%e4%bb%98%e9%92%b1" aria-label="锚点">#</a></span></h3><p>客户付费获取 AI 计算能力，无论是通过超大规模数据中心的需求、企业承诺还是其他长期合同。</p>
+<h3 id="钱先流向哪里" class="relative group">钱先流向哪里 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e9%92%b1%e5%85%88%e6%b5%81%e5%90%91%e5%93%aa%e9%87%8c" aria-label="锚点">#</a></span></h3><p>这笔钱的大部分并不会立即转化为纯粹的剩余利润。</p>
+<p>首先，它必须支持数据中心建设、电力供应、GPU基础设施、网络、租赁、部署和融资成本。</p>
+<p>这是该模型的标志性特征。</p>
+<p>该公司并非只是以高利润率转售软件，而是在构建一个庞大的实体和财务体系。</p>
+<h3 id="谁掌握了经济命脉" class="relative group">谁掌握了经济命脉？ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%b0%81%e6%8e%8c%e6%8f%a1%e4%ba%86%e7%bb%8f%e6%b5%8e%e5%91%bd%e8%84%89" aria-label="锚点">#</a></span></h3><p>在该模型的早期和中期阶段，很大一部分经济价值被基础设施和资本层所攫取：芯片供应商、电力系统、设施、网络建设、贷款人和租赁人。</p>
+<p>只有在支付了这些费用之后，剩余的业务质量才更容易判断。</p>
+<p>但这并不意味着该模型行不通。</p>
+<p>这意味着应该正确描述该模型。</p>
+<p>CoreWeave 不仅仅是人工智能领域的赢家。</p>
+<p>这是一个转化率很高的业务。</p>
+<p>它的任务是将已签署的需求转化为实际产能，然后将实际产能转化为收入，再将收入转化为足以证明最初建设该产能所需的融资和资本密集度合理的经济效益。</p>
+<p>这比通常人工智能新闻标题所暗示的要复杂得多。</p>
+<p>
+
+
+
+
+
+
+  
+  
+<figure><img src="C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20260511155927683.png" alt="image-20260511155927683" class="mx-auto my-0 rounded-md" />
+</figure>
+</p>
+<p><em>图 5. Neocloud 资金流向图。客户的资金会依次流经基础设施、电力、硬件和融资层，最终才能产生持久的剩余经济效益。</em></p>
+<h2 id="这比coreweave更大" class="relative group">这比CoreWeave更大 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e8%bf%99%e6%af%94coreweave%e6%9b%b4%e5%a4%a7" aria-label="锚点">#</a></span></h2><p>该公司是最佳的直接案例研究对象，因为其业务集中于其季度，并且该公司处于新云辩论的中心。</p>
+<p>但问题的根源更为广泛。</p>
+<p>同一份资料以CoreWeave的季度业绩为例，对其他人工智能基础设施公司发出警告。其传递的信息很简单：仅仅高需求已不足以解答最棘手的问题。更棘手的问题是，资本密集型人工智能基础设施提供商能否在控制运营杠杆、融资成本和部署时间的同时，实现规模化扩张。</p>
+<p>这是一个行业结构性问题。</p>
+<p>这也有助于解释为什么一些比较乐观和比较怀疑的原始文件听起来都似乎有道理。</p>
+<p>乐观主义者并没有凭空捏造需求。</p>
+<p>怀疑论者并非凭空捏造成本问题。</p>
+<p>双方都在研究模型的实际组成部分。</p>
+<p>区别在于，一方强调的是商业时钟，而另一方强调的是物质和经济时钟。</p>
+<p>一个完善的频道套餐应该同时兼顾这三方面。</p>
+<h2 id="真正的结论" class="relative group">真正的结论 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e7%9c%9f%e6%ad%a3%e7%9a%84%e7%bb%93%e8%ae%ba" aria-label="锚点">#</a></span></h2><p>CoreWeave 的这一季度业绩既不能简单地归为成功，也不能简单地归为失败。</p>
+<p>这既证明了新云模式的真实性，也证明了其经济效益更多地取决于转化速度，而不仅仅是积压订单数量所显示的。</p>
+<p>该业务显然有市场需求。</p>
+<p>这家企业显然有规模扩张的雄心。</p>
+<p>该企业显然拥有重要的实体基础设施。</p>
+<p>但这显然也取决于大量的初期投资和可观的融资成本，同时还要等待基础设施转化为成熟的经济效益。</p>
+<p>因此，最有用的结论并非CoreWeave仅仅是一个人工智能增长的故事。</p>
+<p>CoreWeave是在现金完全到账之前就出售人工智能产能。</p>
+<p>这仍然是需要关注的核心条件。</p>
+<p>如果部署速度、产能激活和收入转化开始超过建设和融资负担，那么这种模式就更容易站得住脚了。</p>
+<p>如果他们不这样做，积压订单可能会保持庞大的数量，而经济状况则会持续承压。</p>
+<p>这才是真正的机制。</p>
+<p>而且，它的影响可能远远超出一个季度，也远远超出一家公司。</p>
+<h2 id="本分析的局限性" class="relative group">本分析的局限性 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%9c%ac%e5%88%86%e6%9e%90%e7%9a%84%e5%b1%80%e9%99%90%e6%80%a7" aria-label="锚点">#</a></span></h2><ul>
+<li>
+<p>本文依赖于第一阶段筛选出的 CoreWeave 源集，包括公司资料和已获批准用于下游用途的引用媒体报道。</p>
+</li>
+<li>
+<p>源数据集中的一些财务数据使用了略有不同的定义，尤其是在资本支出和杠杆范围方面，因此本文仅使用研究阶段批准的标准化下游措辞。</p>
+</li>
+<li>
+<p>管理层目标和时间安排说明，包括积压订单转换窗口和年度经常性收入目标，均视为管理层评论，而非最终结果。</p>
+</li>
+<li>
+<p>本分析侧重于商业模式结构、基础设施建设时间安排和资金流影响，而不是对资产负债表的每一项或客户合同进行全面审计。</p>
+</li>
+</ul>
+<h2 id="数据来源和披露" class="relative group">数据来源和披露 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e6%95%b0%e6%8d%ae%e6%9d%a5%e6%ba%90%e5%92%8c%e6%8a%ab%e9%9c%b2" aria-label="锚点">#</a></span></h2><ul>
+<li>
+<p>CoreWeave，2026 年第一季度收益报告。</p>
+</li>
+<li>
+<p>CoreWeave，2026 年第一季度收益演示文稿和收益单页报告。</p>
+</li>
+<li>
+<p>CNBC 对 CoreWeave 2026 年第一季度收益和收入预期对比的报道，引自已批准的来源集。</p>
+</li>
+<li>
+<p>路透社对 CoreWeave 2026 年第一季度收入预期和市场预期的报道，引自已批准的来源集。</p>
+</li>
+<li>
+<p><a href="http://Investing.com" target="_blank" rel="noreferrer">Investing.com</a>经批准的资料集中引用了财报电话会议记录摘录，用于管理层对工作量组合、客户范围和积压订单转化时间的评论。</p>
+</li>
+<li>
+<p>Seeking Alpha 来源文章包含在提供的研究资料包中，仅用于事实提取和解释筛选，并非面向公众的权威来源，因此无法获取原始公司资料。</p>
+</li>
+</ul>
+<h2 id="仅限分析编辑用途" class="relative group">仅限分析/编辑用途 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%e4%bb%85%e9%99%90%e5%88%86%e6%9e%90%e7%bc%96%e8%be%91%e7%94%a8%e9%80%94" aria-label="锚点">#</a></span></h2><p>本文仅供分析和评论之用。其目的是解释商业模式结构、基础设施建设时机和资金流动动态，并不构成投资建议、法律建议或正式的会计意见。</p>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+        <img
+          src="https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/QQ_1774316449530.png"
+          alt="xd wang"
+          class="avatar-circle avatar-circle--small !mb-0 !mt-0 me-4"
+          loading="lazy"
+        />
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          作者
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          xd wang
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">持续记录设计思考、乡村振兴项目、工作笔记与灵感片段。你可以把这里当作我的公开工作台与个人知识库。</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://www.welegent.com/"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="mailto:hello@87188202.xyz"
+          target="_blank"
+          aria-label="Email"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="/index.xml"
+          target="_blank"
+          aria-label="Rss"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM0 416a64 64 0 1 1 128 0A64 64 0 1 1 0 416zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+      
+  
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    
+      
+        <a
+          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.welegent.com/posts/coreweave%E5%9C%A8%E6%94%B6%E5%88%B0%E7%8E%B0%E9%87%91%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%87%BA%E5%94%AE%E5%85%B6%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A7%E8%83%BD/&amp;title=%20CoreWeave%e5%9c%a8%e6%94%b6%e5%88%b0%e7%8e%b0%e9%87%91%e4%b9%8b%e5%89%8d%e5%b0%b1%e5%87%ba%e5%94%ae%e5%85%b6%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e4%ba%a7%e8%83%bd"
+          title="分享到 LinkedIn"
+          aria-label="分享到 LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          href="mailto:?body=https://www.welegent.com/posts/coreweave%E5%9C%A8%E6%94%B6%E5%88%B0%E7%8E%B0%E9%87%91%E4%B9%8B%E5%89%8D%E5%B0%B1%E5%87%BA%E5%94%AE%E5%85%B6%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A7%E8%83%BD/&amp;subject=%20CoreWeave%e5%9c%a8%e6%94%b6%e5%88%b0%e7%8e%b0%e9%87%91%e4%b9%8b%e5%89%8d%e5%b0%b1%e5%87%ba%e5%94%ae%e5%85%b6%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e4%ba%a7%e8%83%bd"
+          title="通过电子邮件发送"
+          aria-label="通过电子邮件发送"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></a
+        >
+      
+    
+  </section>
+
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="https://www.welegent.com/posts/spacex-%E4%B8%8D%E4%BB%85%E4%BB%85%E6%98%AF%E7%81%AB%E7%AE%AD%E5%88%B6%E9%80%A0%E5%95%86%E5%AE%83%E6%AD%A3%E5%9C%A8%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E5%A4%AA%E7%A9%BA%E5%B0%86%E5%85%B6%E8%A7%86%E4%B8%BA%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD_/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >SpaceX 不仅仅是火箭制造商，它正在重新定义太空，将其视为基础设施。</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2026-05-10 00:00:00 &#43;0000 UTC">2026-05-10</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="https://www.welegent.com/posts/%E5%88%AB%E7%AE%A1%E4%BB%80%E4%B9%88%E6%A8%A1%E5%9E%8B%E6%8E%92%E8%A1%8C%E6%A6%9C%E4%BA%86%E7%9C%8B%E7%9C%8Balphabet%E6%8A%8A%E9%92%B1%E9%83%BD%E8%97%8F%E5%88%B0%E5%93%AA%E5%84%BF%E5%8E%BB%E4%BA%86/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  > 别管什么模型排行榜了，看看Alphabet把钱都藏到哪儿去了</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2026-05-21 00:00:00 &#43;0000 UTC">2026-05-21</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+        
+          <div class="pt-3">
+            <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+            <div class="pt-3">
+              <section class="comments-box">
+    <h2>评论</h2>
+    <script src="https://utteranc.es/client.js"
+        repo="welegent2010/Myblogs"
+        issue-term="pathname"
+        label="comment"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+    </script>
+</section>
+            </div>
+          </div>
+        
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="回到顶部"
+            title="回到顶部"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            © 2026 welegent. 保留所有文字与原创内容版权。
+        </p>
+      
+      
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+        <div
+          class="me-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        >
+          <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+            <div
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
+              title="切换为深色模式"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+            </div>
+            <div
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
+              title="切换为浅色模式"
+            >
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+            </div>
+          </button>
+        </div>
+      
+    </div>
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://www.welegent.com/"
+>
+  <div
+    id="search-modal"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜索"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="关闭 (Esc)"
+      >
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto overflow-auto px-2">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

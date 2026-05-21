@@ -15,7 +15,7 @@
           {{ $.Title | emojify }}
         </a>
       {{ else }}
-        <a class="home-article-card__link" href="{{ .Permalink }}">
+        <a class="home-article-card__link" href="{{ .RelPermalink }}">
           {{ .Title | emojify }}
         </a>
       {{ end }}
