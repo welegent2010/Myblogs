@@ -2,7 +2,7 @@
 title: " 别管什么模型排行榜了，看看Alphabet把钱都藏到哪儿去了"
 date: 2026-05-21
 lastmod: 2026-05-21
-draft: true
+draft: false
 
 description: "Alphabet的AI优势不在模型排行榜,而在这个循环:搜索现金支撑基础设施,云端转化需求,产品变现工作流。"
 summary: "为什么Alphabet的1800亿美元AI投入值得关注:不是基准测试,而是如何将基础设施支出转化为合同收入并保持利润率。"
