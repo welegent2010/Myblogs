@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>产业研究 on XD Wang</title>
-		<link>http://localhost:1313/tags/%E4%BA%A7%E4%B8%9A%E7%A0%94%E7%A9%B6/</link>
+		<link>https://87188202.xyz/tags/%E4%BA%A7%E4%B8%9A%E7%A0%94%E7%A9%B6/</link>
 		<description>Recent content in 产业研究 on XD Wang</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -14,12 +14,12 @@
 		
 			<lastBuildDate>Thu, 25 Jun 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/tags/%E4%BA%A7%E4%B8%9A%E7%A0%94%E7%A9%B6/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://87188202.xyz/tags/%E4%BA%A7%E4%B8%9A%E7%A0%94%E7%A9%B6/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title> AI驱动的存储层级轮动与企业级全闪存架构重估：Everpure深度研究报告</title>
-				<link>http://localhost:1313/posts/ai%E9%A9%B1%E5%8A%A8%E7%9A%84%E5%AD%98%E5%82%A8%E5%B1%82%E7%BA%A7%E8%BD%AE%E5%8A%A8%E4%B8%8E%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%85%A8%E9%97%AA%E5%AD%98%E6%9E%B6%E6%9E%84%E9%87%8D%E4%BC%B0/</link>
+				<link>https://87188202.xyz/posts/ai%E9%A9%B1%E5%8A%A8%E7%9A%84%E5%AD%98%E5%82%A8%E5%B1%82%E7%BA%A7%E8%BD%AE%E5%8A%A8%E4%B8%8E%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%85%A8%E9%97%AA%E5%AD%98%E6%9E%B6%E6%9E%84%E9%87%8D%E4%BC%B0/</link>
 				<pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/ai%E9%A9%B1%E5%8A%A8%E7%9A%84%E5%AD%98%E5%82%A8%E5%B1%82%E7%BA%A7%E8%BD%AE%E5%8A%A8%E4%B8%8E%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%85%A8%E9%97%AA%E5%AD%98%E6%9E%B6%E6%9E%84%E9%87%8D%E4%BC%B0/</guid>
+				<guid>https://87188202.xyz/posts/ai%E9%A9%B1%E5%8A%A8%E7%9A%84%E5%AD%98%E5%82%A8%E5%B1%82%E7%BA%A7%E8%BD%AE%E5%8A%A8%E4%B8%8E%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%85%A8%E9%97%AA%E5%AD%98%E6%9E%B6%E6%9E%84%E9%87%8D%E4%BC%B0/</guid>
 				<description>在AI数据中心从算力向存力深水区迈进之际，本报告通过存储层级轮动逻辑的深度还原与批判性评估，揭示Everpure作为企业级全闪存架构龙头的核心竞争力与商业模式质变，同时点出上游SSD主控芯片黑马的更高beta机会，为投资者提供可执行的决策框架与风险管控建议。</description>
 			</item>
 	</channel>

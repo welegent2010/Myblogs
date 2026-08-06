@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>个股分析 on XD Wang</title>
-		<link>http://localhost:1313/tags/%E4%B8%AA%E8%82%A1%E5%88%86%E6%9E%90/</link>
+		<link>https://87188202.xyz/tags/%E4%B8%AA%E8%82%A1%E5%88%86%E6%9E%90/</link>
 		<description>Recent content in 个股分析 on XD Wang</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -14,12 +14,12 @@
 		
 			<lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/tags/%E4%B8%AA%E8%82%A1%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://87188202.xyz/tags/%E4%B8%AA%E8%82%A1%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title> 基于技术指标、资金行为和市场结构形成的美股个股研究日报</title>
-				<link>http://localhost:1313/posts/%E5%9F%BA%E4%BA%8E%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E8%B5%84%E9%87%91%E8%A1%8C%E4%B8%BA%E5%92%8C%E5%B8%82%E5%9C%BA%E7%BB%93%E6%9E%84%E5%BD%A2%E6%88%90%E7%BE%8E%E8%82%A1%E4%B8%AA%E8%82%A1%E7%A0%94%E7%A9%B6%E6%97%A5%E6%8A%A5/</link>
+				<link>https://87188202.xyz/posts/%E5%9F%BA%E4%BA%8E%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E8%B5%84%E9%87%91%E8%A1%8C%E4%B8%BA%E5%92%8C%E5%B8%82%E5%9C%BA%E7%BB%93%E6%9E%84%E5%BD%A2%E6%88%90%E7%BE%8E%E8%82%A1%E4%B8%AA%E8%82%A1%E7%A0%94%E7%A9%B6%E6%97%A5%E6%8A%A5/</link>
 				<pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/%E5%9F%BA%E4%BA%8E%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E8%B5%84%E9%87%91%E8%A1%8C%E4%B8%BA%E5%92%8C%E5%B8%82%E5%9C%BA%E7%BB%93%E6%9E%84%E5%BD%A2%E6%88%90%E7%BE%8E%E8%82%A1%E4%B8%AA%E8%82%A1%E7%A0%94%E7%A9%B6%E6%97%A5%E6%8A%A5/</guid>
+				<guid>https://87188202.xyz/posts/%E5%9F%BA%E4%BA%8E%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87%E8%B5%84%E9%87%91%E8%A1%8C%E4%B8%BA%E5%92%8C%E5%B8%82%E5%9C%BA%E7%BB%93%E6%9E%84%E5%BD%A2%E6%88%90%E7%BE%8E%E8%82%A1%E4%B8%AA%E8%82%A1%E7%A0%94%E7%A9%B6%E6%97%A5%E6%8A%A5/</guid>
 				<description>聚焦INTC，OKLO，NVTS，SOUN，PATH，INFO，AXTI，AAOI个股8月5日数据研究分析，分布从技术面分析、资金面分析，个人判断以及未来关注点及趋势变化判断。</description>
 			</item>
 	</channel>
