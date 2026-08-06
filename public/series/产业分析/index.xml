@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>产业分析 on XD Wang</title>
+		<link>http://localhost:1313/series/%E4%BA%A7%E4%B8%9A%E5%88%86%E6%9E%90/</link>
+		<description>Recent content in 产业分析 on XD Wang</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+			<copyright>© 2026 welegent. 保留所有文字与原创内容版权。</copyright>
+		
+		
+			<lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/series/%E4%BA%A7%E4%B8%9A%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title> ADEA深度研究报告：AI半导体底层的“隐形收费站”与2028年重定价催化剂</title>
+				<link>http://localhost:1313/posts/adea%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8Aai%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%BA%95%E5%B1%82%E7%9A%84%E9%9A%90%E5%BD%A2%E6%94%B6%E8%B4%B9%E7%AB%99%E4%B8%8E2028%E5%B9%B4%E9%87%8D%E5%AE%9A%E4%BB%B7%E5%82%AC%E5%8C%96%E5%89%82/</link>
+				<pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/adea%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8Aai%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%BA%95%E5%B1%82%E7%9A%84%E9%9A%90%E5%BD%A2%E6%94%B6%E8%B4%B9%E7%AB%99%E4%B8%8E2028%E5%B9%B4%E9%87%8D%E5%AE%9A%E4%BB%B7%E5%82%AC%E5%8C%96%E5%89%82/</guid>
+				<description>ADEA不造芯片，却凭1.3万项混合键合专利垄断HBM4底层技术，向三星、英伟达等巨头收取授权费。其轻资产模式毛利率超60%，净利润率25%。核心催化剂为2027年与存储巨头合同到期重签，预计从固定费转为高比例分成，叠加RAPID散热技术商用，2028年营收有望翻五至十倍。当前市值仅34.8亿美元，具备极高风险收益比。</description>
+			</item>
+			<item>
+				<title> 黄金宏观定价范式重构与流动性收割深度研究报告</title>
+				<link>http://localhost:1313/posts/%E9%BB%84%E9%87%91%E5%AE%8F%E8%A7%82%E5%AE%9A%E4%BB%B7%E8%8C%83%E5%BC%8F%E9%87%8D%E6%9E%84%E4%B8%8E%E6%B5%81%E5%8A%A8%E6%80%A7%E6%94%B6%E5%89%B2%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/</link>
+				<pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/%E9%BB%84%E9%87%91%E5%AE%8F%E8%A7%82%E5%AE%9A%E4%BB%B7%E8%8C%83%E5%BC%8F%E9%87%8D%E6%9E%84%E4%B8%8E%E6%B5%81%E5%8A%A8%E6%80%A7%E6%94%B6%E5%89%B2%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/</guid>
+				<description>黄金跌至4000美元非抄底良机，而是机构撤退的流动性陷阱。受油价推高通胀、加息预期飙升及多头拥挤三大压力影响，花旗警告或下探3500美元出清区。切忌盲目接盘，需等待油价见顶、政策转向及多头出清三大反转信号。</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>半导体 on XD Wang</title>
+		<link>http://localhost:1313/categories/%E5%8D%8A%E5%AF%BC%E4%BD%93/</link>
+		<description>Recent content in 半导体 on XD Wang</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+			<copyright>© 2026 welegent. 保留所有文字与原创内容版权。</copyright>
+		
+		
+			<lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/categories/%E5%8D%8A%E5%AF%BC%E4%BD%93/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>  Agentic AI 时代的技术架构与产业重构</title>
+				<link>http://localhost:1313/posts/agentic-ai-%E6%97%B6%E4%BB%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E4%B8%8E%E4%BA%A7%E4%B8%9A%E9%87%8D%E6%9E%84/</link>
+				<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/agentic-ai-%E6%97%B6%E4%BB%A3%E7%9A%84%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E4%B8%8E%E4%BA%A7%E4%B8%9A%E9%87%8D%E6%9E%84/</guid>
+				<description>本报告深度解读黄仁勋在GTC Taipei 2026的演讲,揭示计算范式从传统应用程序向Agentic AI的根本转变。报告分析了三大核心产品:Vera Rubin架构实现10倍推理性能提升、RTX Spark重新定义PC产业、Cosmos 3构建物理AI数据飞轮。从技术架构、供应链价值、竞争格局和投资机会四个维度,解析英伟达如何从GPU公司转型为AI基础设施公司,以及AI产业链价值重新分配的深层逻辑。</description>
+			</item>
+	</channel>
+</rss>
