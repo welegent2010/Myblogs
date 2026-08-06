@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>宏观经济 on XD Wang</title>
-    <link>https://87188202.xyz/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E/</link>
-    <description>Recent content in 宏观经济 on XD Wang</description>
-    <generator>Hugo</generator>
-    <language>zh-CN</language>
-    <copyright>© 2026 welegent. 保留所有文字与原创内容版权。</copyright>
-    <lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://87188202.xyz/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title> 黄金宏观定价范式重构与流动性收割深度研究报告</title>
-      <link>https://87188202.xyz/posts/%E9%BB%84%E9%87%91%E5%AE%8F%E8%A7%82%E5%AE%9A%E4%BB%B7%E8%8C%83%E5%BC%8F%E9%87%8D%E6%9E%84%E4%B8%8E%E6%B5%81%E5%8A%A8%E6%80%A7%E6%94%B6%E5%89%B2%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/</link>
-      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://87188202.xyz/posts/%E9%BB%84%E9%87%91%E5%AE%8F%E8%A7%82%E5%AE%9A%E4%BB%B7%E8%8C%83%E5%BC%8F%E9%87%8D%E6%9E%84%E4%B8%8E%E6%B5%81%E5%8A%A8%E6%80%A7%E6%94%B6%E5%89%B2%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/</guid>
-      <description>黄金跌至4000美元非抄底良机，而是机构撤退的流动性陷阱。受油价推高通胀、加息预期飙升及多头拥挤三大压力影响，花旗警告或下探3500美元出清区。切忌盲目接盘，需等待油价见顶、政策转向及多头出清三大反转信号。</description>
-    </item>
-  </channel>
+	<channel>
+		<title>宏观经济 on XD Wang</title>
+		<link>https://87188202.xyz/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E/</link>
+		<description>Recent content in 宏观经济 on XD Wang</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+			<copyright>© 2026 welegent. 保留所有文字与原创内容版权。</copyright>
+		
+		
+			<lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://87188202.xyz/tags/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title> 黄金宏观定价范式重构与流动性收割深度研究报告</title>
+				<link>https://87188202.xyz/posts/%E9%BB%84%E9%87%91%E5%AE%8F%E8%A7%82%E5%AE%9A%E4%BB%B7%E8%8C%83%E5%BC%8F%E9%87%8D%E6%9E%84%E4%B8%8E%E6%B5%81%E5%8A%A8%E6%80%A7%E6%94%B6%E5%89%B2%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/</link>
+				<pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://87188202.xyz/posts/%E9%BB%84%E9%87%91%E5%AE%8F%E8%A7%82%E5%AE%9A%E4%BB%B7%E8%8C%83%E5%BC%8F%E9%87%8D%E6%9E%84%E4%B8%8E%E6%B5%81%E5%8A%A8%E6%80%A7%E6%94%B6%E5%89%B2%E6%B7%B1%E5%BA%A6%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/</guid>
+				<description>黄金跌至4000美元非抄底良机，而是机构撤退的流动性陷阱。受油价推高通胀、加息预期飙升及多头拥挤三大压力影响，花旗警告或下探3500美元出清区。切忌盲目接盘，需等待油价见顶、政策转向及多头出清三大反转信号。</description>
+			</item>
+	</channel>
 </rss>

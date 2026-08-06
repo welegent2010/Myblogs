@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>数字体验 on XD Wang</title>
-    <link>https://87188202.xyz/categories/%E6%95%B0%E5%AD%97%E4%BD%93%E9%AA%8C/</link>
-    <description>Recent content in 数字体验 on XD Wang</description>
-    <generator>Hugo</generator>
-    <language>zh-CN</language>
-    <copyright>© 2026 welegent. 保留所有文字与原创内容版权。</copyright>
-    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://87188202.xyz/categories/%E6%95%B0%E5%AD%97%E4%BD%93%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>用第一性原理思考：无需追流量，做好内容就能在平台获利</title>
-      <link>https://87188202.xyz/posts/%E7%94%A8%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E6%80%9D%E8%80%83%E4%BA%A7%E5%93%81%E5%86%85%E5%AE%B9%E7%9A%84%E6%9C%AC%E8%B4%A8/</link>
-      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://87188202.xyz/posts/%E7%94%A8%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E6%80%9D%E8%80%83%E4%BA%A7%E5%93%81%E5%86%85%E5%AE%B9%E7%9A%84%E6%9C%AC%E8%B4%A8/</guid>
-      <description>这是流量与本质主题的复盘笔记，核心观点：应当用第一性原理拆解流量迷思，跳出盲目追逐泛流量的瞎忙陷阱，深耕垂直小领域做精品内容，小体量精准粉丝的变现价值远高于海量无效泛流量，选对方向扎实沉淀才是长期竞争力。</description>
-    </item>
-  </channel>
+	<channel>
+		<title>数字体验 on XD Wang</title>
+		<link>https://87188202.xyz/categories/%E6%95%B0%E5%AD%97%E4%BD%93%E9%AA%8C/</link>
+		<description>Recent content in 数字体验 on XD Wang</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+			<copyright>© 2026 welegent. 保留所有文字与原创内容版权。</copyright>
+		
+		
+			<lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://87188202.xyz/categories/%E6%95%B0%E5%AD%97%E4%BD%93%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>用第一性原理思考：无需追流量，做好内容就能在平台获利</title>
+				<link>https://87188202.xyz/posts/%E7%94%A8%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E6%80%9D%E8%80%83%E4%BA%A7%E5%93%81%E5%86%85%E5%AE%B9%E7%9A%84%E6%9C%AC%E8%B4%A8/</link>
+				<pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://87188202.xyz/posts/%E7%94%A8%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E6%80%9D%E8%80%83%E4%BA%A7%E5%93%81%E5%86%85%E5%AE%B9%E7%9A%84%E6%9C%AC%E8%B4%A8/</guid>
+				<description>这是流量与本质主题的复盘笔记，核心观点：应当用第一性原理拆解流量迷思，跳出盲目追逐泛流量的瞎忙陷阱，深耕垂直小领域做精品内容，小体量精准粉丝的变现价值远高于海量无效泛流量，选对方向扎实沉淀才是长期竞争力。</description>
+			</item>
+	</channel>
 </rss>
