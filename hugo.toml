@@ -102,10 +102,10 @@ summaryLength = 120
     [languages.zh-cn.params.author]
       name = 'xd wang'
       image = 'https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/QQ_1774316449530.png'
-      headline = '设计观察者 / 项目记录者 / 长期主义实践者'
-      bio = '持续记录设计思考、乡村振兴项目、工作笔记与灵感片段。你可以把这里当作我的公开工作台与个人知识库。'
+      headline = '城市发展顾问 / 规划实践者 / 空间创新研究者'
+      bio = '专注城市更新、产业策划、乡村振兴与文旅发展领域的项目研究与实践。基于近20年规划设计经验积累，探索空间规划、产业运营与AI技术融合的新型咨询模式。'
       links = [
-        { github = 'https://www.welegent.com/' },
+        { globe = 'https://www.welegent.com/' },
         { email = 'mailto:hello@87188202.xyz' },
         { rss = '/index.xml' },
       ]
