@@ -5,6 +5,9 @@ summary: 一位城市研究者用三年时间被Python环境和技术门槛困�
 date: 2026-04-02
 lastmod: 2026-04-02
 draft: false
+slug: tools-no-longer-limit-ai-breakthrough
+aliases:
+- /posts/工具不再是限制一个城市研究者的ai突围史/
 channels:
 - notes-methods
 topics:

@@ -5,6 +5,9 @@ summary: ADEA不造芯片，却凭1.3万项混合键合专利垄断HBM4底层技
 date: 2026-06-12
 lastmod: 2026-06-12
 draft: false
+slug: adea-ai-semiconductor-toll-booth-2028-repricing
+aliases:
+- /posts/adea深度研究报告ai半导体底层的隐形收费站与2028年重定价催化剂/
 channels:
 - markets-finance
 topics:

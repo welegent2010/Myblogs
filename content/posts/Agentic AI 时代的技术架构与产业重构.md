@@ -5,6 +5,9 @@ summary: 本报告深度解读黄仁勋在GTC Taipei 2026的演讲,揭示计算�
 date: 2026-06-11
 lastmod: 2026-06-11
 draft: false
+slug: agentic-ai-architecture-industry-restructure
+aliases:
+- /posts/agentic-ai-时代的技术架构与产业重构/
 channels:
 - markets-finance
 topics:

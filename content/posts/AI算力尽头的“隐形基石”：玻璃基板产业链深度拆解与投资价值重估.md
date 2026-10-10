@@ -5,6 +5,9 @@ summary: AI芯片封装遭遇有机基板极限，玻璃基板成破局关键。
 date: 2026-06-15
 lastmod: 2026-06-15
 draft: false
+slug: glass-substrate-ai-compute-value-revaluation
+aliases:
+- /posts/ai算力尽头的隐形基石玻璃基板产业链深度拆解与投资价值重估/
 channels:
 - markets-finance
 topics:

@@ -5,6 +5,9 @@ summary: Cerebras（CBRS）上市后从高点腰斩，却获木头姐ARK大举�
 date: 2026-06-22
 lastmod: 2026-06-22
 draft: false
+slug: cerebras-cbrs-wafer-scale-ai-inference
+aliases:
+- /posts/cerebras-cbrs-深度研究报告晶圆级架构重塑ai推理时代的黑马/
 channels:
 - markets-finance
 topics:

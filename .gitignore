@@ -1,0 +1,10 @@
+# Hugo 构建产物：Cloudflare Pages 会从源码重新构建，不需要进仓库
+public/
+public-drafts/
+.tmp-public/
+resources/
+.hugo_build.lock
+
+# 系统 / 编辑器噪声
+.DS_Store
+*.swp

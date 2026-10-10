@@ -5,6 +5,9 @@ summary: 为什么Alphabet的1800亿美元AI投入值得关注:不是基准测�
 date: 2026-05-21
 lastmod: 2026-05-21
 draft: false
+slug: alphabet-where-the-money-hides
+aliases:
+- /posts/别管什么模型排行榜了看看alphabet把钱都藏到哪儿去了/
 channels:
 - markets-finance
 topics:

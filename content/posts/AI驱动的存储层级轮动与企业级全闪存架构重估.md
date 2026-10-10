@@ -5,6 +5,9 @@ summary: 在AI数据中心从算力向存力深水区迈进之际，本报告通
 date: 2026-06-25
 lastmod: 2026-06-25
 draft: false
+slug: ai-storage-tier-rotation-all-flash-reevaluation
+aliases:
+- /posts/ai驱动的存储层级轮动与企业级全闪存架构重估/
 channels:
 - markets-finance
 topics:

@@ -5,6 +5,9 @@ summary: 本报告深度剖析宜宾七星山项目，对标全球标杆，提�
 date: 2026-03-25
 lastmod: 2026-03-25
 draft: false
+slug: yibin-qixingshan-bamboo-park-eod-strategy
+aliases:
+- /posts/宜宾七星山竹文化生态公园项目战略研究报告eod模式下的盈利架构与综合效益深度分析/
 channels:
 - cities-industries
 topics:

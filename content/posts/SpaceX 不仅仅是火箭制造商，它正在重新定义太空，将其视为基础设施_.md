@@ -5,6 +5,9 @@ summary: SpaceX 即将以 2 万亿美元估值上市,但市场购买的不是火
 date: 2026-05-10
 lastmod: 2026-05-10
 draft: true
+slug: spacex-space-as-infrastructure
+aliases:
+- /posts/spacex-不仅仅是火箭制造商它正在重新定义太空将其视为基础设施_/
 channels:
 - markets-finance
 topics:
