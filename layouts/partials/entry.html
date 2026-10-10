@@ -1,0 +1,32 @@
+{{- $p := . -}}
+{{- $ck := partial "func/channel-key.html" $p -}}
+{{- $tk := partial "func/topic-key.html" $p -}}
+{{- $ch := "" -}}
+{{- with $ck }}{{ $ch = index site.Data.channels . }}{{ end -}}
+{{- $tp := "" -}}
+{{- with $tk }}{{ $tp = index site.Data.topics . }}{{ end -}}
+<article class="entry"{{ with $ck }} data-channel="{{ . }}"{{ end }}>
+  <div class="entry__meta">
+    {{- with $ch }}
+      <a class="entry__channel" href="{{ .url }}">{{ .en }}</a>
+      <span class="dot">/</span>
+    {{- end -}}
+    {{- with $tp }}
+      <a href="{{ printf "/topics/%s/" $tk | relURL }}">{{ .en }}</a>
+      <span class="dot">/</span>
+    {{- end -}}
+    <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "2006-01-02" }}</time>
+    <span class="dot">/</span>
+    <span>{{ $p.ReadingTime }} min</span>
+    {{- with $p.Params.content_type }}
+      <span class="entry__type">{{ . | upper }}</span>
+    {{- end -}}
+    {{- if $p.Draft }}<span class="draft-label">Draft</span>{{ end -}}
+  </div>
+
+  <h3 class="entry__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+
+  {{- with partial "post-summary.html" $p }}
+    <p class="entry__summary">{{ . }}</p>
+  {{- end -}}
+</article>

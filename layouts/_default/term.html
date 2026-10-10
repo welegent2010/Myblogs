@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <section class="channel-hero">
+    <div class="shell">
+      <span class="channel-hero__num">{{ .Data.Singular | upper }}</span>
+      <h1 class="channel-hero__title">{{ .Title }}</h1>
+      <p class="channel-hero__desc">
+        {{ len .Pages }} 篇研究记录 ·
+        <a href="{{ "/archives/" | relURL }}">Archive</a> ·
+        <a href="{{ "/topics/" | relURL }}">Topics</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="border-bottom: 0">
+    <div class="shell">
+      <div class="measure">
+        {{- range .Paginator.Pages }}
+          {{ partial "entry.html" . }}
+        {{- end }}
+        {{ partial "pagination.html" . }}
+      </div>
+    </div>
+  </section>
+{{ end }}

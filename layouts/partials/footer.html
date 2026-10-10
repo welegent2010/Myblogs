@@ -1,0 +1,47 @@
+<footer class="site-footer">
+  <div class="shell">
+    <div class="site-footer__grid">
+      <div>
+        <div class="site-footer__title">Xiaodong Wang</div>
+        <div class="site-footer__role">{{ site.Params.author.headlineEn }}</div>
+        <div class="site-footer__role">{{ site.Params.author.headline }}</div>
+      </div>
+
+      <div class="site-footer__col">
+        <h5>Channels</h5>
+        <ul>
+          {{- range $key := slice "cities-industries" "markets-finance" "notes-methods" }}
+            {{- with index site.Data.channels $key }}
+              <li><a href="{{ .url }}">{{ .en }}<br /><span class="mono">{{ .zh }}</span></a></li>
+            {{- end }}
+          {{- end }}
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h5>Journal</h5>
+        <ul>
+          <li><a href="{{ "/topics/" | relURL }}">Topics</a></li>
+          <li><a href="{{ "/archives/" | relURL }}">Archive</a></li>
+          <li><a href="{{ "/about/" | relURL }}">About</a></li>
+          <li><a href="{{ "/search/" | relURL }}">Search</a></li>
+          <li><a href="{{ "index.xml" | relURL }}">RSS</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h5>Profile</h5>
+        <ul>
+          <li><a href="{{ site.Params.journal.profileUrl }}" target="_blank" rel="noopener">welegent.com</a></li>
+          <li><a href="mailto:hello@87188202.xyz">hello@87188202.xyz</a></li>
+          <li><a href="https://87188202.xyz/">87188202.xyz</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__base">
+      <span>{{ site.Copyright }}</span>
+      <span>From Planning to Decisions. / 从规划成果走向发展决策。</span>
+    </div>
+  </div>
+</footer>

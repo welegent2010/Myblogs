@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Topics on XD Wang</title>
+		<link>http://localhost:1319/topics/</link>
+		<description>Recent content in Topics on XD Wang</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+			<copyright>© 2026 Xiaodong Wang. 保留所有文字与原创内容版权。</copyright>
+		
+		
+			<lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1319/topics/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Tourism</title>
+				<link>http://localhost:1319/topics/tourism/</link>
+				<pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/tourism/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Us-Equities</title>
+				<link>http://localhost:1319/topics/us-equities/</link>
+				<pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/us-equities/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Web-Software</title>
+				<link>http://localhost:1319/topics/web-software/</link>
+				<pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/web-software/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Urban-Regeneration</title>
+				<link>http://localhost:1319/topics/urban-regeneration/</link>
+				<pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/urban-regeneration/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Company-Research</title>
+				<link>http://localhost:1319/topics/company-research/</link>
+				<pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/company-research/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Industry-Chain</title>
+				<link>http://localhost:1319/topics/industry-chain/</link>
+				<pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/industry-chain/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Market-Structure</title>
+				<link>http://localhost:1319/topics/market-structure/</link>
+				<pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/market-structure/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Ai-Infrastructure</title>
+				<link>http://localhost:1319/topics/ai-infrastructure/</link>
+				<pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/ai-infrastructure/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Planning-Practice</title>
+				<link>http://localhost:1319/topics/planning-practice/</link>
+				<pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/planning-practice/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Ai-Research</title>
+				<link>http://localhost:1319/topics/ai-research/</link>
+				<pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/ai-research/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Industry-Research</title>
+				<link>http://localhost:1319/topics/industry-research/</link>
+				<pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/industry-research/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Development-Economics</title>
+				<link>http://localhost:1319/topics/development-economics/</link>
+				<pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/development-economics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Knowledge-Systems</title>
+				<link>http://localhost:1319/topics/knowledge-systems/</link>
+				<pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1319/topics/knowledge-systems/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

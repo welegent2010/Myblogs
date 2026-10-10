@@ -1,0 +1,79 @@
+{{- $term := .Data.Term -}}
+{{- $tp := index site.Data.topics $term -}}
+{{- $ch := "" -}}
+{{- with $tp }}{{ $ch = index site.Data.channels .channel }}{{ end -}}
+{{- $paginator := .Paginate .Pages -}}
+
+<section class="channel-hero">
+  <div class="shell">
+    <span class="channel-hero__num">
+      {{- with $ch }}<a href="{{ .url }}">{{ .en }}</a>{{ else }}TOPIC{{ end -}}
+    </span>
+    <h1 class="channel-hero__title">{{ with $tp }}{{ .en }}{{ else }}{{ $term }}{{ end }}</h1>
+    {{- with $tp }}<div class="channel-hero__zh">{{ .zh }}</div>{{ end -}}
+  </div>
+</section>
+
+{{- if $ch }}
+  <div class="shell">
+    <nav class="subnav" aria-label="频道主题">
+      <a href="{{ $ch.url }}">All</a>
+      {{- range $slug := $ch.topics }}
+        {{- $t := index site.Data.topics $slug -}}
+        {{- with $t }}
+          <a
+            href="{{ printf "/topics/%s/" $slug | relURL }}"
+            {{- if eq $slug $term }} class="is-active" {{- end -}}
+          >
+            {{ .en }}
+          </a>
+        {{- end }}
+      {{- end }}
+    </nav>
+  </div>
+{{- end }}
+
+<div class="shell">
+  <div class="split">
+    <div>
+      <div class="section" style="padding-top: 34px; border-bottom: 0">
+        {{- range $paginator.Pages }}
+          {{ partial "entry.html" . }}
+        {{- end }}
+        {{ partial "pagination.html" $ }}
+      </div>
+    </div>
+
+    <aside>
+      <div class="side-block">
+        <div class="side-block__title">Channel</div>
+        <ul>
+          {{- with $ch }}
+            <li><a href="{{ .url }}">{{ .en }}</a><span>{{ .zh }}</span></li>
+          {{- end }}
+        </ul>
+      </div>
+
+      <div class="side-block">
+        <div class="side-block__title">Years</div>
+        <ul>
+          {{- range .Pages.GroupByDate "2006" }}
+            <li>
+              <a href="{{ "/archives/" | relURL }}#year-{{ .Key }}">{{ .Key }}</a>
+              <span>{{ len .Pages }}</span>
+            </li>
+          {{- end }}
+        </ul>
+      </div>
+
+      <div class="side-block">
+        <div class="side-block__title">Browse</div>
+        <ul>
+          <li><a href="{{ "/archives/" | relURL }}">Archive</a></li>
+          <li><a href="{{ "/topics/" | relURL }}">All Topics</a></li>
+          <li><a href="{{ "/search/" | relURL }}">Search</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>

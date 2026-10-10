@@ -1,0 +1,48 @@
+# 三大一级研究频道。key 与文章 front matter 中的 channel 字段一致。
+cities-industries:
+  num: "01"
+  en: "Cities & Industries"
+  zh: "城市与产业"
+  url: "/urban/"
+  desc_en: "Urban development, tourism, regional strategy and industry research."
+  desc_zh: "长期研究城市更新、县域发展、文旅、产业策划、区域经济、项目投资、空间数据与城市运营。"
+  topics:
+    - urban-regeneration
+    - tourism
+    - regional-development
+    - industry-research
+    - development-economics
+    - gis-data
+    - planning-practice
+
+markets-finance:
+  num: "02"
+  en: "Markets & Finance"
+  zh: "市场与金融"
+  url: "/markets/"
+  desc_en: "Independent research on public markets, companies, industries and investment frameworks."
+  desc_zh: "围绕公司、产业链、资本市场结构和交易方法进行长期研究与复盘。"
+  topics:
+    - us-equities
+    - company-research
+    - industry-chain
+    - ai-infrastructure
+    - semiconductors
+    - market-structure
+    - trading
+    - portfolio
+
+notes-methods:
+  num: "03"
+  en: "Notes & Methods"
+  zh: "方法与工具"
+  url: "/notes/"
+  desc_en: "Notes on research methods, AI workflows, data analysis, software tools and independent digital practice."
+  desc_zh: "记录研究方法、AI工作流、GIS、数据分析、软件开发、Web工具和独立工作方法。"
+  topics:
+    - ai-research
+    - gis-data-methods
+    - knowledge-systems
+    - web-software
+    - workflow
+    - ux-design

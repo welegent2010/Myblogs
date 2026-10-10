@@ -1,0 +1,28 @@
+{{- $css := resources.Get "css/editorial.css" | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm | default "sha256") -}}
+{{- $js := resources.Get "js/journal.js" | resources.Minify | resources.Fingerprint (site.Params.fingerprintAlgorithm | default "sha256") -}}
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "zh-CN" }}" data-theme="light">
+  <head>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("xd-theme");
+          if (!t) {
+            t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+    {{ partial "head.html" . }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <div class="progress" aria-hidden="true"></div>
+    {{ partial "header.html" . }}
+    <main id="main">{{ block "main" . }}{{ end }}</main>
+    {{ partial "footer.html" . }}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+  </body>
+</html>

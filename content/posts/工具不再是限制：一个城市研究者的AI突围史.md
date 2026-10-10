@@ -1,33 +1,30 @@
 ---
-title: "工具不再是限制：一个城市研究者的AI突围史"
+title: 工具不再是限制：一个城市研究者的AI突围史
+description: 三年困境一朝破解，AI工具重塑个人科研范式
+summary: 一位城市研究者用三年时间被Python环境和技术门槛困住，无法推进城市韧性研究。2026年，借助SuperGrok和GitHub Copilot的协同闭环，他在一下午完成了10个城市30个研究点的数据下载和分析。这不是关于AI替代人类的故事，而是关于工具如何解放思维、让个人研究者也能拥有实验室级能力的真实经历。工具不再是限制，思考才是核心价值。
 date: 2026-04-02
 lastmod: 2026-04-02
 draft: false
-
-description: "三年困境一朝破解，AI工具重塑个人科研范式"
-
-summary: "一位城市研究者用三年时间被Python环境和技术门槛困住，无法推进城市韧性研究。2026年，借助SuperGrok和GitHub Copilot的协同闭环，他在一下午完成了10个城市30个研究点的数据下载和分析。这不是关于AI替代人类的故事，而是关于工具如何解放思维、让个人研究者也能拥有实验室级能力的真实经历。工具不再是限制，思考才是核心价值。"
-
+channels:
+- notes-methods
+topics:
+- ai-research
+content_type: essay
+featured: true
 categories:
-  - 研究方法论
-  - 学术科研
-  - 个人成长
-
+- 研究方法论
+- 学术科研
+- 个人成长
 tags:
-  - AI科研
-  - 城市研究
-  - 个人研究者
-  - 工具革命
-  - 研究范式转变
-
+- AI工作流
+- 城市研究
+- Python
+- 数据获取
 series:
-  - 本质思考
-
+- 本质思考
 showTableOfContents: true
 showComments: true
 ---
-
-
 三年前，我有一个关于城市街道网络韧性的研究设想。
 
 三年后，这个设想终于在 2026 年的一个下午变成了现实。

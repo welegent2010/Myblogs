@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <section class="channel-hero">
+    <div class="shell">
+      <span class="channel-hero__num">RESEARCH INDEX</span>
+      <h1 class="channel-hero__title">Search</h1>
+      <div class="channel-hero__zh">站内检索</div>
+      <p class="channel-hero__desc">搜索标题、摘要、标签与研究频道。</p>
+    </div>
+  </section>
+
+  <div class="shell">
+    <div class="search-box">
+      <input
+        id="search-query"
+        class="search-input"
+        type="search"
+        autocomplete="off"
+        placeholder="城市更新 / 文旅 / 半导体 / AAOI / OSM / AI 工作流"
+        aria-label="搜索关键词"
+      />
+      <p class="search-hint">Search across all research notes</p>
+    </div>
+    <ul class="search-results" id="search-results"></ul>
+  </div>
+{{ end }}

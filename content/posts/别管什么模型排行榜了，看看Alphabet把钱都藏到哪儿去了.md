@@ -1,31 +1,29 @@
 ---
-title: " 别管什么模型排行榜了，看看Alphabet把钱都藏到哪儿去了"
+title: 别管什么模型排行榜了，看看Alphabet把钱都藏到哪儿去了
+description: Alphabet的AI优势不在模型排行榜,而在这个循环:搜索现金支撑基础设施,云端转化需求,产品变现工作流。
+summary: 为什么Alphabet的1800亿美元AI投入值得关注:不是基准测试,而是如何将基础设施支出转化为合同收入并保持利润率。
 date: 2026-05-21
 lastmod: 2026-05-21
 draft: false
-
-description: "Alphabet的AI优势不在模型排行榜,而在这个循环:搜索现金支撑基础设施,云端转化需求,产品变现工作流。"
-summary: "为什么Alphabet的1800亿美元AI投入值得关注:不是基准测试,而是如何将基础设施支出转化为合同收入并保持利润率。"
-
+channels:
+- markets-finance
+topics:
+- company-research
+content_type: essay
+featured: false
 categories:
-  - 工作记录
-
+- 工作记录
 tags:
-  - 城市规划
-  - 设计研究
-  - 概念规划
-  - 商业模式
-
+- Alphabet
+- AI资本开支
+- 云计算
+- 商业模式
 series:
-  - 工作笔记
-  - 商业模式
-
+- 工作笔记
+- 商业模式
 showTableOfContents: true
 showComments: true
 ---
-
-
-
 *为什么Alphabet的AI经济状况比本周的基准之争更重要？*
 
 ![](https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/Where%20Alphabet%20Keeps%20AI%20Economics.png)

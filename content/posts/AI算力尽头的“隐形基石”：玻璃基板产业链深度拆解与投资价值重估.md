@@ -1,30 +1,30 @@
 ---
-title: "玻璃基板产业链深度拆解与投资价值重估"
+title: 玻璃基板产业链深度拆解与投资价值重估
+description: 深度拆解AI芯片玻璃基板产业链，揭秘材料设备巨头的投资逻辑与翻倍潜力。
+summary: AI芯片封装遭遇有机基板极限，玻璃基板成破局关键。本期深度拆解产业链，剖析TGV工艺壁垒，挖掘康宁、应用材料等“卖铲人”的技术护城河，锁定材料、设备与检测环节的确定性投资及底部翻倍机会。
 date: 2026-06-15
 lastmod: 2026-06-15
 draft: false
-
-description: "深度拆解AI芯片玻璃基板产业链，揭秘材料设备巨头的投资逻辑与翻倍潜力。"
-summary: "AI芯片封装遭遇有机基板极限，玻璃基板成破局关键。本期深度拆解产业链，剖析TGV工艺壁垒，挖掘康宁、应用材料等“卖铲人”的技术护城河，锁定材料、设备与检测环节的确定性投资及底部翻倍机会。"
-
+channels:
+- markets-finance
+topics:
+- industry-chain
+content_type: essay
+featured: true
 categories:
-  - 深度研究
-  - 商业创作
-
+- 深度研究
+- 商业创作
 tags:
-  - 城市规划
-  - 深度研究
-  - 先进封装
-  - 玻璃基板
-
+- 玻璃基板
+- 先进封装
+- 产业链
+- TGV
 series:
-  - 深度研究
-  - 产业链
-
+- 深度研究
+- 产业链
 showTableOfContents: true
 showComments: true
 ---
-
 报告类型：深度行业研究与投资策略报告
  研究对象：AI芯片先进封装之玻璃基板（Glass Substrate）产业链
  核心标的：康宁 (GLW)、应用材料 (AMAT)、KLA (KLAC)、Onto Innovation (ONTO)、安靠 (AMKR)

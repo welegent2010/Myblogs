@@ -1,0 +1,15 @@
+{{- $items := slice -}}
+{{- range where site.RegularPages "Section" "posts" -}}
+  {{- $ck := partial "func/channel-key.html" . -}}
+  {{- $tk := partial "func/topic-key.html" . -}}
+  {{- $items = $items | append (dict
+    "title" .Title
+    "summary" (partial "post-summary.html" .)
+    "permalink" .RelPermalink
+    "date" (.Date.Format "2006-01-02")
+    "channel" $ck
+    "topic" $tk
+    "tags" (.Params.tags | default (slice))
+  ) -}}
+{{- end -}}
+{{ dict "items" $items | jsonify }}

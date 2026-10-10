@@ -1,29 +1,29 @@
 ---
-title: " AI驱动的存储层级轮动与企业级全闪存架构重估：Everpure深度研究报告"
+title: AI驱动的存储层级轮动与企业级全闪存架构重估：Everpure深度研究报告
+description: 系统拆解AI存储板块从HBM到企业级全闪存的层级轮动逻辑，重点分析Everpure的技术护城河、Evergreen订阅模式转型与TCO优势，并揭示上游SSD主控芯片隐藏黑马的投资弹性。
+summary: 在AI数据中心从算力向存力深水区迈进之际，本报告通过存储层级轮动逻辑的深度还原与批判性评估，揭示Everpure作为企业级全闪存架构龙头的核心竞争力与商业模式质变，同时点出上游SSD主控芯片黑马的更高beta机会，为投资者提供可执行的决策框架与风险管控建议。
 date: 2026-06-25
 lastmod: 2026-06-25
 draft: false
-
-description: "系统拆解AI存储板块从HBM到企业级全闪存的层级轮动逻辑，重点分析Everpure的技术护城河、Evergreen订阅模式转型与TCO优势，并揭示上游SSD主控芯片隐藏黑马的投资弹性。"
-summary: "在AI数据中心从算力向存力深水区迈进之际，本报告通过存储层级轮动逻辑的深度还原与批判性评估，揭示Everpure作为企业级全闪存架构龙头的核心竞争力与商业模式质变，同时点出上游SSD主控芯片黑马的更高beta机会，为投资者提供可执行的决策框架与风险管控建议。"
-
+channels:
+- markets-finance
+topics:
+- company-research
+content_type: essay
+featured: false
 categories:
-  - 深度思考
-  - 商业模式
-  
+- 深度思考
+- 商业模式
 tags:
-  - 产业研究
-  - TCO经济学
-  - 商业模式
-  - AI 基础设施
-
+- Everpure
+- 全闪存
+- AI基础设施
+- TCO
 series:
-  - 深度研究
-
+- 深度研究
 showTableOfContents: true
 showComments: true
 ---
-
 **报告日期**：2026年6月25日  
 **核心主题**：AI数据中心从“算力”向“存力+数据智能调度”下沉，存储板块正进入从HBM → NAND颗粒 → 企业级全闪存架构的精准轮动第三波。Everpure作为该浪潮的明牌龙头之一，叠加隐蔽上游SSD主控芯片黑马，构成完整的存储投资主线。
 

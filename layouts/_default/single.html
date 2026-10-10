@@ -1,0 +1,173 @@
+{{ define "main" }}
+  {{- $ck := partial "func/channel-key.html" . -}}
+  {{- $tk := partial "func/topic-key.html" . -}}
+  {{- $ch := "" -}}
+  {{- with $ck }}{{ $ch = index site.Data.channels . }}{{ end -}}
+  {{- $tp := "" -}}
+  {{- with $tk }}{{ $tp = index site.Data.topics . }}{{ end -}}
+
+  <article>
+    <header class="article-header">
+      <div class="shell">
+        <div class="measure">
+          <div class="article-header__meta">
+            {{- with $ch }}<a href="{{ .url }}">{{ .en }}</a><span class="dot">/</span>{{ end -}}
+            {{- with $tp }}
+              <a href="{{ printf "/topics/%s/" $tk | relURL }}">{{ .en }}</a>
+            {{- end -}}
+          </div>
+
+          <h1 class="article-title">{{ .Title }}</h1>
+
+          {{- $sub := "" -}}
+          {{- with .Params.summary }}{{ $sub = . }}{{ else }}{{ with .Params.description }}{{ $sub = . }}{{ end }}{{ end -}}
+          {{- with $sub }}<p class="article-sub">{{ . }}</p>{{ end -}}
+
+          <div class="article-byline">
+            <span>{{ site.Params.author.name }}</span>
+            <span>{{ .Date.Format "2006-01-02" }}</span>
+            {{- if gt .Lastmod .Date }}<span>Updated {{ .Lastmod.Format "2006-01-02" }}</span>{{ end -}}
+            <span>{{ .ReadingTime }} min read</span>
+            <span>{{ .WordCount }} 字</span>
+            {{- if .Draft }}<span class="draft-label">Draft</span>{{ end -}}
+          </div>
+        </div>
+      </div>
+    </header>
+
+    {{- $cover := .Params.image | default .Params.cover -}}
+    {{- with $cover }}
+      <div class="shell">
+        <div class="measure">
+          <figure class="article-cover">
+            <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    {{- end }}
+
+    <div class="shell">
+      {{- if and .TableOfContents (site.Params.article.showTableOfContents | default true) }}
+        <details class="toc toc--inline">
+          <summary>Table of Contents / 目录</summary>
+          {{ .TableOfContents }}
+        </details>
+      {{- end }}
+
+      <div
+        class="article-shell{{ if and .TableOfContents (site.Params.article.showTableOfContents | default true) }} article-shell--toc{{ end }}"
+      >
+        <div class="prose">{{ .Content }}</div>
+
+        {{- if and .TableOfContents (site.Params.article.showTableOfContents | default true) }}
+          <aside class="toc toc--sticky" aria-label="文章目录">
+            <div class="toc__title">Contents</div>
+            {{ .TableOfContents }}
+          </aside>
+        {{- end }}
+      </div>
+
+      <div class="article-end">
+        <div class="measure">
+          <div class="filed">
+            {{- with $ch }}
+              <div>
+                <span class="filed__label">Channel</span>
+                <a href="{{ .url }}">{{ .en }} · {{ .zh }}</a>
+              </div>
+            {{- end -}}
+            {{- with $tp }}
+              <div>
+                <span class="filed__label">Topic</span>
+                <a href="{{ printf "/topics/%s/" $tk | relURL }}">{{ .en }} · {{ .zh }}</a>
+              </div>
+            {{- end -}}
+            {{- with .Params.tags }}
+              <div>
+                <span class="filed__label">Tags</span>
+                <ul class="tag-list">
+                  {{- range . }}
+                    <li><a href="{{ printf "/tags/%s/" (. | urlize) | relURL }}">{{ . }}</a></li>
+                  {{- end }}
+                </ul>
+              </div>
+            {{- end -}}
+          </div>
+        </div>
+      </div>
+
+      {{- $rel := slice -}}
+      {{- $seen := slice .RelPermalink -}}
+      {{- with $tk }}
+        {{- with index site.Taxonomies.topics . }}
+          {{- range .Pages }}
+            {{- if and (lt (len $rel) 3) (not (in $seen .RelPermalink)) }}
+              {{ $rel = $rel | append . }}
+              {{ $seen = $seen | append .RelPermalink }}
+            {{- end }}
+          {{- end }}
+        {{- end }}
+      {{- end }}
+      {{- with $ck }}
+        {{- with index site.Taxonomies.channels . }}
+          {{- range .Pages }}
+            {{- if and (lt (len $rel) 3) (not (in $seen .RelPermalink)) }}
+              {{ $rel = $rel | append . }}
+              {{ $seen = $seen | append .RelPermalink }}
+            {{- end }}
+          {{- end }}
+        {{- end }}
+      {{- end }}
+
+      {{- with $rel }}
+        <section class="related">
+          <div class="section__head">
+            <h2 class="section__title">Related Research</h2>
+            <span class="mono">相关研究</span>
+          </div>
+          <div class="related__grid">
+            {{- range . }}
+              <div class="related__item">
+                <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+                <p>{{ partial "post-summary.html" . | truncate 96 }}</p>
+              </div>
+            {{- end }}
+          </div>
+          {{- with $ch }}
+            <p style="margin-top: 26px"><a class="link-arrow" href="{{ .url }}">Explore this channel →</a></p>
+          {{- end }}
+        </section>
+      {{- end }}
+
+      <section class="author-card">
+        <div>
+          <div class="author-card__name">{{ site.Params.author.name }}</div>
+          <div class="author-card__role">{{ site.Params.author.headlineEn }} / {{ site.Params.author.headline }}</div>
+          <p class="author-card__bio">{{ site.Params.author.bio }}</p>
+        </div>
+        <p>
+          <a class="link-arrow" href="{{ site.Params.journal.profileUrl }}" target="_blank" rel="noopener">
+            Professional Profile →
+          </a>
+        </p>
+      </section>
+
+      {{ partial "comments.html" . }}
+
+      <nav class="pager" aria-label="上下篇">
+        <div class="pager__item">
+          {{- with .PrevInSection }}
+            <span class="pager__label">← Newer</span>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{- end }}
+        </div>
+        <div class="pager__item pager__item--next">
+          {{- with .NextInSection }}
+            <span class="pager__label">Older →</span>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{- end }}
+        </div>
+      </nav>
+    </div>
+  </article>
+{{ end }}

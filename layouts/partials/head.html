@@ -1,0 +1,43 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="{{ site.Params.defaultThemeColor | default "#fbfaf8" }}" />
+
+<title>
+  {{- if .IsHome -}}
+    {{ site.Title }} · Independent Research Journal
+  {{- else -}}
+    {{ .Title }} · {{ site.Title }}
+  {{- end -}}
+</title>
+
+{{- $desc := "" -}}
+{{- with .Params.description -}}
+  {{ $desc = . }}
+{{- else -}}
+  {{- with .Params.summary -}}
+    {{ $desc = . }}
+  {{- else -}}
+    {{ $desc = .Summary | plainify | truncate 160 }}
+  {{- end -}}
+{{- end -}}
+<meta name="description" content="{{ $desc }}" />
+<meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . "," }}{{ else }}{{ delimit site.Params.keywords "," }}{{ end }}" />
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.Title }} · RSS" href="{{ "index.xml" | absURL }}" />
+
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+<meta property="og:description" content="{{ $desc }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ site.Title }}" />
+{{- with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}" />
+{{- end }}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
+
+{{ partial "schema.html" . }}

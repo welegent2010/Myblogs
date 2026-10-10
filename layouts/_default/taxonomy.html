@@ -1,0 +1,9 @@
+{{ define "main" }}
+  {{- if eq .Data.Plural "channels" -}}
+    {{ partial "channel-index-main.html" . }}
+  {{- else if eq .Data.Plural "topics" -}}
+    {{ partial "topic-index-main.html" . }}
+  {{- else -}}
+    {{ partial "generic-taxonomy-main.html" . }}
+  {{- end -}}
+{{ end }}

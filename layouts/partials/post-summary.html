@@ -1,0 +1,11 @@
+{{- $s := "" -}}
+{{- with .Params.summary -}}
+  {{ $s = . }}
+{{- else -}}
+  {{- with .Params.description -}}
+    {{ $s = . }}
+  {{- else -}}
+    {{ $s = .Summary }}
+  {{- end -}}
+{{- end -}}
+{{- $s | plainify | truncate 220 -}}

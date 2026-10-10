@@ -1,0 +1,43 @@
+{{- $channels := slice "cities-industries" "markets-finance" "notes-methods" -}}
+
+<section class="channel-hero">
+  <div class="shell">
+    <span class="channel-hero__num">RESEARCH INDEX</span>
+    <h1 class="channel-hero__title">Research Channels</h1>
+    <div class="channel-hero__zh">三条研究主线</div>
+    <p class="channel-hero__desc">
+      这个研究档案按三条主线组织：<strong>Cities & Industries</strong>（城市与产业）、<strong>Markets &amp;
+      Finance</strong>（市场与金融）、<strong>Notes &amp; Methods</strong>（方法与工具）。
+    </p>
+  </div>
+</section>
+
+<section class="section" style="border-bottom: 0">
+  <div class="shell">
+    <div class="channel-grid">
+      {{- range $key := $channels }}
+        {{- $ch := index site.Data.channels $key -}}
+        {{- $pages := slice -}}
+        {{- with index site.Taxonomies.channels $key }}{{ $pages = .Pages }}{{ end -}}
+        <div class="channel-col">
+          <span class="channel-col__num">{{ $ch.num }}</span>
+          <h3 class="channel-col__title"><a href="{{ $ch.url }}">{{ $ch.en }}</a></h3>
+          <div class="channel-col__zh">{{ $ch.zh }}</div>
+          <p class="channel-col__desc">{{ $ch.desc_en }}</p>
+          <p class="channel-col__desc channel-col__desc--zh">{{ $ch.desc_zh }}</p>
+          <ul class="channel-col__list">
+            {{- range first 3 $pages }}
+              <li>
+                <a href="{{ .RelPermalink }}">
+                  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+                  {{ .Title }}
+                </a>
+              </li>
+            {{- end }}
+          </ul>
+          <a class="link-arrow" href="{{ $ch.url }}">View Channel →</a>
+        </div>
+      {{- end }}
+    </div>
+  </div>
+</section>

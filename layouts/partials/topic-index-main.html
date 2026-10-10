@@ -1,0 +1,45 @@
+{{- $channels := slice "cities-industries" "markets-finance" "notes-methods" -}}
+
+<section class="channel-hero">
+  <div class="shell">
+    <span class="channel-hero__num">RESEARCH INDEX</span>
+    <h1 class="channel-hero__title">Topics</h1>
+    <div class="channel-hero__zh">研究主题</div>
+    <p class="channel-hero__desc">按三条研究主线组织的二级主题索引，每个主题显示文章数量与最新一篇。</p>
+  </div>
+</section>
+
+<div class="shell">
+  {{- range $key := $channels }}
+    {{- $ch := index site.Data.channels $key -}}
+    <section class="topic-group">
+      <div class="topic-group__head">
+        <span class="topic-group__num">{{ $ch.num }}</span>
+        <h2 style="font-size: 1.16rem"><a href="{{ $ch.url }}">{{ $ch.en }}</a></h2>
+        <span class="mono">{{ $ch.zh }}</span>
+      </div>
+
+      <div class="topic-grid">
+        {{- range $slug := $ch.topics }}
+          {{- $t := index site.Data.topics $slug -}}
+          {{- $count := 0 -}}
+          {{- with index site.Taxonomies.topics $slug }}{{ $count = .Count }}{{ end -}}
+          {{- with $t }}
+            <div class="topic-item">
+              <div class="topic-item__name">
+                <a href="{{ printf "/topics/%s/" $slug | relURL }}">{{ .en }}</a>
+                <span class="topic-item__count">{{ $count }}</span>
+              </div>
+              <div class="topic-item__zh">{{ .zh }}</div>
+              {{- with index site.Taxonomies.topics $slug }}
+                {{- with index .Pages 0 }}
+                  <div class="topic-item__latest">Latest · <a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+                {{- end }}
+              {{- end }}
+            </div>
+          {{- end }}
+        {{- end }}
+      </div>
+    </section>
+  {{- end }}
+</div>

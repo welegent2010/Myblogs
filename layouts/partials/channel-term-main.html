@@ -1,0 +1,108 @@
+{{- $key := .Data.Term -}}
+{{- $ch := index site.Data.channels $key -}}
+{{- $pages := .Pages -}}
+{{- $paginator := .Paginate $pages -}}
+
+<section class="channel-hero">
+  <div class="shell">
+    <span class="channel-hero__num">{{ with $ch }}{{ .num }} / {{ end }}RESEARCH CHANNEL</span>
+    <h1 class="channel-hero__title">{{ with $ch }}{{ .en }}{{ else }}{{ $key }}{{ end }}</h1>
+    {{- with $ch }}<div class="channel-hero__zh">{{ .zh }}</div>{{ end -}}
+    {{- with $ch }}
+      <p class="channel-hero__desc channel-hero__desc--en">{{ .desc_en }}</p>
+      <p class="channel-hero__desc">{{ .desc_zh }}</p>
+    {{- end -}}
+    {{- if eq $key "markets-finance" }}
+      <p class="disclaimer">
+        {{ site.Params.journal.disclaimerEn }}<br />
+        {{ site.Params.journal.disclaimer }}
+      </p>
+    {{- end -}}
+  </div>
+</section>
+
+<div class="shell">
+  <nav class="subnav" aria-label="频道主题">
+    <a href="{{ .RelPermalink }}" class="is-active">All</a>
+    {{- range $slug := $ch.topics }}
+      {{- $t := index site.Data.topics $slug -}}
+      {{- $count := 0 -}}
+      {{- with index site.Taxonomies.topics $slug }}{{ $count = .Count }}{{ end -}}
+      {{- with $t }}
+        <a href="{{ printf "/topics/%s/" $slug | relURL }}">{{ .en }}<span class="mono"> {{ $count }}</span></a>
+      {{- end }}
+    {{- end }}
+  </nav>
+</div>
+
+<div class="shell">
+  <div class="split">
+    <div>
+      {{- $feat := where $pages "Params.featured" true -}}
+      {{- $featShown := slice -}}
+      {{- if and (eq $paginator.PageNumber 1) $feat }}
+        <div class="featured">
+          <div class="featured__lead">{{ partial "entry.html" (index $feat 0) }}</div>
+          <div class="featured__side">
+            {{- range first 2 (after 1 $feat) }}
+              {{ partial "entry.html" . }}
+              {{ $featShown = $featShown | append .RelPermalink }}
+            {{- end }}
+          </div>
+        </div>
+        {{ $featShown = $featShown | append (index $feat 0).RelPermalink }}
+      {{- end }}
+
+      <div class="section" style="padding-top: 34px; padding-bottom: 0; border-bottom: 0">
+        {{- range $paginator.Pages }}
+          {{- if not (in $featShown .RelPermalink) }}
+            {{ partial "entry.html" . }}
+          {{- end }}
+        {{- end }}
+        {{ partial "pagination.html" $ }}
+      </div>
+    </div>
+
+    <aside>
+      <div class="side-block">
+        <div class="side-block__title">Topics</div>
+        <ul>
+          {{- range $slug := $ch.topics }}
+            {{- $t := index site.Data.topics $slug -}}
+            {{- $count := 0 -}}
+            {{- with index site.Taxonomies.topics $slug }}{{ $count = .Count }}{{ end -}}
+            {{- with $t }}
+              <li>
+                <a href="{{ printf "/topics/%s/" $slug | relURL }}">{{ .en }}</a>
+                <span>{{ $count }}</span>
+              </li>
+            {{- end }}
+          {{- end }}
+        </ul>
+      </div>
+
+      <div class="side-block">
+        <div class="side-block__title">Years</div>
+        <ul>
+          {{- range $pages.GroupByDate "2006" }}
+            <li>
+              <a href="{{ "/archives/" | relURL }}#year-{{ .Key }}">{{ .Key }}</a>
+              <span>{{ len .Pages }}</span>
+            </li>
+          {{- end }}
+        </ul>
+      </div>
+
+      {{- with first 3 (where $pages "Params.featured" true) }}
+        <div class="side-block">
+          <div class="side-block__title">Selected</div>
+          <ul style="display: block">
+            {{- range . }}
+              <li style="display: block"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{- end }}
+          </ul>
+        </div>
+      {{- end }}
+    </aside>
+  </div>
+</div>

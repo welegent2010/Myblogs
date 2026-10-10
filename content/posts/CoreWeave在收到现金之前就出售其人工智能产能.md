@@ -1,38 +1,35 @@
 ---
-title: " CoreWeave在收到现金之前就出售其人工智能产能"
+title: CoreWeave在收到现金之前就出售其人工智能产能
+description: 深度分析 CoreWeave 商业模式的文章,揭示了这家 AI 云服务提供商如何在现金完全到账之前就需要出售和构建其 AI 产能。
+summary: CoreWeave 报告 20.8 亿美元季度收入和 994 亿美元积压订单,但面临核心挑战:必须在现金到账前构建产能,承受巨额资本支出(310-350 亿美元)和融资压力,积压订单转化缓慢。
 date: 2026-05-11
 lastmod: 2026-05-11
 draft: false
-slug: "coreweave-selling-capacity-before-cash"
+slug: coreweave-selling-capacity-before-cash
 aliases:
-  - "/posts/coreweave在收到现金之前就出售其人工智能产能/"
-  - "/posts/CoreWeave在收到现金之前就出售其人工智能产能/"
-
-description: "深度分析 CoreWeave 商业模式的文章,揭示了这家 AI 云服务提供商如何在现金完全到账之前就需要出售和构建其 AI 产能。"
-summary: "CoreWeave 报告 20.8 亿美元季度收入和 994 亿美元积压订单,但面临核心挑战:必须在现金到账前构建产能,承受巨额资本支出(310-350 亿美元)和融资压力,积压订单转化缓慢。"
-
+- /posts/coreweave在收到现金之前就出售其人工智能产能/
+- /posts/CoreWeave在收到现金之前就出售其人工智能产能/
+channels:
+- markets-finance
+topics:
+- company-research
+content_type: essay
+featured: false
 categories:
-  - 深度思考
-  - 商业模式
-  - 思维方法论
-  - 
-
+- 深度思考
+- 商业模式
+- 思维方法论
+- None
 tags:
-  - 城市规划
-  - 设计研究
-  - 第一性原理
-  - 商业模式
-  - AI 基础设施
-
+- CoreWeave
+- AI云服务
+- 资本开支
+- 商业模式
 series:
-  - 商业模式
-
+- 商业模式
 showTableOfContents: true
 showComments: true
 ---
-
-
-
 ![](https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/CoreWeave%20Selling%20Capacity%20Before%20Cash.jpg)
 
 ## 执行摘要

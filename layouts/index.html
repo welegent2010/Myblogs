@@ -1,0 +1,107 @@
+{{ define "main" }}
+  {{- $posts := where site.RegularPages "Section" "posts" -}}
+  {{- $channels := slice "cities-industries" "markets-finance" "notes-methods" -}}
+
+  <section class="hero">
+    <div class="shell">
+      <span class="mono hero__eyebrow">{{ site.Params.journal.eyebrow }}</span>
+      <h1 class="hero__title">
+        {{ site.Params.journal.headlineEn }}<br />
+        {{ site.Params.journal.headlineEn2 }}
+      </h1>
+      <p class="hero__zh">{{ site.Params.journal.headlineZh }}</p>
+      <p class="hero__desc">{{ site.Params.journal.description }}</p>
+      {{ with .Content }}<div class="hero__desc">{{ . }}</div>{{ end }}
+      <div class="hero__foot">
+        <span class="hero__byline">{{ site.Params.journal.authorName }}</span>
+        <a class="link-arrow" href="{{ site.Params.journal.aboutUrl | relURL }}">About the Author →</a>
+        <a class="link-arrow" href="{{ site.Params.journal.profileUrl }}" target="_blank" rel="noopener">
+          Professional Profile →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="section__head">
+        <h2 class="section__title">Research Channels</h2>
+        <span class="mono">三条研究主线</span>
+      </div>
+
+      <div class="channel-grid">
+        {{- range $key := $channels }}
+          {{- $ch := index site.Data.channels $key -}}
+          {{- $pages := slice -}}
+          {{- with index site.Taxonomies.channels $key }}{{ $pages = .Pages }}{{ end -}}
+          <div class="channel-col">
+            <span class="channel-col__num">{{ $ch.num }}</span>
+            <h3 class="channel-col__title"><a href="{{ $ch.url }}">{{ $ch.en }}</a></h3>
+            <div class="channel-col__zh">{{ $ch.zh }}</div>
+            <p class="channel-col__desc">{{ $ch.desc_en }}</p>
+            <p class="channel-col__desc channel-col__desc--zh">{{ $ch.desc_zh }}</p>
+
+            <ul class="channel-col__list">
+              {{- range first 3 $pages }}
+                <li>
+                  <a href="{{ .RelPermalink }}">
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+                    {{ .Title }}
+                  </a>
+                </li>
+              {{- end }}
+            </ul>
+
+            <a class="link-arrow" href="{{ $ch.url }}">View Channel →</a>
+          </div>
+        {{- end }}
+      </div>
+    </div>
+  </section>
+
+  {{- $featured := where $posts "Params.featured" true -}}
+  {{- with $featured }}
+    <section class="section">
+      <div class="shell">
+        <div class="section__head">
+          <h2 class="section__title">Featured Research</h2>
+          <span class="mono">重点研究</span>
+        </div>
+        <div class="featured">
+          <div class="featured__lead">{{ partial "entry.html" (index . 0) }}</div>
+          <div class="featured__side">
+            {{- range first (sub (site.Params.homepage.featuredLimit | default 4) 1) (after 1 .) }}
+              {{ partial "entry.html" . }}
+            {{- end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{- end }}
+
+  <section class="section">
+    <div class="shell">
+      <div class="section__head">
+        <h2 class="section__title">Latest Research</h2>
+        <a class="section__more link-arrow" href="{{ "/archives/" | relURL }}">View Archive →</a>
+      </div>
+      {{- range first (site.Params.homepage.recentLimit | default 10) $posts }}
+        {{ partial "entry.html" . }}
+      {{- end }}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <div class="index-strip">
+        <span class="index-strip__label">Browse by</span>
+        {{- range $key := $channels }}
+          {{- with index site.Data.channels $key }}<a href="{{ .url }}">{{ .en }}</a>{{ end }}
+        {{- end }}
+        <a href="{{ "/topics/" | relURL }}">Topics</a>
+        <a href="{{ "/tags/" | relURL }}">Tags</a>
+        <a href="{{ "/archives/" | relURL }}">Years</a>
+      </div>
+    </div>
+  </section>
+{{ end }}

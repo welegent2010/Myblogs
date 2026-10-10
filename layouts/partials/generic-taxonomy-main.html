@@ -1,0 +1,38 @@
+{{- $plural := .Data.Plural -}}
+{{- $terms := slice -}}
+{{- range $term, $weighted := index site.Taxonomies $plural -}}
+  {{- $terms = $terms | append (dict
+    "term" $term
+    "count" $weighted.Count
+    "pages" $weighted.Pages
+  ) -}}
+{{- end -}}
+{{- $terms = sort $terms "count" "desc" -}}
+
+<section class="channel-hero">
+  <div class="shell">
+    <span class="channel-hero__num">BROWSE / {{ $plural | upper }}</span>
+    <h1 class="channel-hero__title">{{ .Title }}</h1>
+    <p class="channel-hero__desc">
+      共 {{ len $terms }} 个条目。研究主线请见 <a href="{{ "/topics/" | relURL }}">Topics</a>。
+    </p>
+  </div>
+</section>
+
+<section class="section" style="border-bottom: 0">
+  <div class="shell">
+    <div class="topic-grid">
+      {{- range $terms }}
+        <div class="topic-item">
+          <div class="topic-item__name">
+            <a href="{{ printf "/%s/%s/" $plural (.term | urlize) | relURL }}">{{ .term }}</a>
+            <span class="topic-item__count">{{ .count }}</span>
+          </div>
+          {{- with index .pages 0 }}
+            <div class="topic-item__latest">Latest · <a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+          {{- end }}
+        </div>
+      {{- end }}
+    </div>
+  </div>
+</section>

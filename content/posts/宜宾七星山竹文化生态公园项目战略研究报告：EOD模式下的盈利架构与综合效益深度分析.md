@@ -1,29 +1,28 @@
 ---
-title: "宜宾七星山竹文化生态公园项目战略研究报告：EOD模式下的盈利架构与综合效益深度分析"
+title: 宜宾七星山竹文化生态公园项目战略研究报告：EOD模式下的盈利架构与综合效益深度分析
+description: 宜宾七星山竹文化生态公园：以 EOD 模式构建“土地 + 产业 + 体验”复合盈利体系，打造城市新地标。
+summary: 本报告深度剖析宜宾七星山项目，对标全球标杆，提出以土地增值、竹产业链及山地体验为核心的 EOD 盈利架构，量化经济、社会与生态三重效益，助力城市价值重塑。
 date: 2026-03-25
 lastmod: 2026-03-25
 draft: false
-
-description: "宜宾七星山竹文化生态公园：以 EOD 模式构建“土地 + 产业 + 体验”复合盈利体系，打造城市新地标。"
-summary: "本报告深度剖析宜宾七星山项目，对标全球标杆，提出以土地增值、竹产业链及山地体验为核心的 EOD 盈利架构，量化经济、社会与生态三重效益，助力城市价值重塑。"
-
+channels:
+- cities-industries
+topics:
+- development-economics
+content_type: essay
+featured: false
 categories:
-
-  - 商业模式
-
+- 商业模式
 tags:
-
-  - 城市规划
-  - 设计研究
-
+- EOD
+- 文旅项目
+- 投资测算
+- 生态公园
 series:
-
-  - 研究报告
-
+- 研究报告
 showTableOfContents: true
 showComments: true
 ---
-
 ## **1. 宏观背景与项目战略定位**
 
 ### **1.1 宜宾城市发展的新阶段：从“万里长江第一城”到“动力电池之都”**

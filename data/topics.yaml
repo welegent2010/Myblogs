@@ -1,0 +1,87 @@
+# 二级研究主题。key 与文章 front matter 中的 topic 字段一致；channel 用于分组。
+urban-regeneration:
+  en: "Urban Regeneration"
+  zh: "城市更新"
+  channel: "cities-industries"
+tourism:
+  en: "Tourism"
+  zh: "文旅"
+  channel: "cities-industries"
+regional-development:
+  en: "Regional Development"
+  zh: "区域发展"
+  channel: "cities-industries"
+industry-research:
+  en: "Industry Research"
+  zh: "产业研究"
+  channel: "cities-industries"
+development-economics:
+  en: "Development Economics"
+  zh: "投资运营"
+  channel: "cities-industries"
+gis-data:
+  en: "GIS & Data"
+  zh: "GIS与数据"
+  channel: "cities-industries"
+planning-practice:
+  en: "Planning Practice"
+  zh: "规划实践"
+  channel: "cities-industries"
+
+us-equities:
+  en: "US Equities"
+  zh: "美股"
+  channel: "markets-finance"
+company-research:
+  en: "Company Research"
+  zh: "公司研究"
+  channel: "markets-finance"
+industry-chain:
+  en: "Industry Chain"
+  zh: "产业链研究"
+  channel: "markets-finance"
+ai-infrastructure:
+  en: "AI Infrastructure"
+  zh: "AI基础设施"
+  channel: "markets-finance"
+semiconductors:
+  en: "Semiconductors"
+  zh: "半导体"
+  channel: "markets-finance"
+market-structure:
+  en: "Market Structure"
+  zh: "市场结构"
+  channel: "markets-finance"
+trading:
+  en: "Trading"
+  zh: "交易方法"
+  channel: "markets-finance"
+portfolio:
+  en: "Portfolio"
+  zh: "投资组合"
+  channel: "markets-finance"
+
+ai-research:
+  en: "AI & Research"
+  zh: "AI与研究"
+  channel: "notes-methods"
+gis-data-methods:
+  en: "GIS & Data"
+  zh: "GIS与数据"
+  channel: "notes-methods"
+knowledge-systems:
+  en: "Knowledge Systems"
+  zh: "知识系统"
+  channel: "notes-methods"
+web-software:
+  en: "Web & Software"
+  zh: "软件与工具"
+  channel: "notes-methods"
+workflow:
+  en: "Workflow"
+  zh: "工作流"
+  channel: "notes-methods"
+ux-design:
+  en: "UX & Digital Design"
+  zh: "体验设计"
+  channel: "notes-methods"

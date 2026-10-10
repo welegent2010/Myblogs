@@ -1,24 +1,28 @@
 ---
-title: "你好，世界 | 规划与设计的跨界视界"
-date: 2026-03-23
+title: 你好，世界 | 规划与设计的跨界视界
+description: 中营副总规划师的个人博客。在这里，城市产业的宏观逻辑与三维动效的微观美学相遇。探索空间规划、学习管理与前沿设计的跨界融合。
+summary: 从巴龙村与嘎拉桃花村项目出发，整理乡村振兴设计中的在地需求、系统方案与文旅融合思路。
+date: &id001 2026-03-23
+lastmod: *id001
 draft: false
-description: "中营副总规划师的个人博客。在这里，城市产业的宏观逻辑与三维动效的微观美学相遇。探索空间规划、学习管理与前沿设计的跨界融合。"
-summary: "从巴龙村与嘎拉桃花村项目出发，整理乡村振兴设计中的在地需求、系统方案与文旅融合思路。"
-tags:
-  - 城市规划
-  - 城市产业
-  - 城市空间
-  - 学习管理
-  - 网页设计
-  - 动效设计
-  - 三维动画
+channels:
+- notes-methods
+topics:
+- knowledge-systems
+content_type: note
+featured: false
 categories:
-  - 工作记录
-  - 城市产业
-  - 城市空间
-  - 三维设计
-  - 网页设计
+- 工作记录
+- 城市产业
+- 城市空间
+- 三维设计
+- 网页设计
+tags:
+- 开始
+- 写作
+- 网页设计
 showTableOfContents: true
+showComments: true
 ---
 这是我的第一篇文章，用 GitHub Desktop 管理的！
 

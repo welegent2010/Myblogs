@@ -1,35 +1,32 @@
 ---
-title: "  Agentic AI 时代的技术架构与产业重构"
+title: Agentic AI 时代的技术架构与产业重构
+description: 黄仁勋GTC Taipei 2026演讲解读:Agentic AI时代的技术架构创新、产业重构逻辑与投资机会分析。
+summary: 本报告深度解读黄仁勋在GTC Taipei 2026的演讲,揭示计算范式从传统应用程序向Agentic AI的根本转变。报告分析了三大核心产品:Vera Rubin架构实现10倍推理性能提升、RTX Spark重新定义PC产业、Cosmos 3构建物理AI数据飞轮。从技术架构、供应链价值、竞争格局和投资机会四个维度,解析英伟达如何从GPU公司转型为AI基础设施公司,以及AI产业链价值重新分配的深层逻辑。
 date: 2026-06-11
 lastmod: 2026-06-11
 draft: false
-
-description: "黄仁勋GTC Taipei 2026演讲解读:Agentic AI时代的技术架构创新、产业重构逻辑与投资机会分析。"
-summary: "本报告深度解读黄仁勋在GTC Taipei 2026的演讲,揭示计算范式从传统应用程序向Agentic AI的根本转变。报告分析了三大核心产品:Vera Rubin架构实现10倍推理性能提升、RTX Spark重新定义PC产业、Cosmos 3构建物理AI数据飞轮。从技术架构、供应链价值、竞争格局和投资机会四个维度,解析英伟达如何从GPU公司转型为AI基础设施公司,以及AI产业链价值重新分配的深层逻辑。"
-
+channels:
+- markets-finance
+topics:
+- ai-infrastructure
+content_type: essay
+featured: false
 categories:
-  - 研究报告
-  - 技术趋势
-  - 人工智能
-  - 半导体
-
+- 研究报告
+- 技术趋势
+- 人工智能
+- 半导体
 tags:
-  - 城市规划
-  - 设计研究
-  - 概念规划
-  - 商业模式
-  - 深度研究
-
+- NVIDIA
+- Agentic AI
+- AI基础设施
+- GTC
 series:
-  - 深度研究
-  - 商业模式
-
+- 深度研究
+- 商业模式
 showTableOfContents: true
 showComments: true
 ---
-
-
-
 **黄仁勋 GTC Taipei 2026 演讲深度研究报告**
 
 # Agentic AI 时代的技术架构与产业重构
