@@ -4,8 +4,8 @@
 
   <section class="channel-hero">
     <div class="shell">
-      <span class="channel-hero__num">RESEARCH INDEX</span>
-      <h1 class="channel-hero__title">Archive</h1>
+      <span class="channel-hero__num">研究索引</span>
+      <h1 class="channel-hero__title">研究归档</h1>
       <div class="channel-hero__zh">研究档案</div>
       <p class="channel-hero__desc">按时间浏览全部研究记录，可按研究频道筛选。</p>
     </div>
@@ -13,12 +13,12 @@
 
   <div class="shell">
     <div class="archive-filter" role="group" aria-label="按频道筛选">
-      <button type="button" data-channel="all" class="is-active">All（{{ len $posts }}）</button>
+      <button type="button" data-channel="all" class="is-active">全部（{{ len $posts }}）</button>
       {{- range $key := $channels }}
         {{- $ch := index site.Data.channels $key -}}
         {{- $count := 0 -}}
         {{- with index site.Taxonomies.channels $key }}{{ $count = .Count }}{{ end -}}
-        <button type="button" data-channel="{{ $key }}">{{ $ch.en }}（{{ $count }}）</button>
+        <button type="button" data-channel="{{ $key }}">{{ $ch.zh }}（{{ $count }}）</button>
       {{- end }}
     </div>
 
@@ -31,7 +31,7 @@
               <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "01-02" }}</time>
               <div class="archive-row__channel">
                 {{- with partial "func/channel-key.html" . }}
-                  {{- with index site.Data.channels . }}{{ .en }}{{ end -}}
+                  {{- with index site.Data.channels . }}{{ .zh }}{{ end -}}
                 {{- end -}}
               </div>
               <div class="archive-row__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>

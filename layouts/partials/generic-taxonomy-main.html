@@ -11,10 +11,10 @@
 
 <section class="channel-hero">
   <div class="shell">
-    <span class="channel-hero__num">BROWSE / {{ $plural | upper }}</span>
+    <span class="channel-hero__num">浏览</span>
     <h1 class="channel-hero__title">{{ .Title }}</h1>
     <p class="channel-hero__desc">
-      共 {{ len $terms }} 个条目。研究主线请见 <a href="{{ "/topics/" | relURL }}">Topics</a>。
+      共 {{ len $terms }} 个条目。研究主线请见 <a href="{{ "/topics/" | relURL }}">研究主题</a>。
     </p>
   </div>
 </section>
@@ -29,7 +29,7 @@
             <span class="topic-item__count">{{ .count }}</span>
           </div>
           {{- with index .pages 0 }}
-            <div class="topic-item__latest">Latest · <a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+            <div class="topic-item__latest">最新 · <a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
           {{- end }}
         </div>
       {{- end }}

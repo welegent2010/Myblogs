@@ -1,0 +1,3 @@
+{{- $t := . | lower -}}
+{{- $label := index site.Data.content_types $t -}}
+{{- if $label }}{{ $label }}{{ else }}{{ . }}{{ end -}}

@@ -1,7 +1,7 @@
 baseURL = 'https://87188202.xyz/'
 languageCode = 'zh-CN'
 defaultContentLanguage = 'zh-cn'
-title = 'XD Wang'
+title = '王晓东'
 theme = 'congo-dev'
 enableRobotsTXT = true
 hasCJKLanguage = true
@@ -50,25 +50,24 @@ summaryLength = 120
   keywords = ['城市更新', '文旅', '产业研究', '资本市场', '研究方法', 'AI工作流', 'GIS']
 
   [params.journal]
-    eyebrow = 'INDEPENDENT RESEARCH JOURNAL'
-    headlineEn = 'Cities, Industries,'
-    headlineEn2 = 'Markets & Methods.'
+    eyebrow = '独立研究档案'
+    headlineOne = '城市、产业、'
+    headlineTwo = '市场与方法。'
     headlineZh = '关于城市、产业、资本市场与研究方法的长期观察。'
     description = '记录城市发展、产业经济、资本市场和数字工具研究，尝试从空间、经济、资本与技术之间建立长期的分析框架。'
-    authorName = 'Xiaodong Wang'
+    authorName = '王晓东'
     aboutUrl = '/about/'
     profileUrl = 'https://www.welegent.com/'
-    disclaimer = '内容仅用于个人研究与方法记录，不构成投资建议。'
-    disclaimerEn = 'Research notes for personal study and analysis. Not investment advice.'
+    disclaimer = '本站内容仅用于个人研究与方法记录，不构成投资建议。'
+    tagline = '从规划成果走向发展决策。'
 
   [params.author]
-    name = '王晓东 / Xiaodong Wang'
+    name = '王晓东'
     headline = '城市价值与文旅策略顾问'
-    headlineEn = 'Urban Strategy & Tourism Development Advisor'
     bio = '20+ 年城乡规划、建筑、城市更新与文旅项目经验，关注城市价值、县域发展、产业研究、项目投资与数字化研究方法。'
     links = [
       { globe = 'https://www.welegent.com/' },
-      { email = 'mailto:hello@87188202.xyz' },
+      { email = 'mailto:hello@xdstudiolab.com' },
       { rss = '/index.xml' },
     ]
 
@@ -133,8 +132,8 @@ summaryLength = 120
     languageName = '简体中文'
     languageDirection = 'ltr'
     weight = 1
-    title = 'XD Wang'
-    copyright = '© 2026 Xiaodong Wang. 保留所有文字与原创内容版权。'
+    title = '王晓东'
+    copyright = '© 2026 王晓东。保留所有文字与原创内容版权。'
 
     [languages.zh-cn.params]
       dateFormat = '2006-01-02'
@@ -143,37 +142,37 @@ summaryLength = 120
 
 [menu]
   [[menu.main]]
-    name = 'Cities & Industries'
+    name = '城市与产业'
     url = '/urban/'
     weight = 10
 
   [[menu.main]]
-    name = 'Markets & Finance'
+    name = '市场与金融'
     url = '/markets/'
     weight = 20
 
   [[menu.main]]
-    name = 'Notes & Methods'
+    name = '方法与工具'
     url = '/notes/'
     weight = 30
 
   [[menu.main]]
-    name = 'Topics'
+    name = '主题'
     url = '/topics/'
     weight = 40
 
   [[menu.main]]
-    name = 'Archive'
+    name = '归档'
     url = '/archives/'
     weight = 50
 
   [[menu.main]]
-    name = 'About'
+    name = '关于'
     url = '/about/'
     weight = 60
 
   [[menu.main]]
-    name = 'Search'
+    name = '搜索'
     url = '/search/'
     weight = 70
 

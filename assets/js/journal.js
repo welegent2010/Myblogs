@@ -1,4 +1,4 @@
-/* XD Wang — Independent Research Journal
+/* 王晓东 · 独立研究档案
    原生 JS，无第三方依赖：外观切换 / 阅读进度 / 目录高亮 / 归档筛选 / 站内搜索 */
 (function () {
   "use strict";
@@ -13,7 +13,7 @@
       localStorage.setItem("xd-theme", theme);
     } catch (e) {}
     if (toggle) {
-      toggle.textContent = theme === "dark" ? "LIGHT" : "DARK";
+      toggle.textContent = theme === "dark" ? "浅色" : "深色";
       toggle.setAttribute("aria-label", theme === "dark" ? "切换到浅色" : "切换到深色");
     }
   }

@@ -4,7 +4,9 @@
 
 <title>
   {{- if .IsHome -}}
-    {{ site.Title }} · Independent Research Journal
+    {{ site.Title }} · 独立研究档案
+  {{- else if eq .Kind "404" -}}
+    页面不存在 · {{ site.Title }}
   {{- else -}}
     {{ .Title }} · {{ site.Title }}
   {{- end -}}

@@ -8,20 +8,20 @@
 <article class="entry"{{ with $ck }} data-channel="{{ . }}"{{ end }}>
   <div class="entry__meta">
     {{- with $ch }}
-      <a class="entry__channel" href="{{ .url }}">{{ .en }}</a>
+      <a class="entry__channel" href="{{ .url }}">{{ .zh }}</a>
       <span class="dot">/</span>
     {{- end -}}
     {{- with $tp }}
-      <a href="{{ printf "/topics/%s/" $tk | relURL }}">{{ .en }}</a>
+      <a href="{{ printf "/topics/%s/" $tk | relURL }}">{{ .zh }}</a>
       <span class="dot">/</span>
     {{- end -}}
     <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "2006-01-02" }}</time>
     <span class="dot">/</span>
-    <span>{{ $p.ReadingTime }} min</span>
+    <span>{{ $p.ReadingTime }} 分钟</span>
     {{- with $p.Params.content_type }}
-      <span class="entry__type">{{ . | upper }}</span>
+      <span class="entry__type">{{ partial "func/content-type.html" . }}</span>
     {{- end -}}
-    {{- if $p.Draft }}<span class="draft-label">Draft</span>{{ end -}}
+    {{- if $p.Draft }}<span class="draft-label">草稿</span>{{ end -}}
   </div>
 
   <h3 class="entry__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>

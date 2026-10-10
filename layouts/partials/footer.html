@@ -2,46 +2,44 @@
   <div class="shell">
     <div class="site-footer__grid">
       <div>
-        <div class="site-footer__title">Xiaodong Wang</div>
-        <div class="site-footer__role">{{ site.Params.author.headlineEn }}</div>
+        <div class="site-footer__title">王晓东</div>
         <div class="site-footer__role">{{ site.Params.author.headline }}</div>
       </div>
 
       <div class="site-footer__col">
-        <h5>Channels</h5>
+        <h5>研究频道</h5>
         <ul>
           {{- range $key := slice "cities-industries" "markets-finance" "notes-methods" }}
             {{- with index site.Data.channels $key }}
-              <li><a href="{{ .url }}">{{ .en }}<br /><span class="mono">{{ .zh }}</span></a></li>
+              <li><a href="{{ .url }}">{{ .zh }}</a></li>
             {{- end }}
           {{- end }}
         </ul>
       </div>
 
       <div class="site-footer__col">
-        <h5>Journal</h5>
+        <h5>研究档案</h5>
         <ul>
-          <li><a href="{{ "/topics/" | relURL }}">Topics</a></li>
-          <li><a href="{{ "/archives/" | relURL }}">Archive</a></li>
-          <li><a href="{{ "/about/" | relURL }}">About</a></li>
-          <li><a href="{{ "/search/" | relURL }}">Search</a></li>
-          <li><a href="{{ "index.xml" | relURL }}">RSS</a></li>
+          <li><a href="{{ "/topics/" | relURL }}">研究主题</a></li>
+          <li><a href="{{ "/archives/" | relURL }}">研究归档</a></li>
+          <li><a href="{{ "/about/" | relURL }}">关于本站</a></li>
+          <li><a href="{{ "/search/" | relURL }}">站内搜索</a></li>
+          <li><a href="{{ "index.xml" | relURL }}">RSS 订阅</a></li>
         </ul>
       </div>
 
       <div class="site-footer__col">
-        <h5>Profile</h5>
+        <h5>联系</h5>
         <ul>
-          <li><a href="{{ site.Params.journal.profileUrl }}" target="_blank" rel="noopener">welegent.com</a></li>
-          <li><a href="mailto:hello@87188202.xyz">hello@87188202.xyz</a></li>
-          <li><a href="https://87188202.xyz/">87188202.xyz</a></li>
+          <li><a href="{{ site.Params.journal.profileUrl }}" target="_blank" rel="noopener">专业履历 · welegent.com</a></li>
+          <li><a href="mailto:hello@xdstudiolab.com">hello@xdstudiolab.com</a></li>
         </ul>
       </div>
     </div>
 
     <div class="site-footer__base">
       <span>{{ site.Copyright }}</span>
-      <span>From Planning to Decisions. / 从规划成果走向发展决策。</span>
+      <span>{{ site.Params.journal.tagline }}</span>
     </div>
   </div>
 </footer>

@@ -11,9 +11,9 @@
       <div class="shell">
         <div class="measure">
           <div class="article-header__meta">
-            {{- with $ch }}<a href="{{ .url }}">{{ .en }}</a><span class="dot">/</span>{{ end -}}
+            {{- with $ch }}<a href="{{ .url }}">{{ .zh }}</a><span class="dot">/</span>{{ end -}}
             {{- with $tp }}
-              <a href="{{ printf "/topics/%s/" $tk | relURL }}">{{ .en }}</a>
+              <a href="{{ printf "/topics/%s/" $tk | relURL }}">{{ .zh }}</a>
             {{- end -}}
           </div>
 
@@ -26,10 +26,11 @@
           <div class="article-byline">
             <span>{{ site.Params.author.name }}</span>
             <span>{{ .Date.Format "2006-01-02" }}</span>
-            {{- if gt .Lastmod .Date }}<span>Updated {{ .Lastmod.Format "2006-01-02" }}</span>{{ end -}}
-            <span>{{ .ReadingTime }} min read</span>
+            {{- if gt .Lastmod .Date }}<span>更新于 {{ .Lastmod.Format "2006-01-02" }}</span>{{ end -}}
+            <span>{{ .ReadingTime }} 分钟阅读</span>
             <span>{{ .WordCount }} 字</span>
-            {{- if .Draft }}<span class="draft-label">Draft</span>{{ end -}}
+            {{- with .Params.content_type }}<span>{{ partial "func/content-type.html" . }}</span>{{ end -}}
+            {{- if .Draft }}<span class="draft-label">草稿</span>{{ end -}}
           </div>
         </div>
       </div>
@@ -49,7 +50,7 @@
     <div class="shell">
       {{- if and .TableOfContents (site.Params.article.showTableOfContents | default true) }}
         <details class="toc toc--inline">
-          <summary>Table of Contents / 目录</summary>
+          <summary>目录</summary>
           {{ .TableOfContents }}
         </details>
       {{- end }}
@@ -61,7 +62,7 @@
 
         {{- if and .TableOfContents (site.Params.article.showTableOfContents | default true) }}
           <aside class="toc toc--sticky" aria-label="文章目录">
-            <div class="toc__title">Contents</div>
+            <div class="toc__title">目录</div>
             {{ .TableOfContents }}
           </aside>
         {{- end }}
@@ -72,19 +73,19 @@
           <div class="filed">
             {{- with $ch }}
               <div>
-                <span class="filed__label">Channel</span>
-                <a href="{{ .url }}">{{ .en }} · {{ .zh }}</a>
+                <span class="filed__label">频道</span>
+                <a href="{{ .url }}">{{ .zh }}</a>
               </div>
             {{- end -}}
             {{- with $tp }}
               <div>
-                <span class="filed__label">Topic</span>
-                <a href="{{ printf "/topics/%s/" $tk | relURL }}">{{ .en }} · {{ .zh }}</a>
+                <span class="filed__label">主题</span>
+                <a href="{{ printf "/topics/%s/" $tk | relURL }}">{{ .zh }}</a>
               </div>
             {{- end -}}
             {{- with .Params.tags }}
               <div>
-                <span class="filed__label">Tags</span>
+                <span class="filed__label">标签</span>
                 <ul class="tag-list">
                   {{- range . }}
                     <li><a href="{{ printf "/tags/%s/" (. | urlize) | relURL }}">{{ . }}</a></li>
@@ -122,7 +123,7 @@
       {{- with $rel }}
         <section class="related">
           <div class="section__head">
-            <h2 class="section__title">Related Research</h2>
+            <h2 class="section__title">相关研究</h2>
             <span class="mono">相关研究</span>
           </div>
           <div class="related__grid">
@@ -134,7 +135,7 @@
             {{- end }}
           </div>
           {{- with $ch }}
-            <p style="margin-top: 26px"><a class="link-arrow" href="{{ .url }}">Explore this channel →</a></p>
+            <p style="margin-top: 26px"><a class="link-arrow" href="{{ .url }}">浏览该频道全部研究 →</a></p>
           {{- end }}
         </section>
       {{- end }}
@@ -142,12 +143,12 @@
       <section class="author-card">
         <div>
           <div class="author-card__name">{{ site.Params.author.name }}</div>
-          <div class="author-card__role">{{ site.Params.author.headlineEn }} / {{ site.Params.author.headline }}</div>
+          <div class="author-card__role">{{ site.Params.author.headline }}</div>
           <p class="author-card__bio">{{ site.Params.author.bio }}</p>
         </div>
         <p>
           <a class="link-arrow" href="{{ site.Params.journal.profileUrl }}" target="_blank" rel="noopener">
-            Professional Profile →
+            完整专业履历 →
           </a>
         </p>
       </section>
@@ -157,13 +158,13 @@
       <nav class="pager" aria-label="上下篇">
         <div class="pager__item">
           {{- with .PrevInSection }}
-            <span class="pager__label">← Newer</span>
+            <span class="pager__label">← 较新一篇</span>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
           {{- end }}
         </div>
         <div class="pager__item pager__item--next">
           {{- with .NextInSection }}
-            <span class="pager__label">Older →</span>
+            <span class="pager__label">较早一篇 →</span>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
           {{- end }}
         </div>

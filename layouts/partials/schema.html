@@ -21,8 +21,8 @@
   <script type="application/ld+json">{{ $data | jsonify | safeHTML }}</script>
 {{- else if .IsPage -}}
   {{- $channel := "" -}}
-  {{- with .Params.channel }}
-    {{- with index site.Data.channels . }}{{ $channel = .en }}{{ end }}
+  {{- with partial "func/channel-key.html" . }}
+    {{- with index site.Data.channels . }}{{ $channel = .zh }}{{ end }}
   {{- end -}}
   {{- $data := dict
     "@context" "https://schema.org"

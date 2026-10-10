@@ -1,0 +1,6 @@
+# 内容类型（Notes & Methods 频道尤其常用）。key 与 front matter 的 content_type 一致。
+essay: "长文"
+note: "笔记"
+method: "方法"
+tool: "工具"
+experiment: "实验"

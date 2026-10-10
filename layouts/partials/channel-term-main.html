@@ -5,31 +5,24 @@
 
 <section class="channel-hero">
   <div class="shell">
-    <span class="channel-hero__num">{{ with $ch }}{{ .num }} / {{ end }}RESEARCH CHANNEL</span>
-    <h1 class="channel-hero__title">{{ with $ch }}{{ .en }}{{ else }}{{ $key }}{{ end }}</h1>
-    {{- with $ch }}<div class="channel-hero__zh">{{ .zh }}</div>{{ end -}}
-    {{- with $ch }}
-      <p class="channel-hero__desc channel-hero__desc--en">{{ .desc_en }}</p>
-      <p class="channel-hero__desc">{{ .desc_zh }}</p>
-    {{- end -}}
+    <span class="channel-hero__num">{{ with $ch }}{{ .num }} / {{ end }}研究频道</span>
+    <h1 class="channel-hero__title">{{ with $ch }}{{ .zh }}{{ else }}{{ $key }}{{ end }}</h1>
+    {{- with $ch }}<p class="channel-hero__desc">{{ .desc_zh }}</p>{{ end -}}
     {{- if eq $key "markets-finance" }}
-      <p class="disclaimer">
-        {{ site.Params.journal.disclaimerEn }}<br />
-        {{ site.Params.journal.disclaimer }}
-      </p>
+      <p class="disclaimer">{{ site.Params.journal.disclaimer }}</p>
     {{- end -}}
   </div>
 </section>
 
 <div class="shell">
   <nav class="subnav" aria-label="频道主题">
-    <a href="{{ .RelPermalink }}" class="is-active">All</a>
+    <a href="{{ .RelPermalink }}" class="is-active">全部</a>
     {{- range $slug := $ch.topics }}
       {{- $t := index site.Data.topics $slug -}}
       {{- $count := 0 -}}
       {{- with index site.Taxonomies.topics $slug }}{{ $count = .Count }}{{ end -}}
       {{- with $t }}
-        <a href="{{ printf "/topics/%s/" $slug | relURL }}">{{ .en }}<span class="mono"> {{ $count }}</span></a>
+        <a href="{{ printf "/topics/%s/" $slug | relURL }}">{{ .zh }}<span class="mono"> {{ $count }}</span></a>
       {{- end }}
     {{- end }}
   </nav>
@@ -65,7 +58,7 @@
 
     <aside>
       <div class="side-block">
-        <div class="side-block__title">Topics</div>
+        <div class="side-block__title">本频道主题</div>
         <ul>
           {{- range $slug := $ch.topics }}
             {{- $t := index site.Data.topics $slug -}}
@@ -73,7 +66,7 @@
             {{- with index site.Taxonomies.topics $slug }}{{ $count = .Count }}{{ end -}}
             {{- with $t }}
               <li>
-                <a href="{{ printf "/topics/%s/" $slug | relURL }}">{{ .en }}</a>
+                <a href="{{ printf "/topics/%s/" $slug | relURL }}">{{ .zh }}</a>
                 <span>{{ $count }}</span>
               </li>
             {{- end }}
@@ -82,7 +75,7 @@
       </div>
 
       <div class="side-block">
-        <div class="side-block__title">Years</div>
+        <div class="side-block__title">年份</div>
         <ul>
           {{- range $pages.GroupByDate "2006" }}
             <li>
@@ -95,7 +88,7 @@
 
       {{- with first 3 (where $pages "Params.featured" true) }}
         <div class="side-block">
-          <div class="side-block__title">Selected</div>
+          <div class="side-block__title">重点推荐</div>
           <ul style="display: block">
             {{- range . }}
               <li style="display: block"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
