@@ -4,7 +4,7 @@ description: SpaceX 不再是一家火箭公司,而是正在将太空重新定�
 summary: SpaceX 即将以 2 万亿美元估值上市,但市场购买的不是火箭,而是一个整合了发射系统、星链网络和 AI 计算的基础设施平台。本文分析其商业模式转型、资本结构及对整个航天行业的重新定价效应。
 date: 2026-05-10
 lastmod: 2026-05-10
-draft: true
+draft: false
 slug: spacex-space-as-infrastructure
 aliases:
 - /posts/spacex-不仅仅是火箭制造商它正在重新定义太空将其视为基础设施_/
