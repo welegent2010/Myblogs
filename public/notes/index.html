@@ -1,265 +1,47 @@
-<!DOCTYPE html>
-<html lang="zh-CN" data-theme="light">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1319&amp;path=livereload" data-no-instant defer></script>
-    <script>
-      (function () {
-        try {
-          var t = localStorage.getItem("xd-theme");
-          if (!t) {
-            t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-          }
-          document.documentElement.setAttribute("data-theme", t);
-        } catch (e) {}
-      })();
-    </script>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#fbfaf8" />
-
-<title>方法与工具 · 王晓东</title><meta name="description" content="方法与工具：研究方法、AI工作流、GIS与数据分析、软件开发、Web工具与独立工作方法。" />
-<meta name="keywords" content="城市更新,文旅,产业研究,资本市场,研究方法,AI工作流,GIS" />
-<link rel="canonical" href="http://localhost:1319/notes/" />
-
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="manifest" href="/site.webmanifest" />
-<link rel="alternate" type="application/rss+xml" title="王晓东 · RSS" href="http://localhost:1319/index.xml" />
-
-<meta property="og:type" content="website" />
-<meta property="og:title" content="方法与工具" />
-<meta property="og:description" content="方法与工具：研究方法、AI工作流、GIS与数据分析、软件开发、Web工具与独立工作方法。" />
-<meta property="og:url" content="http://localhost:1319/notes/" />
-<meta property="og:site_name" content="王晓东" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="方法与工具" />
-<meta name="twitter:description" content="方法与工具：研究方法、AI工作流、GIS与数据分析、软件开发、Web工具与独立工作方法。" />
-
-
-
-    <link rel="stylesheet" href="/css/editorial.min.92b3783610eeaf9971abcbf5799af4ec7a748f78a07e8c0b2e1ccf2224ed2baf.css" integrity="sha256-krN4NhDur5lxq8v1eZr07Hp0j3igfowLLhzPIiTtK68=" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">跳到正文</a>
-    <div class="progress" aria-hidden="true"></div>
-    <header class="site-header">
-  <div class="shell site-header__inner">
-    <a class="brand" href="/">
-      <span class="brand__mark">王晓东</span>
-      <span class="brand__sub">独立研究档案</span>
-    </a>
-    <nav class="nav" aria-label="主导航">
-        <a
-          href="/urban/">
-          城市与产业
-        </a>
-        <a
-          href="/markets/">
-          市场与金融
-        </a>
-        <a
-          href="/notes/">
-          方法与工具
-        </a>
-        <a
-          href="/topics/">
-          主题
-        </a>
-        <a
-          href="/archives/">
-          归档
-        </a>
-        <a
-          href="/about/">
-          关于
-        </a>
-        <a
-          href="/search/">
-          搜索
-        </a>
-      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换深浅色">深色</button>
-    </nav>
-  </div>
-</header>
-
-    <main id="main">
-  <section class="channel-hero">
-  <div class="shell">
-    <span class="channel-hero__num">03 / 研究频道</span>
-    <h1 class="channel-hero__title">方法与工具</h1><p class="channel-hero__desc">记录研究方法、AI工作流、GIS、数据分析、软件开发、Web工具和独立工作方法。</p></div>
-</section>
-
-<div class="shell">
-  <nav class="subnav" aria-label="频道主题">
-    <a href="/notes/" class="is-active">全部</a>
-        <a href="/topics/ai-research/">AI与研究<span class="mono"> 1</span></a>
-        <a href="/topics/gis-data-methods/">GIS与数据<span class="mono"> 0</span></a>
-        <a href="/topics/knowledge-systems/">知识系统<span class="mono"> 2</span></a>
-        <a href="/topics/web-software/">软件与工具<span class="mono"> 1</span></a>
-        <a href="/topics/workflow/">工作流<span class="mono"> 0</span></a>
-        <a href="/topics/ux-design/">体验设计<span class="mono"> 0</span></a>
-  </nav>
-</div>
-
-<div class="shell">
-  <div class="split">
-    <div>
-        <div class="featured">
-          <div class="featured__lead"><article class="entry" data-channel="notes-methods">
-  <div class="entry__meta">
-      <a class="entry__channel" href="/notes/">方法与工具</a>
-      <span class="dot">/</span>
-      <a href="/topics/ai-research/">AI与研究</a>
-      <span class="dot">/</span><time datetime="2026-04-02">2026-04-02</time>
-    <span class="dot">/</span>
-    <span>6 分钟</span>
-      <span class="entry__type">长文</span></div>
-
-  <h3 class="entry__title"><a href="/posts/%E5%B7%A5%E5%85%B7%E4%B8%8D%E5%86%8D%E6%98%AF%E9%99%90%E5%88%B6%E4%B8%80%E4%B8%AA%E5%9F%8E%E5%B8%82%E7%A0%94%E7%A9%B6%E8%80%85%E7%9A%84ai%E7%AA%81%E5%9B%B4%E5%8F%B2/">工具不再是限制：一个城市研究者的AI突围史</a></h3>
-    <p class="entry__summary">一位城市研究者用三年时间被Python环境和技术门槛困住，无法推进城市韧性研究。2026年，借助SuperGrok和GitHub Copilot的协同闭环，他在一下午完成了10个城市30个研究点的数据下载和分析。这不是关于AI替代人类的故事，而是关于工具如何解放思维、让个人研究者也能拥有实验室级能力的真实经历。工具不再是限制，思考才是核心价值。</p></article>
-</div>
-          <div class="featured__side">
-          </div>
-        </div>
-        
-
-      <div class="section" style="padding-top: 34px; padding-bottom: 0; border-bottom: 0">
-            <article class="entry" data-channel="notes-methods">
-  <div class="entry__meta">
-      <a class="entry__channel" href="/notes/">方法与工具</a>
-      <span class="dot">/</span>
-      <a href="/topics/web-software/">软件与工具</a>
-      <span class="dot">/</span><time datetime="2026-07-28">2026-07-28</time>
-    <span class="dot">/</span>
-    <span>17 分钟</span>
-      <span class="entry__type">工具</span></div>
-
-  <h3 class="entry__title"><a href="/posts/%E5%9F%8E%E5%B8%82%E6%96%87%E6%97%85%E5%BC%80%E5%8F%91%E9%A1%B9%E7%9B%AE%E6%8A%95%E8%B5%84%E8%BF%90%E8%90%A5%E7%BB%8F%E6%B5%8E%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D/">从设计面积到经济判断：城市文旅开发项目投资运营经济模型测算软件介绍</a></h3>
-    <p class="entry__summary">本文介绍城市文旅开发项目投资运营经济模型测算软件开发背景、功能和应用范围，重点说明如何将设计面积转化为投入、收入、回收期及社会效益指标，并以量化比较促进城市运营提前介入方案比选、功能配置和可持续决策。</p></article>
-
-            <article class="entry" data-channel="notes-methods">
-  <div class="entry__meta">
-      <a class="entry__channel" href="/notes/">方法与工具</a>
-      <span class="dot">/</span>
-      <a href="/topics/knowledge-systems/">知识系统</a>
-      <span class="dot">/</span><time datetime="2026-03-24">2026-03-24</time>
-    <span class="dot">/</span>
-    <span>7 分钟</span>
-      <span class="entry__type">长文</span></div>
-
-  <h3 class="entry__title"><a href="/posts/%E7%94%A8%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E6%80%9D%E8%80%83%E4%BA%A7%E5%93%81%E5%86%85%E5%AE%B9%E7%9A%84%E6%9C%AC%E8%B4%A8/">用第一性原理思考：无需追流量，做好内容就能在平台获利</a></h3>
-    <p class="entry__summary">这是流量与本质主题的复盘笔记，核心观点：应当用第一性原理拆解流量迷思，跳出盲目追逐泛流量的瞎忙陷阱，深耕垂直小领域做精品内容，小体量精准粉丝的变现价值远高于海量无效泛流量，选对方向扎实沉淀才是长期竞争力。</p></article>
-
-            <article class="entry" data-channel="notes-methods">
-  <div class="entry__meta">
-      <a class="entry__channel" href="/notes/">方法与工具</a>
-      <span class="dot">/</span>
-      <a href="/topics/knowledge-systems/">知识系统</a>
-      <span class="dot">/</span><time datetime="2026-03-23">2026-03-23</time>
-    <span class="dot">/</span>
-    <span>2 分钟</span>
-      <span class="entry__type">笔记</span></div>
-
-  <h3 class="entry__title"><a href="/posts/hello/">你好，世界 | 规划与设计的跨界视界</a></h3>
-    <p class="entry__summary">从巴龙村与嘎拉桃花村项目出发，整理乡村振兴设计中的在地需求、系统方案与文旅融合思路。</p></article>
-
-        
-      </div>
-    </div>
-
-    <aside>
-      <div class="side-block">
-        <div class="side-block__title">本频道主题</div>
-        <ul>
-              <li>
-                <a href="/topics/ai-research/">AI与研究</a>
-                <span>1</span>
-              </li>
-              <li>
-                <a href="/topics/gis-data-methods/">GIS与数据</a>
-                <span>0</span>
-              </li>
-              <li>
-                <a href="/topics/knowledge-systems/">知识系统</a>
-                <span>2</span>
-              </li>
-              <li>
-                <a href="/topics/web-software/">软件与工具</a>
-                <span>1</span>
-              </li>
-              <li>
-                <a href="/topics/workflow/">工作流</a>
-                <span>0</span>
-              </li>
-              <li>
-                <a href="/topics/ux-design/">体验设计</a>
-                <span>0</span>
-              </li>
-        </ul>
-      </div>
-
-      <div class="side-block">
-        <div class="side-block__title">年份</div>
-        <ul>
-            <li>
-              <a href="/archives/#year-2026">2026</a>
-              <span>4</span>
-            </li>
-        </ul>
-      </div>
-        <div class="side-block">
-          <div class="side-block__title">重点推荐</div>
-          <ul style="display: block">
-              <li style="display: block"><a href="/posts/%E5%B7%A5%E5%85%B7%E4%B8%8D%E5%86%8D%E6%98%AF%E9%99%90%E5%88%B6%E4%B8%80%E4%B8%AA%E5%9F%8E%E5%B8%82%E7%A0%94%E7%A9%B6%E8%80%85%E7%9A%84ai%E7%AA%81%E5%9B%B4%E5%8F%B2/">工具不再是限制：一个城市研究者的AI突围史</a></li>
-          </ul>
-        </div>
-    </aside>
-  </div>
-</div>
-
-</main>
-    <footer class="site-footer">
-  <div class="shell">
-    <div class="site-footer__grid">
-      <div>
-        <div class="site-footer__title">王晓东</div>
-        <div class="site-footer__role">城市价值与文旅策略顾问</div>
-      </div>
-
-      <div class="site-footer__col">
-        <h5>研究频道</h5>
-        <ul>
-              <li><a href="/urban/">城市与产业</a></li>
-              <li><a href="/markets/">市场与金融</a></li>
-              <li><a href="/notes/">方法与工具</a></li>
-        </ul>
-      </div>
-
-      <div class="site-footer__col">
-        <h5>研究档案</h5>
-        <ul>
-          <li><a href="/topics/">研究主题</a></li>
-          <li><a href="/archives/">研究归档</a></li>
-          <li><a href="/about/">关于本站</a></li>
-          <li><a href="/search/">站内搜索</a></li>
-          <li><a href="/index.xml">RSS 订阅</a></li>
-        </ul>
-      </div>
-
-      <div class="site-footer__col">
-        <h5>联系</h5>
-        <ul>
-          <li><a href="https://www.welegent.com/" target="_blank" rel="noopener">专业履历 · welegent.com</a></li>
-          <li><a href="mailto:hello@xdstudiolab.com">hello@xdstudiolab.com</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="site-footer__base">
-      <span>© 2026 王晓东。保留所有文字与原创内容版权。</span>
-      <span>从规划成果走向发展决策。</span>
-    </div>
-  </div>
-</footer>
-
-    <script defer src="/js/journal.min.98e8d8562ab2b3de85bafb71305ae63e2a97ebadbe1918361ebd929bca61e3a0.js" integrity="sha256-mOjYViqys96FuvtxMFrmPiqX662&#43;GRg2Hr2Sm8ph46A="></script>
-  </body>
-</html>
+<!doctype html><html lang=zh-CN data-theme=light><head><script>(function(){try{var e=localStorage.getItem("xd-theme");e||(e=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"),document.documentElement.setAttribute("data-theme",e)}catch{}})()</script><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=theme-color content="#fbfaf8"><title>方法与工具 · 王晓东</title><meta name=description content="方法与工具：研究方法、AI工作流、GIS与数据分析、软件开发、Web工具与独立工作方法。"><meta name=keywords content="城市更新,文旅,产业研究,资本市场,研究方法,AI工作流,GIS"><meta name=author content="王晓东"><link rel=canonical href=https://87188202.xyz/notes/><link rel=icon type=image/svg+xml href=/favicon.svg><link rel=manifest href=/site.webmanifest><link rel=alternate type=application/rss+xml title="王晓东 · RSS" href=https://87188202.xyz/index.xml><meta property="og:type" content="website"><meta property="og:title" content="方法与工具"><meta property="og:description" content="方法与工具：研究方法、AI工作流、GIS与数据分析、软件开发、Web工具与独立工作方法。"><meta property="og:url" content="https://87188202.xyz/notes/"><meta property="og:site_name" content="王晓东"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://87188202.xyz/images/og-default.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="方法与工具"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="方法与工具"><meta name=twitter:description content="方法与工具：研究方法、AI工作流、GIS与数据分析、软件开发、Web工具与独立工作方法。"><meta name=twitter:image content="https://87188202.xyz/images/og-default.png"><script type=application/ld+json>{"@context":"https://schema.org","@type":"CollectionPage","description":"方法与工具：研究方法、AI工作流、GIS与数据分析、软件开发、Web工具与独立工作方法。","inLanguage":"zh-CN","isPartOf":{"@type":"WebSite","name":"王晓东","url":"https://87188202.xyz/"},"name":"方法与工具","url":"https://87188202.xyz/notes/"}</script><link rel=stylesheet href=/css/editorial.min.92b3783610eeaf9971abcbf5799af4ec7a748f78a07e8c0b2e1ccf2224ed2baf.css integrity="sha256-krN4NhDur5lxq8v1eZr07Hp0j3igfowLLhzPIiTtK68="></head><body><a class=skip-link href=#main>跳到正文</a><div class=progress aria-hidden=true></div><header class=site-header><div class="shell site-header__inner"><a class=brand href=/><span class=brand__mark>王晓东</span>
+<span class=brand__sub>独立研究档案</span></a><nav class=nav aria-label=主导航><a href=/urban/>城市与产业
+</a><a href=/markets/>市场与金融
+</a><a href=/notes/>方法与工具
+</a><a href=/topics/>主题
+</a><a href=/archives/>归档
+</a><a href=/about/>关于
+</a><a href=/search/>搜索
+</a><button class=theme-toggle type=button data-theme-toggle aria-label=切换深浅色>深色</button></nav></div></header><main id=main><section class=channel-hero><div class=shell><span class=channel-hero__num>03 / 研究频道</span><h1 class=channel-hero__title>方法与工具</h1><p class=channel-hero__desc>记录研究方法、AI工作流、GIS、数据分析、软件开发、Web工具和独立工作方法。</p></div></section><div class=shell><nav class=subnav aria-label=频道主题><a href=/notes/ class=is-active>全部</a>
+<a href=/topics/ai-research/>AI与研究<span class=mono> 1</span></a>
+<a href=/topics/gis-data-methods/>GIS与数据<span class=mono> 0</span></a>
+<a href=/topics/knowledge-systems/>知识系统<span class=mono> 2</span></a>
+<a href=/topics/web-software/>软件与工具<span class=mono> 1</span></a>
+<a href=/topics/workflow/>工作流<span class=mono> 0</span></a>
+<a href=/topics/ux-design/>体验设计<span class=mono> 0</span></a></nav></div><div class=shell><div class=split><div><div class=featured><div class=featured__lead><article class=entry data-channel=notes-methods><div class=entry__meta><a class=entry__channel href=/notes/>方法与工具</a>
+<span class=dot>/</span>
+<a href=/topics/ai-research/>AI与研究</a>
+<span class=dot>/</span><time datetime=2026-04-02>2026-04-02</time>
+<span class=dot>/</span>
+<span>6 分钟</span>
+<span class=entry__type>长文</span></div><h3 class=entry__title><a href=/posts/%E5%B7%A5%E5%85%B7%E4%B8%8D%E5%86%8D%E6%98%AF%E9%99%90%E5%88%B6%E4%B8%80%E4%B8%AA%E5%9F%8E%E5%B8%82%E7%A0%94%E7%A9%B6%E8%80%85%E7%9A%84ai%E7%AA%81%E5%9B%B4%E5%8F%B2/>工具不再是限制：一个城市研究者的AI突围史</a></h3><p class=entry__summary>一位城市研究者用三年时间被Python环境和技术门槛困住，无法推进城市韧性研究。2026年，借助SuperGrok和GitHub Copilot的协同闭环，他在一下午完成了10个城市30个研究点的数据下载和分析。这不是关于AI替代人类的故事，而是关于工具如何解放思维、让个人研究者也能拥有实验室级能力的真实经历。工具不再是限制，思考才是核心价值。</p></article></div><div class=featured__side></div></div><div class=section style=padding-top:34px;padding-bottom:0;border-bottom:0><article class=entry data-channel=notes-methods><div class=entry__meta><a class=entry__channel href=/notes/>方法与工具</a>
+<span class=dot>/</span>
+<a href=/topics/web-software/>软件与工具</a>
+<span class=dot>/</span><time datetime=2026-07-28>2026-07-28</time>
+<span class=dot>/</span>
+<span>17 分钟</span>
+<span class=entry__type>工具</span></div><h3 class=entry__title><a href=/posts/%E5%9F%8E%E5%B8%82%E6%96%87%E6%97%85%E5%BC%80%E5%8F%91%E9%A1%B9%E7%9B%AE%E6%8A%95%E8%B5%84%E8%BF%90%E8%90%A5%E7%BB%8F%E6%B5%8E%E8%BD%AF%E4%BB%B6%E4%BB%8B%E7%BB%8D/>从设计面积到经济判断：城市文旅开发项目投资运营经济模型测算软件介绍</a></h3><p class=entry__summary>本文介绍城市文旅开发项目投资运营经济模型测算软件开发背景、功能和应用范围，重点说明如何将设计面积转化为投入、收入、回收期及社会效益指标，并以量化比较促进城市运营提前介入方案比选、功能配置和可持续决策。</p></article><article class=entry data-channel=notes-methods><div class=entry__meta><a class=entry__channel href=/notes/>方法与工具</a>
+<span class=dot>/</span>
+<a href=/topics/knowledge-systems/>知识系统</a>
+<span class=dot>/</span><time datetime=2026-03-24>2026-03-24</time>
+<span class=dot>/</span>
+<span>7 分钟</span>
+<span class=entry__type>长文</span></div><h3 class=entry__title><a href=/posts/%E7%94%A8%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E6%80%9D%E8%80%83%E4%BA%A7%E5%93%81%E5%86%85%E5%AE%B9%E7%9A%84%E6%9C%AC%E8%B4%A8/>用第一性原理思考：无需追流量，做好内容就能在平台获利</a></h3><p class=entry__summary>这是流量与本质主题的复盘笔记，核心观点：应当用第一性原理拆解流量迷思，跳出盲目追逐泛流量的瞎忙陷阱，深耕垂直小领域做精品内容，小体量精准粉丝的变现价值远高于海量无效泛流量，选对方向扎实沉淀才是长期竞争力。</p></article><article class=entry data-channel=notes-methods><div class=entry__meta><a class=entry__channel href=/notes/>方法与工具</a>
+<span class=dot>/</span>
+<a href=/topics/knowledge-systems/>知识系统</a>
+<span class=dot>/</span><time datetime=2026-03-23>2026-03-23</time>
+<span class=dot>/</span>
+<span>2 分钟</span>
+<span class=entry__type>笔记</span></div><h3 class=entry__title><a href=/posts/hello/>你好，世界 | 规划与设计的跨界视界</a></h3><p class=entry__summary>从巴龙村与嘎拉桃花村项目出发，整理乡村振兴设计中的在地需求、系统方案与文旅融合思路。</p></article></div></div><aside><div class=side-block><div class=side-block__title>本频道主题</div><ul><li><a href=/topics/ai-research/>AI与研究</a>
+<span>1</span></li><li><a href=/topics/gis-data-methods/>GIS与数据</a>
+<span>0</span></li><li><a href=/topics/knowledge-systems/>知识系统</a>
+<span>2</span></li><li><a href=/topics/web-software/>软件与工具</a>
+<span>1</span></li><li><a href=/topics/workflow/>工作流</a>
+<span>0</span></li><li><a href=/topics/ux-design/>体验设计</a>
+<span>0</span></li></ul></div><div class=side-block><div class=side-block__title>年份</div><ul><li><a href=/archives/#year-2026>2026</a>
+<span>4</span></li></ul></div><div class=side-block><div class=side-block__title>重点推荐</div><ul style=display:block><li style=display:block><a href=/posts/%E5%B7%A5%E5%85%B7%E4%B8%8D%E5%86%8D%E6%98%AF%E9%99%90%E5%88%B6%E4%B8%80%E4%B8%AA%E5%9F%8E%E5%B8%82%E7%A0%94%E7%A9%B6%E8%80%85%E7%9A%84ai%E7%AA%81%E5%9B%B4%E5%8F%B2/>工具不再是限制：一个城市研究者的AI突围史</a></li></ul></div></aside></div></div></main><footer class=site-footer><div class=shell><div class=site-footer__grid><div><div class=site-footer__title>王晓东</div><div class=site-footer__role>城市价值与文旅策略顾问</div></div><div class=site-footer__col><h5>研究频道</h5><ul><li><a href=/urban/>城市与产业</a></li><li><a href=/markets/>市场与金融</a></li><li><a href=/notes/>方法与工具</a></li></ul></div><div class=site-footer__col><h5>研究档案</h5><ul><li><a href=/topics/>研究主题</a></li><li><a href=/archives/>研究归档</a></li><li><a href=/about/>关于本站</a></li><li><a href=/search/>站内搜索</a></li><li><a href=/index.xml>RSS 订阅</a></li></ul></div><div class=site-footer__col><h5>联系</h5><ul><li><a href=https://www.welegent.com/ target=_blank rel=noopener>专业履历 · welegent.com</a></li><li><a href=mailto:hello@xdstudiolab.com>hello@xdstudiolab.com</a></li></ul></div></div><div class=site-footer__base><span>© 2026 王晓东。保留所有文字与原创内容版权。</span>
+<span>从规划成果走向发展决策。</span></div></div></footer><script defer src=/js/journal.min.98e8d8562ab2b3de85bafb71305ae63e2a97ebadbe1918361ebd929bca61e3a0.js integrity="sha256-mOjYViqys96FuvtxMFrmPiqX662+GRg2Hr2Sm8ph46A="></script></body></html>

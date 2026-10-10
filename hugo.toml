@@ -58,6 +58,7 @@ summaryLength = 120
     authorName = '王晓东'
     aboutUrl = '/about/'
     profileUrl = 'https://www.welegent.com/'
+    ogImage = '/images/og-default.png'
     disclaimer = '本站内容仅用于个人研究与方法记录，不构成投资建议。'
     tagline = '从规划成果走向发展决策。'
 

@@ -18,7 +18,7 @@
     "description" site.Params.journal.description
     "author" (dict "@type" "Person" "name" site.Params.author.name "url" site.Params.journal.profileUrl)
   -}}
-  <script type="application/ld+json">{{ $data | jsonify | safeHTML }}</script>
+  <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- else if .IsPage -}}
   {{- $channel := "" -}}
   {{- with partial "func/channel-key.html" . }}
@@ -37,5 +37,29 @@
     "publisher" (dict "@type" "Person" "name" site.Params.author.name)
     "inLanguage" (site.LanguageCode | default "zh-CN")
   -}}
-  <script type="application/ld+json">{{ $data | jsonify | safeHTML }}</script>
+  <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+  {{- /* 面包屑：文章 / 列表页都输出，帮助搜索引擎理解站点层级 */ -}}
+  {{- $crumbs := slice
+    (dict "@type" "ListItem" "position" 1 "name" site.Title "item" site.BaseURL)
+  -}}
+  {{- $pos := 2 -}}
+  {{- with .Parent -}}
+    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" .Permalink) -}}
+    {{- $pos = 3 -}}
+  {{- end -}}
+  {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $pos "name" .Title "item" .Permalink) -}}
+  {{- $bc := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $crumbs -}}
+  <script type="application/ld+json">{{ $bc | jsonify | safeJS }}</script>
+{{- else -}}
+  {{- /* 列表页 / 分类页：CollectionPage */ -}}
+  {{- $data := dict
+    "@context" "https://schema.org"
+    "@type" "CollectionPage"
+    "name" .Title
+    "description" $desc
+    "url" .Permalink
+    "inLanguage" (site.LanguageCode | default "zh-CN")
+    "isPartOf" (dict "@type" "WebSite" "name" site.Title "url" site.BaseURL)
+  -}}
+  <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
 {{- end -}}
