@@ -61,3 +61,12 @@
 {{- with $ogImage }}<meta name="twitter:image" content="{{ . }}" />{{ end }}
 
 {{ partial "schema.html" . }}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRV5DR4HCX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZRV5DR4HCX');
+</script>
