@@ -1,8 +1,12 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- $extraPages := slice "/topics/" -}}
+  {{- range $channel := site.Data.channels -}}
+    {{- with $channel.url }}{{ $extraPages = $extraPages | append . }}{{ end -}}
+  {{- end -}}
   {{ range .Data.Pages }}
-    {{ if not (in .Site.Params.sitemap.excludedKinds .Kind) }}
+    {{ if or (in $extraPages .RelPermalink) (not (in .Site.Params.sitemap.excludedKinds .Kind)) }}
       {{ if and (.Param "xml" | default true) (not (isset .Params "externalUrl")) (not .Draft) }}
         {{- if .Permalink -}}
           <url>
