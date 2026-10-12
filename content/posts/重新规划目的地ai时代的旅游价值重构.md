@@ -10,11 +10,11 @@ aliases:
 - /posts/重新规划目的地-ai时代的旅游价值重构/
 - /posts/重新规划目的地AI时代的旅游价值重构/
 channels:
-- travel-tourism
+- cities-industries
 topics:
-- destination-planning
+- tourism
 content_type: essay
-featured: false
+featured: true
 categories:
 - 深度思考
 - 商业模式
@@ -33,6 +33,8 @@ series:
 showTableOfContents: true
 showComments: true
 ---
+
+
 # ![重新规划目的地：AI时代的旅游价值重构](../../../../../my%20sale%20blog/xdstudiolab/assets/img/covers/%E9%87%8D%E6%96%B0%E8%A7%84%E5%88%92%E7%9B%AE%E7%9A%84%E5%9C%B0%EF%BC%9AAI%E6%97%B6%E4%BB%A3%E7%9A%84%E6%97%85%E6%B8%B8%E4%BB%B7%E5%80%BC%E9%87%8D%E6%9E%84.webp)
 
 
