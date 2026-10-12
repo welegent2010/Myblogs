@@ -35,11 +35,11 @@ showTableOfContents: true
 showComments: true
 ---
 
-# 
+![重新规划目的地：AI时代的旅游价值重构](../../../../../my%20sale%20blog/xdstudiolab/assets/img/covers/%E9%87%8D%E6%96%B0%E8%A7%84%E5%88%92%E7%9B%AE%E7%9A%84%E5%9C%B0%EF%BC%9AAI%E6%97%B6%E4%BB%A3%E7%9A%84%E6%97%85%E6%B8%B8%E4%BB%B7%E5%80%BC%E9%87%8D%E6%9E%84.jpg)
 
-### 游客的脚步不会停，路上的风景会重新组织价值。
+### 游客![318景观大道](../../../../../my%20sale%20blog/xdstudiolab/assets/img/covers/318%E6%99%AF%E8%A7%82%E5%A4%A7%E9%81%93-1794976.webp)的脚步不会停，路上的风景会重新组织价值。
 
-{{< img src="/img/covers/g318-scenic-highway.webp" alt="318景观大道" >}}
+
 
 2025年，中国国内旅游交出一份惊人的成绩单：出游人次65.22亿，同比增长16.2%；出游花费6.30万亿元，同比增长9.5%。游客越来越多，钱越花越多——这是最常被引用的叙事。
 
@@ -67,9 +67,9 @@ showComments: true
 
 商业模式的任务分三层：创造价值，把资源组合成游客愿意购买的产品和体验；获取价值，让消费真正留在本地，居民和商户获得收益；发现价值，在新的消费方式中捕捉过去被忽略的机会。
 
-智能技术的任务，是放大价值——让价值更快被发现、更精准地连接、更广泛地传播、更高效地转化。它不取代规划师，而是改变了整个旅游业运行的环境。
+智能技术的任![丹巴甲居藏寨](../../../../../my%20sale%20blog/xdstudiolab/assets/img/covers/%E4%B8%B9%E5%B7%B4%E7%94%B2%E5%B1%85%E8%97%8F%E5%AF%A8-1794992.webp)务，是放大价值——让价值更快被发现、更精准地连接、更广泛地传播、更高效地转化。它不取代规划师，而是改变了整个旅游业运行的环境。
 
-{{< img src="/img/covers/danba-jiaju-village.webp" alt="丹巴甲居藏寨" >}}
+
 
 真正影响选择的，往往不是信息多少，而是判断成本。
 
@@ -91,7 +91,7 @@ showComments: true
 
 再看信息。
 
-{{< img src="/img/covers/linzhi-peach-blossom.webp" alt="林芝桃花节" >}}
+![林芝桃花节](../../../../../my%20sale%20blog/xdstudiolab/assets/img/covers/%E6%9E%97%E8%8A%9D%E6%A1%83%E8%8A%B1%E8%8A%82-1795011.webp)
 
 三月的林芝，桃花把山坡染成粉色，雪山在远处安静地看着。
 
