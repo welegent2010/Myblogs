@@ -44,5 +44,12 @@
 - **不再使用 AI 生成的封面图**。无配图时显示按频道配色的纯色 SVG 色块（`layouts/partials/func/placeholder-cover.html`）。
 - 频道配色写在 `data/channels.yaml` 的 base / accent / ink 三个字段，改那里全站同步：城市与产业 #2F5673、市场与金融 #14655A、方法与工具 #8A6A2F。
 - 同频道内不同主题按 topics 索引 mod 4 自动切四种几何版式，保证纯色也能分类。
-- 封面管理用 `scripts/set-cover.py`（--color / --first-image / --url，支持 --all）；尺寸体检用 `scripts/check-covers.py`。
-- 封面降级顺序：front matter `image` → 正文首张 markdown 图 → 正文首个 img 短代码 → 正文首个 HTML img → 频道色块。
+- 封面降级顺序（Medium 模式，2026-10-12 改）：**正文首图（markdown `![]()` / img 短代码 / HTML `<img>`）优先** → front matter `image`（仅当封面≠首图时的可选覆盖，已从 21 篇全删）→ 频道色块。
+- `scripts/set-cover.py`、`scripts/check-covers.py` 已删除（Medium 模式下无用，用户不留过程文件）。
+
+## Hugo 模板铁律（2026-10-12 踩坑）
+
+- **模板文件里不在 `{{/* */}}` 内的裸文本会原样输出到页面**，每调用一次短代码就吐一遍。给模板写中文说明必须放进 `{{/* ... */}}`。
+- 模板注释内部**禁止出现 `*/`**，否则提前闭合注释，构建报 `comment ends before closing delimiter`（写示例短代码时尤其容易踩）。
+- 排查手法：脚本扫描 layouts 下「第一个 `{{` 之前是否存在非空文本」，一次找出所有裸文本污染。
+- 缺图 fallback 不要输出 HTML 注释占位，改用 `warnf` 只进构建日志，保持页面 HTML 干净。
