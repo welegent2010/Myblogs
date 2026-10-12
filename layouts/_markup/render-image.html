@@ -18,6 +18,7 @@
       {{- with .Title }} title="{{ . }}"{{ end -}}
       loading="lazy"
       decoding="async"
+      referrerpolicy="no-referrer"
     />
     {{- with .Title }}<figcaption>{{ . | markdownify }}</figcaption>{{ end -}}
   </figure>
@@ -28,5 +29,6 @@
     {{- with .Title }} title="{{ . }}"{{ end -}}
     loading="lazy"
     decoding="async"
+    referrerpolicy="no-referrer"
   />
 {{- end -}}

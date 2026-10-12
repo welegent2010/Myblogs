@@ -37,7 +37,7 @@ showComments: true
 
 ### 游客
 
-{{< img src="/img/posts/g318-scenic-highway.webp" alt="318景观大道" >}}
+![重新规划目的地：AI时代的旅游价值重构 (1)](../../../../../my%20sale%20blog/xdstudiolab/assets/img/covers/%E9%87%8D%E6%96%B0%E8%A7%84%E5%88%92%E7%9B%AE%E7%9A%84%E5%9C%B0%EF%BC%9AAI%E6%97%B6%E4%BB%A3%E7%9A%84%E6%97%85%E6%B8%B8%E4%BB%B7%E5%80%BC%E9%87%8D%E6%9E%84%20(1).jpg){{< img src="/img/posts/g318-scenic-highway.webp" alt="318景观大道" >}}
 
 的脚步不会停，路上的风景会重新组织价值。
 
