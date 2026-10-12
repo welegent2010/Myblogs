@@ -27,7 +27,8 @@
 
 ## 封面与卡片体系
 
-- 封面取值顺序（`layouts/partials/func/cover.html`）：front matter `image:` → 正文第一张图 → CSS 占位块（频道编号 + 名称，网格纹理）。
+- **配图铁律（2026-10-12 用户最终拍板，Medium 模式）**：插图一律走图床（Cloudflare R2 + PicGo），**封面就是正文第一张图**，不用 `assets/img/covers/` 文件夹周转、不在 front matter 填 image。原因：Typora 图像路径是全局单一份，两个博客仓库无法共存。front matter 的 `image:` 仅作为「封面 ≠ 正文首图」时的可选覆盖，日常不用。
+- 封面取值顺序（`layouts/partials/func/cover.html`）：front matter `image:` → 正文首张 markdown 图 → 正文首个 img 短代码 → 正文首个 HTML img → 频道色块。色块取色见 `layouts/partials/func/placeholder-cover.html`。
 - 图片放 `assets/img/covers/`，front matter 写 `image: /img/covers/<slug>.jpg`；管线自动转 WebP + srcset（`img.html` + `img-resource.html`，扩展名可兜底替换）。
 - 正文插图用短代码 img：花括号 img + src/alt 参数（`layouts/shortcodes/img.html`）。
 - 封面色块配色写在 `data/channels.yaml`（每频道 base/accent/ink + `*_dark` 深色版），取色逻辑见 `layouts/partials/func/placeholder-cover.html`。**用户偏好：性冷淡低饱和浅灰调**（2026-10-12），不要深靛蓝/墨绿/赭黄，要与纸色 #fbfaf8 协调。

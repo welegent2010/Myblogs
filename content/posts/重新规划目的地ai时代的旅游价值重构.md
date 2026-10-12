@@ -5,7 +5,6 @@ summary: 深度分析旅游目的地重构的文章，揭示了游客总量爆�
 date: 2026-10-12
 lastmod: 2026-10-12
 draft: false
-image: /img/covers/replanning-destination-ai-value.webp
 slug: replanning-destination-ai-value
 aliases:
 - /posts/重新规划目的地-ai时代的旅游价值重构/

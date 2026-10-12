@@ -1,17 +1,19 @@
 {{/*
   cover
   -----
-  决定一篇文章的封面图。取值顺序：
+  Medium 模式：封面就是正文第一张图。
 
-  1. front matter 里的 image 字段（站外 URL 或站内 /img/... 路径）
-  2. 正文第一张 markdown 图  ![alt](src)
-  3. 正文第一个 img 短代码   {{< img src="..." >}}
-  4. 正文第一个 <img src="...">
-  5. 都没有则返回空 src，由调用方渲染 CSS 占位块
+  取值顺序：
+    1. front matter 里的 image 字段 —— 仅在「封面 ≠ 正文首图」时才写，日常不用
+    2. 正文第一张 markdown 图  ![alt](src)      ← 图床链接走这里
+    3. 正文第一个 img 短代码   {{< img src="" >}}
+    4. 正文第一个 <img src="">
+    5. 都没有则返回空 src，由调用方渲染频道配色块
+
+  日常写法：Typora 里把图粘贴进正文（PicGo 自动上传图床），第一张即封面。
+  想换封面就把那张图挪到正文第一位，或临时用 front matter 的 image 覆盖。
 
   返回：dict "src" "external"
-
-  想让「正文第一张图自动成为封面」，删掉 front matter 里的 image 行即可。
 */}}
 {{- $p := . -}}
 {{- $src := "" -}}

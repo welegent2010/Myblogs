@@ -25,7 +25,6 @@ series:
 - 研究报告
 showTableOfContents: true
 showComments: true
-image: /img/covers/yibin-qixingshan-bamboo-park-eod-strategy.jpg
 ---
 ## **1. 宏观背景与项目战略定位**
 

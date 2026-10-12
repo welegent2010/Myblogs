@@ -1,11 +1,22 @@
-短代码：正文里输出管线处理的图片。
-调用方式：花括号百分号包裹，参数 src（站内 /img/covers/ 路径）与 alt（说明文字）。
-示例：src 填 /img/covers/g318-scenic-highway.webp，alt 填图片说明。
-走 assets 图片管线（WebP 重编码加 srcset），找不到图时输出注释占位而不是破图。
+{{- /*
+  img 短代码
+  ----------
+  在正文里输出一张走 Hugo 图片管线处理的图（WebP 重编码 + srcset）。
+
+  调用示例（把尖括号内的注释符号去掉即为真实写法）：
+    双花括号 + 尖括号包裹： img src="/img/covers/xxx.webp" alt="图片说明"
+
+  参数：
+    src  站内图片路径，例如 /img/covers/xxx.webp
+    alt  图片的说明文字
+
+  注意：模板里的说明文字必须写在本注释内部，
+  裸文本会被 Hugo 原样输出到每一处调用位置。
+*/ -}}
 {{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" -}}
 {{- with partial "img-resource.html" (dict "src" $src) -}}
   {{ partial "img.html" (dict "src" $src "alt" $alt) }}
 {{- else -}}
-  <!-- img-missing: {{ $src }} -->
+  {{- warnf "img shortcode: missing resource %s (page: %s)" $src .Page.File.Path -}}
 {{- end -}}

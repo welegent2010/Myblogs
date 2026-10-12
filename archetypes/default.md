@@ -37,6 +37,10 @@ content_type: "essay"
 # 是否进入频道页顶部「重点推荐」
 featured: false
 
+# 封面：不用设置，正文第一张图自动成为封面
+# 只有在「封面 ≠ 正文首图」时才写这一行
+# image: "https://img.87188202.xyz/2026/10/xxx.png"
+
 # 旧分类，保留即可，不影响新的频道体系
 categories:
   - 工作记录
@@ -61,6 +65,8 @@ showComments: true
    再把 key 挂到 data/channels.yaml 对应频道的 topics 列表，两处都改才会出现在频道页导航栏和侧栏
 5. 完整规则见项目根目录的 发文模板.md
 6. 标题、description、summary 保留双引号，列表项每项前面保留 "- "
+7. 配图：在 Typora 里直接粘贴，PicGo 会上传图床并写入 HTTPS 链接；
+   正文第一张图就是封面，正文没图则显示频道配色块
 -->
 
 # 在这里填写正文标题

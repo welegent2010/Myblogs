@@ -29,7 +29,6 @@ series:
 - 商业模式
 showTableOfContents: true
 showComments: true
-image: /img/covers/agentic-ai-architecture-industry-restructure.jpg
 ---
 **黄仁勋 GTC Taipei 2026 演讲深度研究报告**
 
