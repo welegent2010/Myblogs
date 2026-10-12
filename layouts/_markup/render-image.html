@@ -1,7 +1,19 @@
+{{- /*
+  智能图片路径解析：
+  1. http(s):// 开头 —— 图床外链，原样输出
+  2. / 开头 —— 站内绝对路径（static 目录），原样输出
+  3. 其余（Typora 复制产生的相对路径，如 ../../static/img/posts/x.png）—— 取文件名映射到 /img/posts/
+*/ -}}
+{{- $src := .Destination -}}
+{{- $isRemote := or (strings.HasPrefix $src "http://") (strings.HasPrefix $src "https://") -}}
+{{- $isAbs := strings.HasPrefix $src "/" -}}
+{{- if not (or $isRemote $isAbs) -}}
+  {{- $src = printf "/img/posts/%s" (path.Base $src) -}}
+{{- end -}}
 {{- if .IsBlock -}}
   <figure>
     <img
-      src="{{ .Destination | safeURL }}"
+      src="{{ $src | safeURL }}"
       alt="{{ .Text }}"
       {{- with .Title }} title="{{ . }}"{{ end -}}
       loading="lazy"
@@ -11,7 +23,7 @@
   </figure>
 {{- else -}}
   <img
-    src="{{ .Destination | safeURL }}"
+    src="{{ $src | safeURL }}"
     alt="{{ .Text }}"
     {{- with .Title }} title="{{ . }}"{{ end -}}
     loading="lazy"
