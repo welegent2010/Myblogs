@@ -21,6 +21,7 @@ categories:
 - 思维方法论
 
 tags:
+- 文旅
 - 旅游规划
 - 目的地
 - 人工智能
@@ -28,6 +29,7 @@ tags:
 - 价值
 series:
 - 商业模式
+- 文旅转型
 showTableOfContents: true
 showComments: true
 ---
