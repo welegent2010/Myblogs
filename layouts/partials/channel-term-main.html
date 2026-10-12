@@ -35,10 +35,10 @@
       {{- $featShown := slice -}}
       {{- if and (eq $paginator.PageNumber 1) $feat }}
         <div class="featured">
-          <div class="featured__lead">{{ partial "entry.html" (index $feat 0) }}</div>
+          <div class="featured__lead">{{ partial "entry.html" (dict "page" (index $feat 0) "variant" "large") }}</div>
           <div class="featured__side">
             {{- range first 2 (after 1 $feat) }}
-              {{ partial "entry.html" . }}
+              {{ partial "entry.html" (dict "page" . "variant" "compact") }}
               {{ $featShown = $featShown | append .RelPermalink }}
             {{- end }}
           </div>
@@ -46,10 +46,10 @@
         {{ $featShown = $featShown | append (index $feat 0).RelPermalink }}
       {{- end }}
 
-      <div class="section" style="padding-top: 34px; padding-bottom: 0; border-bottom: 0">
+      <div class="section entry-grid entry-grid--two" style="padding-top: 34px; padding-bottom: 0; border-bottom: 0">
         {{- range $paginator.Pages }}
           {{- if not (in $featShown .RelPermalink) }}
-            {{ partial "entry.html" . }}
+            {{ partial "entry.html" (dict "page" . "variant" "grid") }}
           {{- end }}
         {{- end }}
         {{ partial "pagination.html" $ }}

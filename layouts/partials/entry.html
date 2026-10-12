@@ -1,32 +1,60 @@
-{{- $p := . -}}
+{{- $p := .page -}}
+{{- $variant := .variant | default "row" -}}
 {{- $ck := partial "func/channel-key.html" $p -}}
 {{- $tk := partial "func/topic-key.html" $p -}}
 {{- $ch := "" -}}
 {{- with $ck }}{{ $ch = index site.Data.channels . }}{{ end -}}
 {{- $tp := "" -}}
 {{- with $tk }}{{ $tp = index site.Data.topics . }}{{ end -}}
-<article class="entry"{{ with $ck }} data-channel="{{ . }}"{{ end }}>
-  <div class="entry__meta">
-    {{- with $ch }}
-      <a class="entry__channel" href="{{ .url }}">{{ .zh }}</a>
+{{- $cover := partial "func/cover.html" $p -}}
+<article class="card card--{{ $variant }}"{{ with $ck }} data-channel="{{ . }}"{{ end }}>
+  <a
+    class="card__figure{{ if not $cover.src }} card__figure--empty{{ end }}"
+    href="{{ $p.RelPermalink }}"
+    tabindex="-1"
+    aria-hidden="true"
+  >
+    {{- if $cover.src -}}
+      {{ partial "img.html" (dict
+        "src" $cover.src
+        "external" $cover.external
+        "alt" ""
+        "class" "card__img"
+        "loading" (cond (eq $variant "large") "eager" "lazy")
+      ) }}
+    {{- else -}}
+      <span class="card__placeholder">
+        <span class="card__placeholder-num">{{ with $ch }}{{ .num }}{{ else }}--{{ end }}</span>
+        <span class="card__placeholder-label">{{ with $ch }}{{ .zh }}{{ else }}研究档案{{ end }}</span>
+      </span>
+    {{- end -}}
+  </a>
+
+  <div class="card__body">
+    <div class="entry__meta">
+      {{- with $ch }}
+        <a class="entry__channel" href="{{ .url }}">{{ .zh }}</a>
+        <span class="dot">/</span>
+      {{- end -}}
+      {{- with $tp }}
+        <a href="{{ printf "/topics/%s/" $tk | relURL }}">{{ .zh }}</a>
+        <span class="dot">/</span>
+      {{- end -}}
+      <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "2006-01-02" }}</time>
       <span class="dot">/</span>
+      <span>{{ $p.ReadingTime }} 分钟</span>
+      {{- with $p.Params.content_type }}
+        <span class="entry__type">{{ partial "func/content-type.html" . }}</span>
+      {{- end -}}
+      {{- if $p.Draft }}<span class="draft-label">草稿</span>{{ end -}}
+    </div>
+
+    <h3 class="entry__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
+
+    {{- if ne $variant "compact" -}}
+      {{- with partial "post-summary.html" $p }}
+        <p class="entry__summary">{{ . }}</p>
+      {{- end -}}
     {{- end -}}
-    {{- with $tp }}
-      <a href="{{ printf "/topics/%s/" $tk | relURL }}">{{ .zh }}</a>
-      <span class="dot">/</span>
-    {{- end -}}
-    <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "2006-01-02" }}</time>
-    <span class="dot">/</span>
-    <span>{{ $p.ReadingTime }} 分钟</span>
-    {{- with $p.Params.content_type }}
-      <span class="entry__type">{{ partial "func/content-type.html" . }}</span>
-    {{- end -}}
-    {{- if $p.Draft }}<span class="draft-label">草稿</span>{{ end -}}
   </div>
-
-  <h3 class="entry__title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h3>
-
-  {{- with partial "post-summary.html" $p }}
-    <p class="entry__summary">{{ . }}</p>
-  {{- end -}}
 </article>

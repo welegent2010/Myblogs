@@ -10,9 +10,9 @@
 
   <section class="section">
     <div class="shell">
-      <div class="measure">
+      <div class="measure entry-list">
         {{- range .Paginator.Pages }}
-          {{ partial "entry.html" . }}
+          {{ partial "entry.html" (dict "page" . "variant" "row") }}
         {{- end }}
         {{ partial "pagination.html" . }}
       </div>

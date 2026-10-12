@@ -27,6 +27,7 @@ series:
 - 产业链
 showTableOfContents: true
 showComments: true
+image: /img/covers/glass-substrate-ai-compute-value-revaluation.jpg
 ---
 报告类型：深度行业研究与投资策略报告
  研究对象：AI芯片先进封装之玻璃基板（Glass Substrate）产业链

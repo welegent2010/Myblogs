@@ -35,7 +35,10 @@
 
 {{- $ogTitle := cond .IsHome site.Title .Title -}}
 {{- $ogImage := "" -}}
-{{- with .Params.image }}{{ $ogImage = . }}{{ else }}{{ with site.Params.journal.ogImage }}{{ $ogImage = . }}{{ end }}{{ end -}}
+{{- with partial "func/cover.html" . -}}
+  {{- with .src }}{{ $ogImage = . }}{{ end -}}
+{{- end -}}
+{{- if not $ogImage }}{{ with site.Params.journal.ogImage }}{{ $ogImage = . }}{{ end }}{{ end -}}
 {{- $ogImage = $ogImage | absURL -}}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:title" content="{{ $ogTitle }}" />

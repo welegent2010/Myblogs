@@ -37,7 +37,7 @@
     <div>
       <div class="section" style="padding-top: 34px; border-bottom: 0">
         {{- range $paginator.Pages }}
-          {{ partial "entry.html" . }}
+          {{ partial "entry.html" (dict "page" . "variant" "row") }}
         {{- end }}
         {{ partial "pagination.html" $ }}
       </div>

@@ -4,6 +4,7 @@ description: 以2025年国内旅游市场爆发为背景，拆解"流量增长�
 summary: 深度分析旅游目的地重构的文章，揭示了游客总量爆发背后"价值没有留下"的结构性困境：从G318交旅融合到亚丁村微创更新，从林芝桃花反季突围到"冬游西藏"，拆解规划、商业模式与智能技术如何共同决定一个地方的长期价值。
 date: 2026-10-12
 lastmod: 2026-10-12
+image: /img/covers/replanning-destination-ai-value.webp
 draft: false
 slug: replanning-destination-ai-value
 aliases:
@@ -34,14 +35,11 @@ showTableOfContents: true
 showComments: true
 ---
 
-
-# ![重新规划目的地：AI时代的旅游价值重构](../../../../../my%20sale%20blog/xdstudiolab/assets/img/covers/%E9%87%8D%E6%96%B0%E8%A7%84%E5%88%92%E7%9B%AE%E7%9A%84%E5%9C%B0%EF%BC%9AAI%E6%97%B6%E4%BB%A3%E7%9A%84%E6%97%85%E6%B8%B8%E4%BB%B7%E5%80%BC%E9%87%8D%E6%9E%84.webp)
-
-
+# 
 
 ### 游客的脚步不会停，路上的风景会重新组织价值。
 
-![318景观大道](../../../../../my%20sale%20blog/xdstudiolab/assets/img/covers/318%E6%99%AF%E8%A7%82%E5%A4%A7%E9%81%93.webp)
+{{< img src="/img/covers/g318-scenic-highway.webp" alt="318景观大道" >}}
 
 2025年，中国国内旅游交出一份惊人的成绩单：出游人次65.22亿，同比增长16.2%；出游花费6.30万亿元，同比增长9.5%。游客越来越多，钱越花越多——这是最常被引用的叙事。
 
@@ -71,9 +69,7 @@ showComments: true
 
 智能技术的任务，是放大价值——让价值更快被发现、更精准地连接、更广泛地传播、更高效地转化。它不取代规划师，而是改变了整个旅游业运行的环境。
 
-![丹巴甲居藏寨](../../../../../my%20sale%20blog/xdstudiolab/assets/img/covers/%E4%B8%B9%E5%B7%B4%E7%94%B2%E5%B1%85%E8%97%8F%E5%AF%A8.webp)
-
-
+{{< img src="/img/covers/danba-jiaju-village.webp" alt="丹巴甲居藏寨" >}}
 
 真正影响选择的，往往不是信息多少，而是判断成本。
 
@@ -95,7 +91,7 @@ showComments: true
 
 再看信息。
 
-![林芝桃花节](../../../../../my%20sale%20blog/xdstudiolab/assets/img/covers/%E6%9E%97%E8%8A%9D%E6%A1%83%E8%8A%B1%E8%8A%82.webp)
+{{< img src="/img/covers/linzhi-peach-blossom.webp" alt="林芝桃花节" >}}
 
 三月的林芝，桃花把山坡染成粉色，雪山在远处安静地看着。
 
@@ -123,8 +119,6 @@ AI没有凭空造出一个目的地。它只是以极低的边际成本，把隐
 
 游客的脚步不会停。能留下来的，是那些真正学会"组织价值"的地方。
 
-
-
 ---
 
 数据来源与链接：
@@ -142,8 +136,6 @@ AI没有凭空造出一个目的地。它只是以极低的边际成本，把隐
 6）林芝桃花节——科技日报：https://www.stdaily.com/web/gdxw/2026-04/04/content_497793.html ；"冬游西藏"政策——西藏自治区文化和旅游厅：https://wlt.xizang.gov.cn/xwzx_69/xydt/202511/t20251103_508152.html ；西藏自治区人民政府：https://www.xizang.gov.cn/xwzx_406/bmkx/202511/t20251110_508937.html
 
 7）小红书话题浏览量——C财经：https://caijing.chinadaily.com.cn/a/202601/08/WS695f76d4a310942cc499a9c9.html
-
-
 
 观点框架：《重新规划目的地》核心主张——规划组织价值；商业模式创造、获取并发现价值；智能技术放大价值。
 

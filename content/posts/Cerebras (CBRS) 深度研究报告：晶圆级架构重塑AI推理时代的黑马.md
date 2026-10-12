@@ -28,6 +28,7 @@ series:
 - AI算力轮动
 showTableOfContents: true
 showComments: true
+image: /img/covers/cerebras-cbrs-wafer-scale-ai-inference.jpg
 ---
 报告日期：2026年6月21日
  核心标的：Cerebras Systems (纳斯达克：CBRS)

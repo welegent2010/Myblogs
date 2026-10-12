@@ -1,0 +1,53 @@
+{{/*
+  img
+  ---
+  渲染一张图。站内资源走 Hugo 管线，转成 WebP 并输出 srcset；
+  SVG 原样输出；站外地址直接输出原 URL（无法重编码）。
+
+  参数：src, external, alt, class, sizes, loading
+*/}}
+{{ if and .src .external }}
+  <img src="{{ .src }}"
+       alt="{{ .alt | default "" }}"
+       {{ with .class }}class="{{ . }}"{{ end }}
+       loading="{{ .loading | default "lazy" }}"
+       decoding="async"
+       referrerpolicy="no-referrer">
+{{ else if .src }}
+  {{ with partial "img-resource.html" (dict "src" .src) }}
+    {{ $alt := $.alt | default "" }}
+    {{ $class := $.class }}
+    {{ $loading := $.loading | default "lazy" }}
+    {{ $r := . }}
+    {{ if in $r.MediaType.SubType "svg" }}
+      <img src="{{ $r.RelPermalink }}"
+           alt="{{ $alt }}"
+           {{ with $class }}class="{{ . }}"{{ end }}
+           loading="{{ $loading }}"
+           decoding="async">
+    {{ else }}
+      {{ $main := "" }}
+      {{ if gt $r.Width 1400 }}
+        {{ $main = $r.Resize "1400x webp q82" }}
+      {{ else }}
+        {{ $main = $r.Resize (printf "%dx webp q82" $r.Width) }}
+      {{ end }}
+      {{ $set := slice (printf "%s %dw" $main.RelPermalink $main.Width) }}
+      {{ range slice 960 640 }}
+        {{ if gt $main.Width . }}
+          {{ $small := $r.Resize (printf "%dx webp q82" .) }}
+          {{ $set = $set | append (printf "%s %dw" $small.RelPermalink $small.Width) }}
+        {{ end }}
+      {{ end }}
+      <img src="{{ $main.RelPermalink }}"
+           srcset="{{ delimit $set ", " }}"
+           sizes="{{ $.sizes | default "(min-width: 1200px) 640px, 100vw" }}"
+           alt="{{ $alt }}"
+           {{ with $class }}class="{{ . }}"{{ end }}
+           width="{{ $main.Width }}"
+           height="{{ $main.Height }}"
+           loading="{{ $loading }}"
+           decoding="async">
+    {{ end }}
+  {{ end }}
+{{ end }}

@@ -27,6 +27,7 @@ series:
 - 产业分析
 showTableOfContents: true
 showComments: true
+image: /img/covers/adea-ai-semiconductor-toll-booth-2028-repricing.jpg
 ---
 报告类型：深度行业研究与投资标的分析
  研究对象：ADEA（AI半导体底层IP授权与专利持有公司）

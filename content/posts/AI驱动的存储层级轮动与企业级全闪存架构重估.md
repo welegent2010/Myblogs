@@ -26,6 +26,7 @@ series:
 - 深度研究
 showTableOfContents: true
 showComments: true
+image: /img/covers/ai-storage-tier-rotation-all-flash-reevaluation.jpg
 ---
 **报告日期**：2026年6月25日  
 **核心主题**：AI数据中心从“算力”向“存力+数据智能调度”下沉，存储板块正进入从HBM → NAND颗粒 → 企业级全闪存架构的精准轮动第三波。Everpure作为该浪潮的明牌龙头之一，叠加隐蔽上游SSD主控芯片黑马，构成完整的存储投资主线。

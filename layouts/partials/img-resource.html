@@ -1,0 +1,27 @@
+{{/*
+  img-resource
+  -----------
+  把一个图片路径解析成 Hugo 资源对象，支持扩展名兜底。
+  这样把占位 .svg 换成真实 .webp / .jpg / .png 时不需要改任何 front matter。
+
+  输入：dict "src" "/img/covers/tourism.svg"
+  输出：Hugo 资源，找不到则返回空
+*/}}
+{{ $res := "" }}
+{{ with .src }}
+  {{ $rel := strings.TrimPrefix "/" . }}
+  {{ $ext := path.Ext $rel }}
+  {{ $base := strings.TrimSuffix $ext $rel }}
+  {{ $candidates := slice }}
+  {{ if ne (lower $ext) ".svg" }}{{ $candidates = $candidates | append $rel }}{{ end }}
+  {{ range slice "webp" "avif" "jpg" "jpeg" "png" }}
+    {{ $candidates = $candidates | append (printf "%s.%s" $base .) }}
+  {{ end }}
+  {{ $candidates = $candidates | append $rel }}
+  {{ range $candidates }}
+    {{ if not $res }}
+      {{ with resources.Get . }}{{ $res = . }}{{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $res }}

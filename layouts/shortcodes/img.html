@@ -1,0 +1,11 @@
+短代码：正文里输出管线处理的图片。
+调用方式：花括号百分号包裹，参数 src（站内 /img/covers/ 路径）与 alt（说明文字）。
+示例：src 填 /img/covers/g318-scenic-highway.webp，alt 填图片说明。
+走 assets 图片管线（WebP 重编码加 srcset），找不到图时输出注释占位而不是破图。
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- with partial "img-resource.html" (dict "src" $src) -}}
+  {{ partial "img.html" (dict "src" $src "alt" $alt) }}
+{{- else -}}
+  <!-- img-missing: {{ $src }} -->
+{{- end -}}

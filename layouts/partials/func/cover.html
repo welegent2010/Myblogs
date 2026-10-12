@@ -1,0 +1,36 @@
+{{/*
+  cover
+  -----
+  决定一篇文章的封面图。取值顺序：
+
+  1. front matter 里的 image 字段（站外 URL 或站内 /img/... 路径）
+  2. 正文第一张图（markdown 或 <img>，同样支持站外 URL）
+  3. 都没有则返回空 src，由调用方渲染 CSS 占位块
+
+  返回：dict "src" "external"
+*/}}
+{{- $p := . -}}
+{{- $src := "" -}}
+{{- $external := false -}}
+
+{{- with $p.Params.image }}{{ $src = printf "%v" . }}{{ end -}}
+
+{{- if not $src -}}
+  {{- $raw := $p.RawContent -}}
+  {{- $md := findRE `!\[[^\]]*\]\(([^)\s]+)` $raw 1 -}}
+  {{- if $md -}}
+    {{- $src = replaceRE `^!\[[^\]]*\]\(` "" (index $md 0) -}}
+  {{- else -}}
+    {{- $html := findRE `<img[^>]+src="([^"]+)"` $raw 1 -}}
+    {{- with $html }}{{ $src = replaceRE `^[\s\S]*src="` "" (index . 0) }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with $src -}}
+  {{- $src = strings.TrimPrefix "\"" ($src | strings.TrimSuffix "\"") -}}
+  {{- if or (hasPrefix $src "http://") (hasPrefix $src "https://") (hasPrefix $src "//") -}}
+    {{- $external = true -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return dict "src" $src "external" $external -}}
