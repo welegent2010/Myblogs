@@ -34,9 +34,9 @@ showTableOfContents: true
 showComments: true
 ---
 
+![](https://img.xdstudio.top/2026/10/f093c18080e6c36deb20fac1f51338e7.jpg)
 
 
-![](https://img.xdstudio.top/2026/10/8e03451f3a8b384906c86bc8a12cd7e2.jpg)
 
 ### 游客的脚步不会停，路上的风景会重新组织价值。
 
