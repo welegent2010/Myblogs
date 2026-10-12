@@ -34,11 +34,11 @@ showTableOfContents: true
 showComments: true
 ---
 
-### 游客
 
-{{< img src="/img/posts/g318-scenic-highway.webp" alt="318景观大道" >}}
 
-的脚步不会停，路上的风景会重新组织价值。
+![](https://img.xdstudio.top/2026/10/9f292a21c0f67e3828f46f96dccfd04d.jpg)
+
+### 游客的脚步不会停，路上的风景会重新组织价值。
 
 2025年，中国国内旅游交出一份惊人的成绩单：出游人次65.22亿，同比增长16.2%；出游花费6.30万亿元，同比增长9.5%。游客越来越多，钱越花越多——这是最常被引用的叙事。
 
