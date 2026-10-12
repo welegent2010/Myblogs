@@ -89,6 +89,45 @@ Making it suitable for building a long-term personal knowledge system.
 └── hugo.toml         # Hugo configuration
 ```
 
+## Writing Workflow
+
+### 1. Create a new post
+
+```bash
+hugo new posts/your-file-name.md
+```
+
+The file is generated from `archetypes/default.md`, which already carries the required front matter and the channel / topic reference in comments. Full rules with a lookup table live in `发文模板.md`.
+
+### 2. Set where the article belongs
+
+Two front matter fields decide which section an article lands in. Nothing else does:
+
+| Front matter field | Source of truth | Renders to |
+| --- | --- | --- |
+| `channels` | `data/channels.yaml` (3 keys) | `/urban/`, `/markets/`, `/notes/` |
+| `topics` | `data/topics.yaml` (21 keys) | Sub-navigation and sidebar inside the channel page |
+
+- `cities-industries` -> `/urban/`
+- `markets-finance` -> `/markets/`
+- `notes-methods` -> `/notes/`
+
+Rules to keep in mind:
+
+1. Never invent a key. A typo does not fail the build, it silently creates an orphan aggregation page and the article appears in no channel at all.
+2. To add a new topic, edit **both** data files: add the entry to `data/topics.yaml` (with `en`, `zh`, `channel`), then append the key to the `topics:` list of its channel in `data/channels.yaml`.
+3. `categories`, `tags` and `series` are free-form Chinese and only feed SEO, related posts and archives. They never decide placement.
+4. `featured: true` promotes an article to the top block of its channel page, newest first.
+5. Keep `slug` lowercase English with hyphens, and record previous URLs in `aliases` to avoid 404s.
+
+### 3. Verify before publishing
+
+```bash
+hugo server -D
+```
+
+Open the target channel page and confirm the article shows up where expected, then set `draft: false`.
+
 ## Local Development
 
 ### Install Hugo
