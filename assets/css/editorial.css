@@ -572,8 +572,24 @@ hr {
   overflow: hidden;
   background-color: var(--paper-2);
   border: 1px solid var(--rule);
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   margin-bottom: 16px;
+}
+
+.card__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  --cv-b: var(--cv-base);
+  --cv-a: var(--cv-accent);
+  --cv-i: var(--cv-ink);
+}
+
+/* 深色模式切到暗版配色；源变量由内联 style 提供，这里只做一次重命名映射 */
+:root[data-theme="dark"] .card__svg {
+  --cv-b: var(--cv-base-d);
+  --cv-a: var(--cv-accent-d);
+  --cv-i: var(--cv-ink-d);
 }
 
 .card__img {
@@ -588,45 +604,8 @@ hr {
   transform: scale(1.03);
 }
 
-.card__figure--empty {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--paper-2);
-  background-image: linear-gradient(var(--rule) 1px, transparent 1px),
-    linear-gradient(90deg, var(--rule) 1px, transparent 1px);
-  background-size: 34px 34px;
-  background-position: -1px -1px;
-}
-
-.card__figure--empty .card__img {
-  display: none;
-}
-
-.card__placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  padding: 10px 14px;
-  background-color: var(--paper);
-  border: 1px solid var(--rule-strong);
-}
-
-.card__placeholder-num {
-  font-family: var(--font-mono);
-  font-size: 1.15rem;
-  letter-spacing: 0.12em;
-  color: var(--accent);
-}
-
-.card__placeholder-label {
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--muted-2);
-  white-space: nowrap;
+.card__figure:hover .card__svg {
+  opacity: 0.88;
 }
 
 .card--grid .entry__title {
@@ -644,7 +623,7 @@ hr {
 }
 
 .card--large .card__figure {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   margin-bottom: 18px;
 }
 
@@ -690,13 +669,6 @@ hr {
   margin-bottom: 0;
 }
 
-.card--compact .card__placeholder-num {
-  font-size: 0.86rem;
-}
-
-.card--compact .card__placeholder-label {
-  display: none;
-}
 
 .card--compact .entry__meta {
   margin-bottom: 6px;

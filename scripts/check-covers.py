@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""封面比例体检：检查 assets/img/covers/ 下所有图是否符合 16:10 (1.600)。
+"""封面尺寸体检：检查图片是否符合 1200x900（4:3，即 1.333）。
 
 用法：
-    python3 scripts/check-covers.py            # 检查 covers 目录
+    python3 scripts/check-covers.py            # 检查 assets/img/covers/ 目录
     python3 scripts/check-covers.py 图.png     # 检查指定文件
 
-判定（距 1.600 的相对偏差）：
+判定（距 1.333 的相对偏差）：
     < 2%  OK      直接用，几乎零裁切
     < 12% 偏差    能用，cover 会裁掉一部分
     更大  严重    建议重做或裁剪
@@ -22,7 +22,7 @@ except ImportError:
     print('缺少 pillow：请先 pip install pillow')
     sys.exit(1)
 
-TARGET = 1.6
+TARGET = 1.3333333
 
 
 def check(path):
@@ -54,7 +54,7 @@ def main():
         if check(f) != 'OK':
             bad += 1
     print()
-    print('目标比例 16:10 = 1.600；常用尺寸 1600x1000 / 1400x875 / 1920x1200')
+    print('标准尺寸 1200x900，比例 4:3 = 1.333；等比例可用 1600x1200 / 800x600')
     print('结果：%d 张中 %d 张需注意' % (len(files), bad))
 
 

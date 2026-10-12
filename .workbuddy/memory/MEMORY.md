@@ -30,6 +30,18 @@
 - 封面取值顺序（`layouts/partials/func/cover.html`）：front matter `image:` → 正文第一张图 → CSS 占位块（频道编号 + 名称，网格纹理）。
 - 图片放 `assets/img/covers/`，front matter 写 `image: /img/covers/<slug>.jpg`；管线自动转 WebP + srcset（`img.html` + `img-resource.html`，扩展名可兜底替换）。
 - 正文插图用短代码 img：花括号 img + src/alt 参数（`layouts/shortcodes/img.html`）。
+- 封面色块配色写在 `data/channels.yaml`（每频道 base/accent/ink + `*_dark` 深色版），取色逻辑见 `layouts/partials/func/placeholder-cover.html`。**用户偏好：性冷淡低饱和浅灰调**（2026-10-12），不要深靛蓝/墨绿/赭黄，要与纸色 #fbfaf8 协调。
+- CSS 变量坑：源变量（inline style 注入）与被引用的变量必须是不同名字（如 `--cv-base` → `--cv-b`），同名会形成循环依赖导致整组失效。
+
 - 卡片四种 variant：grid / row / compact / large（`entry.html`，调用必须传 dict）。
 - 首页频道栅格：12 列，前两个频道 span 6，第三个 span 12 通栏双列。
-- 已知沙盒怪象：含 "shenzhen-stock-era-urban-renewal-misread" 的命令输出会被显示层改写成乱码串，磁盘真实内容以 grep -c 计数验证为准。
+- ⚠️ 沙盒字符串污染（严重，2026-10-12 更新）：凡是凑成 `shenzhen-stock-era-urban-renewal-misread` 这个形态的字符串，不论出现在 shell 命令、heredoc、Write 写入的 Python 脚本里，即便拆成多段拼接，最终都会被映射成同一个等长乱码串。**ls / grep / repr / print 全部不可信，脚本内的 `old == target` 判断也会被带偏。** 该文最终改用全新 slug `shenzhen-urban-renewal-incremental-space` 才完成重命名。教训：遇到此类字符串不要反复尝试替换，直接换一个全新的名字。
+
+## 封面尺寸与配色（2026-10-12 用户定则）
+
+- **封面标准尺寸固定为 1200 × 900（4:3）**，全站统一，不是建议值。卡片容器 aspect-ratio 一律 4/3。等比例放大可用 1600×1200。
+- **不再使用 AI 生成的封面图**。无配图时显示按频道配色的纯色 SVG 色块（`layouts/partials/func/placeholder-cover.html`）。
+- 频道配色写在 `data/channels.yaml` 的 base / accent / ink 三个字段，改那里全站同步：城市与产业 #2F5673、市场与金融 #14655A、方法与工具 #8A6A2F。
+- 同频道内不同主题按 topics 索引 mod 4 自动切四种几何版式，保证纯色也能分类。
+- 封面管理用 `scripts/set-cover.py`（--color / --first-image / --url，支持 --all）；尺寸体检用 `scripts/check-covers.py`。
+- 封面降级顺序：front matter `image` → 正文首张 markdown 图 → 正文首个 img 短代码 → 正文首个 HTML img → 频道色块。

@@ -4,6 +4,14 @@ cities-industries:
   en: "Cities & Industries"
   zh: "城市与产业"
   url: "/urban/"
+  # 封面色块配色（性冷淡低饱和灰调，贴近纸色 #fbfaf8 / #f4f2ee）
+  # base 底色 · accent 辅色块 · ink 文字；*_dark 为深色模式下的对应值
+  base: "#DCE1E6"
+  accent: "#C8D0D8"
+  ink: "#39414A"
+  base_dark: "#262B31"
+  accent_dark: "#333A42"
+  ink_dark: "#D3DAE1"
   desc_en: "Urban development, tourism, regional strategy and industry research."
   desc_zh: "长期研究城市更新、县域发展、文旅、产业策划、区域经济、项目投资、空间数据与城市运营。"
   topics:
@@ -20,6 +28,12 @@ markets-finance:
   en: "Markets & Finance"
   zh: "市场与金融"
   url: "/markets/"
+  base: "#DCE2DC"
+  accent: "#C7D0C7"
+  ink: "#3B443C"
+  base_dark: "#242A26"
+  accent_dark: "#313832"
+  ink_dark: "#D2DAD3"
   desc_en: "Independent research on public markets, companies, industries and investment frameworks."
   desc_zh: "围绕公司、产业链、资本市场结构和交易方法进行长期研究与复盘。"
   topics:
@@ -37,6 +51,12 @@ notes-methods:
   en: "Notes & Methods"
   zh: "方法与工具"
   url: "/notes/"
+  base: "#E4DFD7"
+  accent: "#D3CBBF"
+  ink: "#453F36"
+  base_dark: "#2B2823"
+  accent_dark: "#3A352D"
+  ink_dark: "#DDD6CA"
   desc_en: "Notes on research methods, AI workflows, data analysis, software tools and independent digital practice."
   desc_zh: "记录研究方法、AI工作流、GIS、数据分析、软件开发、Web工具和独立工作方法。"
   topics:

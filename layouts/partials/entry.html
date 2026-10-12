@@ -9,7 +9,7 @@
 {{- $cover := partial "func/cover.html" $p -}}
 <article class="card card--{{ $variant }}"{{ with $ck }} data-channel="{{ . }}"{{ end }}>
   <a
-    class="card__figure{{ if not $cover.src }} card__figure--empty{{ end }}"
+    class="card__figure{{ if not $cover.src }} card__figure--color{{ end }}"
     href="{{ $p.RelPermalink }}"
     tabindex="-1"
     aria-hidden="true"
@@ -23,10 +23,7 @@
         "loading" (cond (eq $variant "large") "eager" "lazy")
       ) }}
     {{- else -}}
-      <span class="card__placeholder">
-        <span class="card__placeholder-num">{{ with $ch }}{{ .num }}{{ else }}--{{ end }}</span>
-        <span class="card__placeholder-label">{{ with $ch }}{{ .zh }}{{ else }}研究档案{{ end }}</span>
-      </span>
+      {{ partial "func/placeholder-cover.html" (dict "page" $p) }}
     {{- end -}}
   </a>
 

@@ -4,8 +4,8 @@ description: 以2025年国内旅游市场爆发为背景，拆解"流量增长�
 summary: 深度分析旅游目的地重构的文章，揭示了游客总量爆发背后"价值没有留下"的结构性困境：从G318交旅融合到亚丁村微创更新，从林芝桃花反季突围到"冬游西藏"，拆解规划、商业模式与智能技术如何共同决定一个地方的长期价值。
 date: 2026-10-12
 lastmod: 2026-10-12
-image: /img/covers/replanning-destination-ai-value.webp
 draft: false
+image: /img/covers/replanning-destination-ai-value.webp
 slug: replanning-destination-ai-value
 aliases:
 - /posts/重新规划目的地-ai时代的旅游价值重构/
@@ -37,7 +37,7 @@ showComments: true
 
 ### 游客
 
-![重新规划目的地：AI时代的旅游价值重构 (1)](../../../../../my%20sale%20blog/xdstudiolab/assets/img/covers/%E9%87%8D%E6%96%B0%E8%A7%84%E5%88%92%E7%9B%AE%E7%9A%84%E5%9C%B0%EF%BC%9AAI%E6%97%B6%E4%BB%A3%E7%9A%84%E6%97%85%E6%B8%B8%E4%BB%B7%E5%80%BC%E9%87%8D%E6%9E%84%20(1).jpg){{< img src="/img/posts/g318-scenic-highway.webp" alt="318景观大道" >}}
+{{< img src="/img/posts/g318-scenic-highway.webp" alt="318景观大道" >}}
 
 的脚步不会停，路上的风景会重新组织价值。
 

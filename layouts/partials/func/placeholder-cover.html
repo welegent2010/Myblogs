@@ -1,0 +1,64 @@
+{{/*
+  placeholder-cover
+  -----------------
+  没有配图时按频道生成一个纯色封面（内联 SVG，不产生图片请求）。
+
+  判定依据：
+    - 频道决定配色，取自 data/channels.yaml 的 base / accent / ink
+      （浅色模式用 *_dark 之外的那组，深色模式自动切到 *_dark）
+    - 主题决定几何构成，共 4 种变体，同频道内不同主题也能一眼区分
+
+  配色通过 CSS 变量注入，所以深浅模式由 CSS 切换，模板不用分支。
+
+  输入：dict "page" <Page>
+  输出：SVG 片段，已带 aria-hidden，可直接放进 figure
+*/}}
+{{- $p := .page -}}
+
+{{- $channelKey := "notes-methods" -}}
+{{- with $p.Params.channels }}{{ $channelKey = index . 0 }}{{ end -}}
+{{- $topicKey := "" -}}
+{{- with $p.Params.topics }}{{ $topicKey = index . 0 }}{{ end -}}
+
+{{- $ch := index site.Data.channels $channelKey -}}
+{{- if not $ch }}{{ $ch = index site.Data.channels "notes-methods" }}{{ end -}}
+{{- $base := $ch.base | default "#DEE2E1" -}}
+{{- $accent := $ch.accent | default "#C9CFCD" -}}
+{{- $ink := $ch.ink | default "#3D4241" -}}
+{{- $baseDark := $ch.base_dark | default "#26292B" -}}
+{{- $accentDark := $ch.accent_dark | default "#34383A" -}}
+{{- $inkDark := $ch.ink_dark | default "#D5D8D7" -}}
+{{- $num := $ch.num | default "--" -}}
+{{- $label := $ch.zh | default "" -}}
+
+{{- $variant := 0 -}}
+{{- with $topicKey -}}
+  {{- $i := 0 -}}
+  {{- range $k, $v := (index site.Data.channels $channelKey).topics -}}
+    {{- if eq $v $topicKey }}{{ $i = $k }}{{ end -}}
+  {{- end -}}
+  {{- $variant = mod $i 4 -}}
+{{- end -}}
+
+<svg class="card__svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"
+  style="--cv-base:{{ $base }};--cv-accent:{{ $accent }};--cv-ink:{{ $ink }};--cv-base-d:{{ $baseDark }};--cv-accent-d:{{ $accentDark }};--cv-ink-d:{{ $inkDark }};">
+  <rect width="1200" height="900" fill="var(--cv-b, #DEE2E1)"/>
+  {{ if eq $variant 0 }}
+    <rect x="740" y="0" width="460" height="900" fill="var(--cv-a, #C9CFCD)"/>
+  {{ else if eq $variant 1 }}
+    <rect x="0" y="608" width="1200" height="292" fill="var(--cv-a, #C9CFCD)"/>
+  {{ else if eq $variant 2 }}
+    <rect x="806" y="188" width="394" height="712" fill="var(--cv-a, #C9CFCD)"/>
+  {{ else }}
+    <circle cx="930" cy="450" r="322" fill="var(--cv-a, #C9CFCD)"/>
+  {{ end }}
+  <g stroke="var(--cv-i, #3D4241)" stroke-width="2" opacity="0.16">
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="900"/>
+    <line x1="800" y1="0" x2="800" y2="900"/>
+  </g>
+  <text x="76" y="196" fill="var(--cv-i, #3D4241)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="164" font-weight="500" letter-spacing="4" opacity="0.72">{{ $num }}</text>
+  <text x="80" y="272" fill="var(--cv-i, #3D4241)" font-family="system-ui, -apple-system, Helvetica, Arial, sans-serif" font-size="58" font-weight="500" opacity="0.62">{{ $label }}</text>
+  <rect x="76" y="318" width="120" height="5" fill="var(--cv-i, #3D4241)" opacity="0.5"/>
+</svg>
