@@ -30,7 +30,7 @@ series:
 showTableOfContents: true
 showComments: true
 ---
-![](https://ele-image.oss-cn-guangzhou.aliyuncs.com/img/CoreWeave%20Selling%20Capacity%20Before%20Cash.jpg)
+![](https://img.xdstudio.top/2026/10/579a8e7fdc02496a60c7456fb7a7fce2.jpg)
 
 ## 执行摘要
 
