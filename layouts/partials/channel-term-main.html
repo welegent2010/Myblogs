@@ -22,7 +22,7 @@
       {{- $count := 0 -}}
       {{- with index site.Taxonomies.topics $slug }}{{ $count = .Count }}{{ end -}}
       {{- with $t }}
-        <a href="{{ printf "/topics/%s/" $slug | relURL }}">{{ .zh }}<span class="mono"> {{ $count }}</span></a>
+        {{- partial "topic-link.html" (dict "slug" $slug "name" .zh) }}<span class="mono"> {{ $count }}</span>
       {{- end }}
     {{- end }}
   </nav>
@@ -66,7 +66,7 @@
             {{- with index site.Taxonomies.topics $slug }}{{ $count = .Count }}{{ end -}}
             {{- with $t }}
               <li>
-                <a href="{{ printf "/topics/%s/" $slug | relURL }}">{{ .zh }}</a>
+                {{- partial "topic-link.html" (dict "slug" $slug "name" .zh) }}
                 <span>{{ $count }}</span>
               </li>
             {{- end }}

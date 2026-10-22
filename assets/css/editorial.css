@@ -831,6 +831,12 @@ hr {
   text-underline-offset: 6px;
 }
 
+/* 无文章主题：不可点击，视觉弱化 */
+.topic-link-empty {
+  opacity: 0.45;
+  cursor: default;
+}
+
 .disclaimer {
   margin: 18px 0 0;
   padding-left: 12px;

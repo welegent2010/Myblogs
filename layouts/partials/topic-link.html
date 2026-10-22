@@ -1,0 +1,14 @@
+{{- /*
+  统一的主题链接渲染：有文章的主题渲染 <a>，没有文章的渲染不可点的 <span>，避免站内死链。
+  调用：{{ partial "topic-link.html" (dict "slug" $slug "name" $t.zh "active" false) }}
+*/ -}}
+{{- $slug := .slug -}}
+{{- $name := .name -}}
+{{- $active := .active | default false -}}
+{{- $hasTerm := false -}}
+{{- with index site.Taxonomies.topics $slug }}{{ $hasTerm = true }}{{ end -}}
+{{- if $hasTerm -}}
+  <a href="{{ printf "/topics/%s/" $slug | relURL }}"{{ with $active }} class="is-active"{{ end }}>{{ $name }}</a>
+{{- else -}}
+  <span class="topic-link-empty" aria-disabled="true">{{ $name }}</span>
+{{- end -}}

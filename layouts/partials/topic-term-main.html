@@ -20,12 +20,7 @@
       {{- range $slug := $ch.topics }}
         {{- $t := index site.Data.topics $slug -}}
         {{- with $t }}
-          <a
-            href="{{ printf "/topics/%s/" $slug | relURL }}"
-            {{- if eq $slug $term }} class="is-active" {{- end -}}
-          >
-            {{ .zh }}
-          </a>
+          {{- partial "topic-link.html" (dict "slug" $slug "name" .zh "active" (eq $slug $term)) }}
         {{- end }}
       {{- end }}
     </nav>

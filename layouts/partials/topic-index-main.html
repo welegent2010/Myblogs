@@ -29,7 +29,7 @@
           {{- with $t }}
             <div class="topic-item">
               <div class="topic-item__name">
-                <a href="{{ printf "/topics/%s/" $slug | relURL }}">{{ .zh }}</a>
+                {{- partial "topic-link.html" (dict "slug" $slug "name" .zh) }}
                 <span class="topic-item__count">{{ $count }}</span>
               </div>
               {{- with index site.Taxonomies.topics $slug }}
