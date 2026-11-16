@@ -2,7 +2,14 @@
   {{- $posts := where site.RegularPages "Section" "posts" -}}
   {{- $channels := slice "cities-industries" "markets-finance" "notes-methods" -}}
 
-  <section class="hero">
+  {{- /* hero 背景图：右侧城市天际线 + 金融网络，左侧天然留白放文字。
+       走 Hugo 管线转 WebP；深色模式的暗罩在 CSS 里叠 --hero-bg 之上 */ -}}
+  {{- $heroBg := "" -}}
+  {{- with resources.Get "img/hero-bg.jpg" -}}
+    {{- $heroBg = (.Resize (printf "%dx webp q82" .Width)).RelPermalink -}}
+  {{- end -}}
+
+  <section class="hero"{{ with $heroBg }} style="--hero-bg:url('{{ . }}')"{{ end }}>
     <div class="shell">
       <span class="mono hero__eyebrow">{{ site.Params.journal.eyebrow }}</span>
       <h1 class="hero__title">
