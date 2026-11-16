@@ -53,3 +53,9 @@
 - 模板注释内部**禁止出现 `*/`**，否则提前闭合注释，构建报 `comment ends before closing delimiter`（写示例短代码时尤其容易踩）。
 - 排查手法：脚本扫描 layouts 下「第一个 `{{` 之前是否存在非空文本」，一次找出所有裸文本污染。
 - 缺图 fallback 不要输出 HTML 注释占位，改用 `warnf` 只进构建日志，保持页面 HTML 干净。
+
+## 首页 hero 背景图（2026-11-16）
+
+- 图源：`assets/img/hero-bg.jpg`（2304×992，城市天际线 + 金融图表网络，右侧主体、左侧留白；用户原图在 `~/Documents/pptprofilo/do/myportfolio/Myblogs/img/wbep/博客页背景图设计.jpg`，入库存英文小写名）。
+- 接法：`layouts/index.html` 用 `resources.Get "img/hero-bg.jpg"` 管线转 WebP，inline `style="--hero-bg:url(...)"`；CSS 用 `background-image: var(--hero-bg)` 引用（管线 hash 资源不要写死在 css 文件里）。
+- 深色模式叠 `linear-gradient(rgba(18,20,22,.85)...)` 暗罩；移动端焦点 72% center + 底部浅色渐变垫底。
